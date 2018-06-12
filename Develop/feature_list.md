@@ -1,55 +1,55 @@
-2018-06-12
+2018-06-13
 
 |Task|Description|Subscript|
 |---|---|---|
-|Install archives tools|Support for zip, rar, 7zip etc.|[install-archives-tools](./scripts/install-archives-tools)|
-|Uninstall garbage Gnome/Ubuntu packages|Uninstall some garbage packages e.g. orca, shotwell, rhythmbox, totem, transmission|[uninstall-garbage-packages](./scripts/uninstall-garbage-packages)|
-|Install codecs|Codecs to support common audio, video formats and additional fonts.|[install-codecs](./scripts/install-codecs)|
-|Install Gnome tools|Install Gnome settings managers and utils.|[install-gnome-tools](./scripts/install-gnome-tools)|
-|Install language packages|Installing language packages for your locale different than English.|[install-language-packages](./scripts/install-language-packages)|
-|Install Libreoffice|Install full Libreoffice package with language packages.|[install-libreoffice](./scripts/install-libreoffice)|
-|Install password manager|Install password manager – keepassXC|[install-password-manager](./scripts/install-password-manager)|
-|Install Synaptic package manager|Install Synaptic package manager|[install-synaptic](./scripts/install-synaptic)|
-|Install Thunderbird|Install Thunderbird mail client|[install-thunderbird](./scripts/install-thunderbird)|
-|Install useful system utilties|Install Partitioning tools, space usage tools, hardware info tools.|[install-system-utilties](./scripts/install-system-utilties)|
-|Install VLC|Install popular media player - both music and videos.|[install-vlc](./scripts/install-vlc)|
-|Upgrade packages|Perform apt dist-upgrade|[perform-upgrade](./scripts/perform-upgrade)|
-|Enable /tmp folder in RAM|Increase efficiency of your system and enable /tmp folder in RAM. Recommended if >8GB of RAM|[enable-tmp-ram](./scripts/enable-tmp-ram)|
-|Install Amarok|Install powerful music player – Amarok|[install-amarok](./scripts/install-amarok)|
-|Install AMD-Nvidia graphics drivers|Install Install AMD-Nvidia graphics drivers|[install-amd-nvidia-drivers](./scripts/install-amd-nvidia-drivers)|
-|Install Atom.io IDE|Install easy to customize IDE – Atom.io|[install-atom](./scripts/install-atom)|
-|Install Audacity audio editor|Install Audacity audio editor|[install-audacity](./scripts/install-audacity)|
-|Install batch photos utilties|Install utilties to batch modify your photos and metadata e.g. aaphoto, exiv2|[install-photo-utils](./scripts/install-photo-utils)|
-|Install better laptop’s battery support|Install better laptop’s battery support. Recommended on laptops.|[install-battery-support](./scripts/install-battery-support)|
-|Install bootable live USB creator – mkusb|Install bootable live USB creator – mkusb|[install-mkusb](./scripts/install-mkusb)|
-|Install CD/DVD burner|Install CD/DVD burner – if you have disk drive|[install-cd-dvd-burner](./scripts/install-cd-dvd-burner)|
-|Install Chromium browser|Install open-source Chromium browser. Open-source Chrome.|[install-chromium](./scripts/install-chromium)|
-|Install Dia – diagram creator|Install Dia – diagram creator – easy and powerful|[install-dia](./scripts/install-dia)|
-|Install Digikam|Install Powerful tool for photos managment|[install-digikam](./scripts/install-digikam)|
-|Install Dropbox client|Install official Dropbox client with nemo support. Headless moder – run as user which will be using dropbox.|[install-dropbox](./scripts/install-dropbox)|
-|Install ebook reader|Install ebook reader – calibre|[install-calibre](./scripts/install-calibre)|
-|Install Eclipse IDE|Install IDE for java programing|[install-eclipse](./scripts/install-eclipse)|
-|Install fzf – CLI fuzzy finder|Install fzf – CLI fuzzy finder. Git clone installation – run as user which will be using script|[install-fzf](./scripts/install-fzf)|
-|Install Guake – gnome dropdown terminal|Install Guake – gnome dropdown terminal|[install-guake](./scripts/install-guake)|
-|Install HEX editor – bless|Install hex editor – bless.|[install-hex-editor](./scripts/install-hex-editor)|
-|Install Inkscape – vector graphic editor|Install vector graphic editor – Inkscape|[install-inkscape](./scripts/install-inkscape)|
-|Install ISO images tool|Install ISO images tool, mount, unmount, modify. - acetoneiso|[install-acetoneiso](./scripts/install-acetoneiso)|
-|Install Nextcloud client|Install Nextcloud client.|[install-nextcloud](./scripts/install-nextcloud)|
-|Install OCR Reader|Install utilties to OCR read files.|[install-ocr](./scripts/install-ocr)|
-|Install Owncloud client|Install Owncloud client.|[install-owncloud](./scripts/install-owncloud)|
-|Install PDF tools|Install utilties to support pdf modifications  - merging, spliting, replacing pages etc.|[install-pdf-tools](./scripts/install-pdf-tools)|
-|Install Qalculate scientific calculator|Install Qalculate scientific calculator|[install-qalculate](./scripts/install-qalculate)|
-|Install QownNotes|Install notepad with markdown support and todo list manager supporting sync.|[install-qownnotes](./scripts/install-qownnotes)|
-|Install qtCreator IDE|Install IDE for qt programs|[install-qtcreator](./scripts/install-qtcreator)|
-|Install sandboxing app – Firejail|Install sandboxing app Firejail.|[install-firejail](./scripts/install-firejail)|
-|Install scanner support|Install utilties to support scanner in Ubuntu.|[install-scanner-support](./scripts/install-scanner-support)|
-|Install sysadmin network utilties|Install utilties to monitor network traffic e.g. nethogs, nmap, iftop, whois, net-tools etc.|[install-sysadmin-network-tools](./scripts/install-sysadmin-network-tools)|
-|Install task manager – TaskCoach|Install powerful task manager TaskCoach|[install-taskcoach](./scripts/install-taskcoach)|
-|Install Tellico – collections manager|Install Tellico – collections manager – books, movies, coins etc.|[install-tellico](./scripts/install-tellico)|
-|Install VirtualBox|Install Virtualbox virtual machines manager.|[install-virtualbox](./scripts/install-virtualbox)|
-|Install webcam application|Install webcam application – cheese|[install-webcam-cheese](./scripts/install-webcam-cheese)|
-|Replace notepad gedit with pluma|Replace default gedit with powerful pluma notepad.|[replace-gedit-pluma](./scripts/replace-gedit-pluma)|
-|Replace filemanager Nautilus with Nemo|Replace file manager Nautilus with more powerful Nemo|[replace-nautilus-nemo](./scripts/replace-nautilus-nemo)|
-|Set Grub Timeout to 1 second|Set Grub Timeout to 1 second|[set-grub](./scripts/set-grub)|
-|Uninstall Ubuntu dock|Uninstall annoying Ubuntu Gnome dock.|[uninstall-ubuntu-dock](./scripts/uninstall-ubuntu-dock)|
-|Clean packages|Perform apt autoremove, clean and autoclean|[perform-cleanup](./scripts/perform-cleanup)|
+|Install archives tools|Support for zip, rar, 7zip etc.|[install-archives-tools](/scripts/install-archives-tools)|
+|Uninstall garbage Gnome/Ubuntu packages|Uninstall some garbage packages e.g. orca, shotwell, rhythmbox, totem, transmission|[uninstall-garbage-packages](/scripts/uninstall-garbage-packages)|
+|Install codecs|Codecs to support common audio, video formats and additional fonts.|[install-codecs](/scripts/install-codecs)|
+|Install Gnome tools|Install Gnome settings managers and utils.|[install-gnome-tools](/scripts/install-gnome-tools)|
+|Install language packages|Installing language packages for your locale different than English.|[install-language-packages](/scripts/install-language-packages)|
+|Install Libreoffice|Install full Libreoffice package with language packages.|[install-libreoffice](/scripts/install-libreoffice)|
+|Install password manager|Install password manager – keepassXC|[install-password-manager](/scripts/install-password-manager)|
+|Install Synaptic package manager|Install Synaptic package manager|[install-synaptic](/scripts/install-synaptic)|
+|Install Thunderbird|Install Thunderbird mail client|[install-thunderbird](/scripts/install-thunderbird)|
+|Install useful system utilties|Install Partitioning tools, space usage tools, hardware info tools.|[install-system-utilties](/scripts/install-system-utilties)|
+|Install VLC|Install popular media player - both music and videos.|[install-vlc](/scripts/install-vlc)|
+|Upgrade packages|Perform apt dist-upgrade|[perform-upgrade](/scripts/perform-upgrade)|
+|Enable /tmp folder in RAM|Increase efficiency of your system and enable /tmp folder in RAM. Recommended if >8GB of RAM|[enable-tmp-ram](/scripts/enable-tmp-ram)|
+|Install Amarok|Install powerful music player – Amarok|[install-amarok](/scripts/install-amarok)|
+|Install AMD-Nvidia graphics drivers|Install Install AMD-Nvidia graphics drivers|[install-amd-nvidia-drivers](/scripts/install-amd-nvidia-drivers)|
+|Install Atom.io IDE|Install easy to customize IDE – Atom.io|[install-atom](/scripts/install-atom)|
+|Install Audacity audio editor|Install Audacity audio editor|[install-audacity](/scripts/install-audacity)|
+|Install batch photos utilties|Install utilties to batch modify your photos and metadata e.g. aaphoto, exiv2|[install-photo-utils](/scripts/install-photo-utils)|
+|Install better laptop’s battery support|Install better laptop’s battery support. Recommended on laptops.|[install-battery-support](/scripts/install-battery-support)|
+|Install bootable live USB creator – mkusb|Install bootable live USB creator – mkusb|[install-mkusb](/scripts/install-mkusb)|
+|Install CD/DVD burner|Install CD/DVD burner – if you have disk drive|[install-cd-dvd-burner](/scripts/install-cd-dvd-burner)|
+|Install Chromium browser|Install open-source Chromium browser. Open-source Chrome.|[install-chromium](/scripts/install-chromium)|
+|Install Dia – diagram creator|Install Dia – diagram creator – easy and powerful|[install-dia](/scripts/install-dia)|
+|Install Digikam|Install Powerful tool for photos managment|[install-digikam](/scripts/install-digikam)|
+|Install Dropbox client|Install official Dropbox client with nemo support. Headless moder – run as user which will be using dropbox.|[install-dropbox](/scripts/install-dropbox)|
+|Install ebook reader|Install ebook reader – calibre|[install-calibre](/scripts/install-calibre)|
+|Install Eclipse IDE|Install IDE for java programing|[install-eclipse](/scripts/install-eclipse)|
+|Install fzf – CLI fuzzy finder|Install fzf – CLI fuzzy finder. Git clone installation – run as user which will be using script|[install-fzf](/scripts/install-fzf)|
+|Install Guake – gnome dropdown terminal|Install Guake – gnome dropdown terminal|[install-guake](/scripts/install-guake)|
+|Install HEX editor – bless|Install hex editor – bless.|[install-hex-editor](/scripts/install-hex-editor)|
+|Install Inkscape – vector graphic editor|Install vector graphic editor – Inkscape|[install-inkscape](/scripts/install-inkscape)|
+|Install ISO images tool|Install ISO images tool, mount, unmount, modify. - acetoneiso|[install-acetoneiso](/scripts/install-acetoneiso)|
+|Install Nextcloud client|Install Nextcloud client.|[install-nextcloud](/scripts/install-nextcloud)|
+|Install OCR Reader|Install utilties to OCR read files.|[install-ocr](/scripts/install-ocr)|
+|Install Owncloud client|Install Owncloud client.|[install-owncloud](/scripts/install-owncloud)|
+|Install PDF tools|Install utilties to support pdf modifications  - merging, spliting, replacing pages etc.|[install-pdf-tools](/scripts/install-pdf-tools)|
+|Install Qalculate scientific calculator|Install Qalculate scientific calculator|[install-qalculate](/scripts/install-qalculate)|
+|Install QownNotes|Install notepad with markdown support and todo list manager supporting sync.|[install-qownnotes](/scripts/install-qownnotes)|
+|Install qtCreator IDE|Install IDE for qt programs|[install-qtcreator](/scripts/install-qtcreator)|
+|Install sandboxing app – Firejail|Install sandboxing app Firejail.|[install-firejail](/scripts/install-firejail)|
+|Install scanner support|Install utilties to support scanner in Ubuntu.|[install-scanner-support](/scripts/install-scanner-support)|
+|Install sysadmin network utilties|Install utilties to monitor network traffic e.g. nethogs, nmap, iftop, whois, net-tools etc.|[install-sysadmin-network-tools](/scripts/install-sysadmin-network-tools)|
+|Install task manager – TaskCoach|Install powerful task manager TaskCoach|[install-taskcoach](/scripts/install-taskcoach)|
+|Install Tellico – collections manager|Install Tellico – collections manager – books, movies, coins etc.|[install-tellico](/scripts/install-tellico)|
+|Install VirtualBox|Install Virtualbox virtual machines manager.|[install-virtualbox](/scripts/install-virtualbox)|
+|Install webcam application|Install webcam application – cheese|[install-webcam-cheese](/scripts/install-webcam-cheese)|
+|Replace notepad gedit with pluma|Replace default gedit with powerful pluma notepad.|[replace-gedit-pluma](/scripts/replace-gedit-pluma)|
+|Replace filemanager Nautilus with Nemo|Replace file manager Nautilus with more powerful Nemo|[replace-nautilus-nemo](/scripts/replace-nautilus-nemo)|
+|Set Grub Timeout to 1 second|Set Grub Timeout to 1 second|[set-grub](/scripts/set-grub)|
+|Uninstall Ubuntu dock|Uninstall annoying Ubuntu Gnome dock.|[uninstall-ubuntu-dock](/scripts/uninstall-ubuntu-dock)|
+|Clean packages|Perform apt autoremove, clean and autoclean|[perform-cleanup](/scripts/perform-cleanup)|

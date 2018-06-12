@@ -111,7 +111,7 @@ function generate_markdown_feature_table () {
   [ ! -f $INPUT ] && { echo "$INPUT File not found"; exit 99; }
   while read state task description script
   do
-        echo "|$task|$description|[$script](./scripts/$script)|"
+        echo "|$task|$description|[$script](/scripts/$script)|"
   done < $INPUT
   unset IFS
 }

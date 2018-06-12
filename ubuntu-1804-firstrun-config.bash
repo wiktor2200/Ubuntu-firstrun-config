@@ -10,7 +10,7 @@
 #         NOTES:  ---
 #        AUTHOR:  wiktor2200, https://github.com/wiktor2200
 #          REPO:  https://github.com/wiktor2200/Ubuntu-1804-firstrun-config
-#       CREATED:  2018-06-12
+#       CREATED:  2018-06-13
 #===============================================================================
 # This script is generated using: generate-script-from-config.bash from repo: https://github.com/wiktor2200/Ubuntu-1804-firstrun-config
 
