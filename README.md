@@ -95,6 +95,7 @@ Generation script workflow looks like following:
 3. Generate `zenity` main checklist menu.
 4. Generate `case` function for zenity checklist output.
 5. Generate rest of code to provide `zenity` summary and errors windows.
+6. Manually replace feature list in `README.md` with content of generated file: [feature_list.md](./Develop/feature_list.md)
 
 ### Autogenerator usage (for adding new features)
 Modify `./Develop/config.csv` file and run:
