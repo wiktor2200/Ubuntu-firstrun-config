@@ -1,0 +1,5 @@
+# install-atom
+# Install easy to customize IDE – Atom.io
+sudo apt-add-repository -y ppa:webupd8team/atom
+sudo apt update
+sudo apt install -y atom

@@ -1,0 +1,5 @@
+# Install-inkscape
+# Install vector graphic editor – Inkscape
+sudo apt-add-repository -y ppa:inkscape.dev/stable
+sudo apt update
+sudo apt install -y inkscape

@@ -1,0 +1,3 @@
+# install-nvidia
+# Install Nvidia driver – if you have nvidia graphics
+sudo ubuntu-drivers autoinstall

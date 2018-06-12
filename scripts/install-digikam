@@ -1,0 +1,3 @@
+# install-digikam
+# Install Powerful tool for photos managment
+sudo apt install -y digikam

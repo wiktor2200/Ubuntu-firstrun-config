@@ -1,0 +1,3 @@
+# Install-calibre
+# Install ebook reader – calibre
+sudo apt install -y calibre

@@ -1,0 +1,3 @@
+# install-amarok
+# Install powerful music player – Amarok
+sudo apt install -y amarok

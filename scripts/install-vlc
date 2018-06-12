@@ -1,0 +1,7 @@
+# install-vlc
+# Install popular media player - both music and videos.
+sudo apt install -y vlc
+
+# Set as default media player
+sudo sed -i 's/org.gnome.Totem.desktop/vlc.desktop/g' /etc/gnome/defaults.list
+sudo sed -i 's/rhythmbox.desktop/vlc.desktop/g' /etc/gnome/defaults.list

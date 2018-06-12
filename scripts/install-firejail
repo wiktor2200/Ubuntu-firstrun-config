@@ -1,0 +1,3 @@
+# install-firejail
+# Install sandboxing app Firejail.
+sudo apt install -y firejail

@@ -1,0 +1,3 @@
+# install-chromium
+# Install open-source Chromium browser. Open-source Chrome.
+sudo apt install -y chromium-browser

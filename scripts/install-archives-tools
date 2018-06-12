@@ -1,0 +1,5 @@
+# install-archives-tools
+# Support for zip, rar, 7zip etc.
+sudo apt-add-repository -y multiverse
+sudo apt update
+sudo apt install -y arj cabextract p7zip-full p7zip-rar poppler-data rar unace unrar unzip zip

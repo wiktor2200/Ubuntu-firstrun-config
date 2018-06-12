@@ -1,0 +1,3 @@
+# uninstall-ubuntu-dock
+# Uninstall annoying Ubuntu Gnome dock.
+sudo apt remove -y --purge gnome-shell-extension-ubuntu-dock

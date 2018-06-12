@@ -1,0 +1,3 @@
+# install-guake
+# Install Guake – gnome dropdown terminal
+sudo apt install -y guake

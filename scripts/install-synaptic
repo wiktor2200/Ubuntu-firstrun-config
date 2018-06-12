@@ -1,0 +1,3 @@
+# install-synaptic
+# Install Synaptic package manager
+sudo apt install -y synaptic

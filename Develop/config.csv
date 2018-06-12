@@ -1,0 +1,51 @@
+TRUE:Install archives tools:Support for zip, rar, 7zip etc.:install-archives-tools
+TRUE:Uninstall garbage Gnome/Ubuntu packages:Uninstall some garbage packages e.g. orca, shotwell, rhythmbox, totem, transmission:uninstall-garbage-packages
+TRUE:Install codecs:Codecs to support common audio, video formats and additional fonts.:install-codecs
+TRUE:Install Gnome tools:Install Gnome settings managers and utils.:install-gnome-tools
+TRUE:Install language packages:Installing language packages for your locale different than English.:install-language-packages
+TRUE:Install Libreoffice:Install full Libreoffice package with language packages.:install-libreoffice
+TRUE:Install password manager:Install password manager – keepassXC:install-password-manager
+TRUE:Install Synaptic package manager:Install Synaptic package manager:install-synaptic
+TRUE:Install Thunderbird:Install Thunderbird mail client:install-thunderbird
+TRUE:Install useful system utilties:Install Partitioning tools, space usage tools, hardware info tools.:install-system-utilties
+TRUE:Install VLC:Install popular media player - both music and videos.:install-vlc
+TRUE:Upgrade packages:Perform apt dist-upgrade:perform-upgrade
+FALSE:Enable /tmp folder in RAM:Increase efficiency of your system and enable /tmp folder in RAM. Recommended if >8GB of RAM:enable-tmp-ram
+FALSE:Install Amarok:Install powerful music player – Amarok:install-amarok
+FALSE:Install AMD-Nvidia graphics drivers:Install Install AMD-Nvidia graphics drivers:install-amd-nvidia-drivers
+FALSE:Install Atom.io IDE:Install easy to customize IDE – Atom.io:install-atom
+FALSE:Install Audacity audio editor:Install Audacity audio editor:install-audacity
+FALSE:Install batch photos utilties:Install utilties to batch modify your photos and metadata e.g. aaphoto, exiv2:install-photo-utils
+FALSE:Install better laptop’s battery support:Install better laptop’s battery support. Recommended on laptops.:install-battery-support
+FALSE:Install bootable live USB creator – mkusb:Install bootable live USB creator – mkusb:install-mkusb
+FALSE:Install CD/DVD burner:Install CD/DVD burner – if you have disk drive:install-cd-dvd-burner
+FALSE:Install Chromium browser:Install open-source Chromium browser. Open-source Chrome.:install-chromium
+FALSE:Install Dia – diagram creator:Install Dia – diagram creator – easy and powerful:install-dia
+FALSE:Install Digikam:Install Powerful tool for photos managment:install-digikam
+FALSE:Install Dropbox client:Install official Dropbox client with nemo support. Headless moder – run as user which will be using dropbox.:install-dropbox
+FALSE:Install ebook reader:Install ebook reader – calibre:install-calibre
+FALSE:Install Eclipse IDE:Install IDE for java programing:install-eclipse
+FALSE:Install fzf – CLI fuzzy finder:Install fzf – CLI fuzzy finder. Git clone installation – run as user which will be using script:install-fzf
+FALSE:Install Guake – gnome dropdown terminal:Install Guake – gnome dropdown terminal:install-guake
+FALSE:Install HEX editor – bless:Install hex editor – bless.:install-hex-editor
+FALSE:Install Inkscape – vector graphic editor:Install vector graphic editor – Inkscape:install-inkscape
+FALSE:Install ISO images tool:Install ISO images tool, mount, unmount, modify. - acetoneiso:install-acetoneiso
+FALSE:Install Nextcloud client:Install Nextcloud client.:install-nextcloud
+FALSE:Install OCR Reader:Install utilties to OCR read files.:install-ocr
+FALSE:Install Owncloud client:Install Owncloud client.:install-owncloud
+FALSE:Install PDF tools:Install utilties to support pdf modifications  - merging, spliting, replacing pages etc.:install-pdf-tools
+FALSE:Install Qalculate scientific calculator:Install Qalculate scientific calculator:install-qalculate
+FALSE:Install QownNotes:Install notepad with markdown support and todo list manager supporting sync.:install-qownnotes
+FALSE:Install qtCreator IDE:Install IDE for qt programs:install-qtcreator
+FALSE:Install sandboxing app – Firejail:Install sandboxing app Firejail.:install-firejail
+FALSE:Install scanner support:Install utilties to support scanner in Ubuntu.:install-scanner-support
+FALSE:Install sysadmin network utilties:Install utilties to monitor network traffic e.g. nethogs, nmap, iftop, whois, net-tools etc.:install-sysadmin-network-tools
+FALSE:Install task manager – TaskCoach:Install powerful task manager TaskCoach:install-taskcoach
+FALSE:Install Tellico – collections manager:Install Tellico – collections manager – books, movies, coins etc.:install-tellico
+FALSE:Install VirtualBox:Install Virtualbox virtual machines manager.:install-virtualbox
+FALSE:Install webcam application:Install webcam application – cheese:install-webcam-cheese
+FALSE:Replace notepad gedit with pluma:Replace default gedit with powerful pluma notepad.:replace-gedit-pluma
+FALSE:Replace filemanager Nautilus with Nemo:Replace file manager Nautilus with more powerful Nemo:replace-nautilus-nemo
+FALSE:Set Grub Timeout to 1 second:Set Grub Timeout to 1 second:set-grub
+FALSE:Uninstall Ubuntu dock:Uninstall annoying Ubuntu Gnome dock.:uninstall-ubuntu-dock
+TRUE:Clean packages:Perform apt autoremove, clean and autoclean:perform-cleanup

@@ -1,0 +1,5 @@
+# install-codecs
+# Codecs to support common audio, video formats and additional fonts
+sudo apt-add-repository -y multiverse
+sudo apt update
+sudo apt install -y ffmpeg ffmpegthumbnailer gstreamer1.0-libav icedax lame libavcodec-extra libdvd-pkg libdvdread4 libmad0 ubuntu-restricted-extras uudeview

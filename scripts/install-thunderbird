@@ -1,0 +1,7 @@
+# Install-thunderbird
+# Install Thunderbird mail client
+
+# Get system language (locale)
+SYS_LANGUAGE=`locale | grep LANG | cut -d= -f2 | cut -d_ -f1`
+
+sudo apt install -y thunderbird thunderbird-gnome-support thunderbird-locale-en thunderbird-locale-$SYS_LANGUAGE

@@ -1,0 +1,3 @@
+# install-webcam-cheese
+# Install webcam application – cheese
+sudo apt install -y cheese

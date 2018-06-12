@@ -1,0 +1,3 @@
+# install-scanner-support
+# Install utilties to support scanner in Ubuntu.
+sudo apt install -y xsane simple-scan

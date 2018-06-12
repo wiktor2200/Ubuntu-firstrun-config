@@ -1,0 +1,4 @@
+# perform-upgrade
+# Perform apt dist-upgrade
+sudo apt update
+sudo apt dist-upgrade -y

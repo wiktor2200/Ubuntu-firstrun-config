@@ -1,0 +1,3 @@
+# install-taskcoach
+# Install powerful task manager TaskCoach
+sudo apt install -y taskcoach

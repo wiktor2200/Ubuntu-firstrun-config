@@ -1,0 +1,6 @@
+# install-ocr
+# Install utilties to OCR read files.
+# https://github.com/manisandro/gImageReader
+sudo apt-add-repository -y ppa:sandromani/gimagereader
+sudo apt update
+sudo apt install -y gimagereader-gtk tesseract-ocr tesseract-ocr-pol

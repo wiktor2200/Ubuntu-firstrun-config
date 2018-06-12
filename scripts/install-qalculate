@@ -1,0 +1,3 @@
+# Install-qalculate
+# Install Qalculate scientific calculator
+sudo apt install -y qalculate
