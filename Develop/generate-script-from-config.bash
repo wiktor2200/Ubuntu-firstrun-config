@@ -100,9 +100,27 @@ function generate_summary () {
 fi"
 }
 
+# Generate Markdown features table
+function generate_markdown_feature_table () {
+  # Read config file from main script directory
+  echo -e "`date +%F`\n\n|Task|Description|Subscript|\n|---|---|---|"
+  INPUT="$DIR/config.csv"
+  IFS=':'
+
+  # Read config from CSV file
+  [ ! -f $INPUT ] && { echo "$INPUT File not found"; exit 99; }
+  while read state task description script
+  do
+        echo "|$task|$description|[$script](./scripts/$script)|"
+  done < $INPUT
+  unset IFS
+}
+
+
 # Main program
 generate_subscripts_files
 start_generate > $DIR/../ubuntu-1804-firstrun-config.bash
 generate_zenity_menu >> $DIR/../ubuntu-1804-firstrun-config.bash
 generate_case >> $DIR/../ubuntu-1804-firstrun-config.bash
 generate_summary >> $DIR/../ubuntu-1804-firstrun-config.bash
+generate_markdown_feature_table > $DIR/feature_list.md
