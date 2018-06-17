@@ -12,7 +12,7 @@ fi
 # Add fzf-ag support in .bashrc file
 echo -e "export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g \"\"'
 export FZF_CTRL_T_COMMAND='ag --hidden --ignore .git -g \"\"'
-export FZF_ALT_C_COMMAND='find . -type d -iname \"*\"'" >> .bashrc
+export FZF_ALT_C_COMMAND='find . -type d -iname \"*\"'" >> ~/.bashrc
 source ~/.bashrc
 
 # Create upgrade command in .git_upgrades directory

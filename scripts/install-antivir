@@ -1,0 +1,12 @@
+# install-antivir
+# Install and configure ClamAV Antivirus
+sudo apt install -y clamav
+
+# Update virus database
+sudo systemctl stop clamav-freshclam
+sudo freshclam
+sudo systemctl start clamav-freshclam
+
+# Install Antivirus GUI
+sudo apt install -y clamtk
+sudo sed -e 's/Exec=clamtk %F/Exec=env LC_TIME=C clamtk %F/g' -i /usr/share/applications/clamtk.desktop

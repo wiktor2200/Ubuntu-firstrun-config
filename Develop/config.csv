@@ -8,6 +8,7 @@ TRUE:Install password manager:Install password manager – keepassXC:install-pas
 TRUE:Install Synaptic package manager:Install Synaptic package manager:install-synaptic
 TRUE:Install Thunderbird:Install Thunderbird mail client:install-thunderbird
 TRUE:Install useful system utilties:Install Partitioning tools, space usage tools, hardware info tools.:install-system-utilties
+TRUE:Install ClamAV Antivirus:Install and configure ClamAV Antivirus:install-antivir
 TRUE:Install VLC:Install popular media player - both music and videos.:install-vlc
 TRUE:Upgrade packages:Perform apt dist-upgrade:perform-upgrade
 FALSE:Enable /tmp folder in RAM:Increase efficiency of your system and enable /tmp folder in RAM. Recommended if >8GB of RAM:enable-tmp-ram

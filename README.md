@@ -23,7 +23,7 @@ Example summary:
 ## Features
 Full feature list from [config.csv](./Develop/config.csv) file in `Develop` directory in easy readable table.
 
-2018-06-12
+2018-06-17
 
 |Task|Description|Subscript|
 |---|---|---|
@@ -37,6 +37,7 @@ Full feature list from [config.csv](./Develop/config.csv) file in `Develop` dire
 |Install Synaptic package manager|Install Synaptic package manager|[install-synaptic](/scripts/install-synaptic)|
 |Install Thunderbird|Install Thunderbird mail client|[install-thunderbird](/scripts/install-thunderbird)|
 |Install useful system utilties|Install Partitioning tools, space usage tools, hardware info tools.|[install-system-utilties](/scripts/install-system-utilties)|
+|Install ClamAV Antivirus|Install and configure ClamAV Antivirus|[install-antivir](/scripts/install-antivir)|
 |Install VLC|Install popular media player - both music and videos.|[install-vlc](/scripts/install-vlc)|
 |Upgrade packages|Perform apt dist-upgrade|[perform-upgrade](/scripts/perform-upgrade)|
 |Enable /tmp folder in RAM|Increase efficiency of your system and enable /tmp folder in RAM. Recommended if >8GB of RAM|[enable-tmp-ram](/scripts/enable-tmp-ram)|

@@ -10,7 +10,7 @@
 #         NOTES:  ---
 #        AUTHOR:  wiktor2200, https://github.com/wiktor2200
 #          REPO:  https://github.com/wiktor2200/Ubuntu-1804-firstrun-config
-#       CREATED:  2018-06-13
+#       CREATED:  2018-06-17
 #===============================================================================
 # This script is generated using: generate-script-from-config.bash from repo: https://github.com/wiktor2200/Ubuntu-1804-firstrun-config
 
@@ -28,6 +28,7 @@ TRUE "Install password manager" "Install password manager – keepassXC" \
 TRUE "Install Synaptic package manager" "Install Synaptic package manager" \
 TRUE "Install Thunderbird" "Install Thunderbird mail client" \
 TRUE "Install useful system utilties" "Install Partitioning tools, space usage tools, hardware info tools." \
+TRUE "Install ClamAV Antivirus" "Install and configure ClamAV Antivirus" \
 TRUE "Install VLC" "Install popular media player - both music and videos." \
 TRUE "Upgrade packages" "Perform apt dist-upgrade" \
 FALSE "Enable /tmp folder in RAM" "Increase efficiency of your system and enable /tmp folder in RAM. Recommended if >8GB of RAM" \
@@ -114,6 +115,10 @@ for word in $response ; do
  "Install useful system utilties") 
  SUMMARY+="`cat $DIR/scripts/install-system-utilties`\n\n" 
  COMMAND_TO_RUN+="bash $DIR/scripts/install-system-utilties; " 
+ ;;
+ "Install ClamAV Antivirus") 
+ SUMMARY+="`cat $DIR/scripts/install-antivir`\n\n" 
+ COMMAND_TO_RUN+="bash $DIR/scripts/install-antivir; " 
  ;;
  "Install VLC") 
  SUMMARY+="`cat $DIR/scripts/install-vlc`\n\n" 
