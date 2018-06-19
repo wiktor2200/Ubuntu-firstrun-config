@@ -1,4 +1,4 @@
-2018-06-17
+2018-06-19
 
 |Task|Description|Subscript|
 |---|---|---|
@@ -32,7 +32,8 @@
 |Install Eclipse IDE|Install IDE for java programing|[install-eclipse](/scripts/install-eclipse)|
 |Install fzf – CLI fuzzy finder|Install fzf – CLI fuzzy finder. Git clone installation – run as user which will be using script|[install-fzf](/scripts/install-fzf)|
 |Install Guake – gnome dropdown terminal|Install Guake – gnome dropdown terminal|[install-guake](/scripts/install-guake)|
-|Install HEX editor – bless|Install hex editor – bless.|[install-hex-editor](/scripts/install-hex-editor)|
+|Install Simple HEX editor - ghex|Install simple Gnome hex editor.|[install-hex-gnome-editor](/scripts/install-hex-gnome-editor)|
+|Install Powerful HEX editor – bless|Install hex editor - bless - more powerful, but needs more dependencies. – bless.|[install-hex-bless-editor](/scripts/install-hex-bless-editor)|
 |Install Inkscape – vector graphic editor|Install vector graphic editor – Inkscape|[install-inkscape](/scripts/install-inkscape)|
 |Install ISO images tool|Install ISO images tool, mount, unmount, modify. - acetoneiso|[install-acetoneiso](/scripts/install-acetoneiso)|
 |Install Nextcloud client|Install Nextcloud client.|[install-nextcloud](/scripts/install-nextcloud)|

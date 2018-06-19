@@ -10,7 +10,7 @@
 #         NOTES:  ---
 #        AUTHOR:  wiktor2200, https://github.com/wiktor2200
 #          REPO:  https://github.com/wiktor2200/Ubuntu-1804-firstrun-config
-#       CREATED:  2018-06-17
+#       CREATED:  2018-06-19
 #===============================================================================
 # This script is generated using: generate-script-from-config.bash from repo: https://github.com/wiktor2200/Ubuntu-1804-firstrun-config
 
@@ -48,7 +48,8 @@ FALSE "Install ebook reader" "Install ebook reader – calibre" \
 FALSE "Install Eclipse IDE" "Install IDE for java programing" \
 FALSE "Install fzf – CLI fuzzy finder" "Install fzf – CLI fuzzy finder. Git clone installation – run as user which will be using script" \
 FALSE "Install Guake – gnome dropdown terminal" "Install Guake – gnome dropdown terminal" \
-FALSE "Install HEX editor – bless" "Install hex editor – bless." \
+FALSE "Install Simple HEX editor - ghex" "Install simple Gnome hex editor." \
+FALSE "Install Powerful HEX editor – bless" "Install hex editor - bless - more powerful, but needs more dependencies. – bless." \
 FALSE "Install Inkscape – vector graphic editor" "Install vector graphic editor – Inkscape" \
 FALSE "Install ISO images tool" "Install ISO images tool, mount, unmount, modify. - acetoneiso" \
 FALSE "Install Nextcloud client" "Install Nextcloud client." \
@@ -196,9 +197,13 @@ for word in $response ; do
  SUMMARY+="`cat $DIR/scripts/install-guake`\n\n" 
  COMMAND_TO_RUN+="bash $DIR/scripts/install-guake; " 
  ;;
- "Install HEX editor – bless") 
- SUMMARY+="`cat $DIR/scripts/install-hex-editor`\n\n" 
- COMMAND_TO_RUN+="bash $DIR/scripts/install-hex-editor; " 
+ "Install Simple HEX editor - ghex") 
+ SUMMARY+="`cat $DIR/scripts/install-hex-gnome-editor`\n\n" 
+ COMMAND_TO_RUN+="bash $DIR/scripts/install-hex-gnome-editor; " 
+ ;;
+ "Install Powerful HEX editor – bless") 
+ SUMMARY+="`cat $DIR/scripts/install-hex-bless-editor`\n\n" 
+ COMMAND_TO_RUN+="bash $DIR/scripts/install-hex-bless-editor; " 
  ;;
  "Install Inkscape – vector graphic editor") 
  SUMMARY+="`cat $DIR/scripts/install-inkscape`\n\n" 

@@ -1,0 +1,3 @@
+# install-hex-bless-editor
+# Install hex editor - bless - more powerful, but needs more dependencies. – bless.
+sudo apt install -y bless

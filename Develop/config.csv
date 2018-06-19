@@ -28,7 +28,8 @@ FALSE:Install ebook reader:Install ebook reader – calibre:install-calibre
 FALSE:Install Eclipse IDE:Install IDE for java programing:install-eclipse
 FALSE:Install fzf – CLI fuzzy finder:Install fzf – CLI fuzzy finder. Git clone installation – run as user which will be using script:install-fzf
 FALSE:Install Guake – gnome dropdown terminal:Install Guake – gnome dropdown terminal:install-guake
-FALSE:Install HEX editor – bless:Install hex editor – bless.:install-hex-editor
+FALSE:Install Simple HEX editor - ghex:Install simple Gnome hex editor.:install-hex-gnome-editor
+FALSE:Install Powerful HEX editor – bless:Install hex editor - bless - more powerful, but needs more dependencies. – bless.:install-hex-bless-editor
 FALSE:Install Inkscape – vector graphic editor:Install vector graphic editor – Inkscape:install-inkscape
 FALSE:Install ISO images tool:Install ISO images tool, mount, unmount, modify. - acetoneiso:install-acetoneiso
 FALSE:Install Nextcloud client:Install Nextcloud client.:install-nextcloud
