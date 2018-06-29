@@ -1,3 +1,11 @@
 # install-taskcoach
 # Install powerful task manager TaskCoach
 sudo apt install -y taskcoach
+
+# Install patches which enables taskcoach to run properly on Ubuntu 18.04
+## https://sourceforge.net/p/taskcoach/bugs/1593/
+## https://sourceforge.net/p/taskcoach/bugs/1660/
+wget -P /tmp https://sourceforge.net/p/taskcoach/bugs/_discuss/thread/ecfa3f41/faa4/attachment/taskcoach_gtk3_v3.patch
+sudo patch -p0 -i /tmp/taskcoach_gtk3_v3.patch -d /usr/lib/python2.7/dist-packages
+wget -P /tmp https://sourceforge.net/p/taskcoach/bugs/_discuss/thread/389b0393/4aaf/attachment/warning_gi_libnotify.patch
+sudo patch -p0 -i /tmp/warning_gi_libnotify.patch -d /usr/lib/python2.7/dist-packages
