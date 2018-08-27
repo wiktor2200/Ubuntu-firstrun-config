@@ -1,3 +1,10 @@
 # uninstall-garbage-packages
 # Uninstall some garbage packages e.g. orca, shotwell, rhythmbox, totem, transmission
 sudo apt remove -y --purge gnome-getting-started-docs-* aisleriot baobab branding-ubuntu cheese cheese-common deja-dup example-content gnome-calendar gnome-initial-setup gnome-mahjongg gnome-mines gnome-shell-extension-appindicator gnome-sudoku gnome-todo gnome-todo-common libgnome-todo orca remmina remmina-common remmina-plugin-rdp remmina-plugin-secret remmina-plugin-vnc rhythmbox rhythmbox-data rhythmbox-plugin-alternative-toolbar rhythmbox-plugins shotwell shotwell-common simple-scan totem totem-common totem-plugins transmission-common transmission-gtk ubuntu-advantage-tools ubuntu-desktop ubuntu-report ubuntu-web-launchers usb-creator-gtk vino zeitgeist-core
+
+# uninstall non-english language packages
+sudo apt remove --purge -y `dpkg-query -W --showformat='${Package}\n' | grep language-pack | egrep -v '\-en'`
+sudo apt remove --purge -y `dpkg-query -W --showformat='${Package}\n' | grep firefox-locale | egrep -v '\-en'`
+sudo apt remove --purge -y `dpkg-query -W --showformat='${Package}\n' | grep thunderbird-locale | egrep -v '\-en'`
+sudo apt remove --purge -y `dpkg-query -W --showformat='${Package}\n' | grep libreoffice-help | egrep -v '\-en'`
+sudo apt remove --purge -y `dpkg-query -W --showformat='${Package}\n' | grep libreoffice-l10n | egrep -v '\-en'`
