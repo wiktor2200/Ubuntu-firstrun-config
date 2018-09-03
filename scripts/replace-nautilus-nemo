@@ -19,4 +19,4 @@ Name=Desktop - Nemo \n\
 Comment=Start Nemo desktop at log in" | sudo tee /etc/xdg/autostart/nemo.destop > /dev/null
 
 # Remove Nautilus
-sudo apt remove -y --purge nautilus*
+sudo apt remove -y --purge  nautilus nautilus-extension-gnome-terminal nautilus-sendto nautilus-share

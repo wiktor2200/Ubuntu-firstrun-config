@@ -7,4 +7,4 @@ sudo apt update
 sudo apt install -y owncloud-client
 
 # Install nemo owncloud integration
-sudo apt install -y nemo-owncloud
+sudo apt install -y owncloud-client-nemo
