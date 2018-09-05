@@ -48,6 +48,7 @@ FALSE:Install VirtualBox:Install Virtualbox virtual machines manager.:install-vi
 FALSE:Install webcam application:Install webcam application – cheese:install-webcam-cheese
 FALSE:Replace notepad gedit with pluma:Replace default gedit with powerful pluma notepad.:replace-gedit-pluma
 FALSE:Replace filemanager Nautilus with Nemo:Replace file manager Nautilus with more powerful Nemo:replace-nautilus-nemo
+FALSE:Show hidden autostart system entries:Show hidden autostart system entries:show-hidden-autostart-entries
 FALSE:Set Grub Timeout to 1 second:Set Grub Timeout to 1 second:set-grub
 FALSE:Uninstall Ubuntu dock:Uninstall annoying Ubuntu Gnome dock.:uninstall-ubuntu-dock
 TRUE:Clean packages:Perform apt autoremove, clean and autoclean:perform-cleanup

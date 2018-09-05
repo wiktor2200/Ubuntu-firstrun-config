@@ -10,7 +10,7 @@
 #         NOTES:  ---
 #        AUTHOR:  wiktor2200, https://github.com/wiktor2200
 #          REPO:  https://github.com/wiktor2200/Ubuntu-1804-firstrun-config
-#       CREATED:  2018-06-19
+#       CREATED:  2018-09-05
 #===============================================================================
 # This script is generated using: generate-script-from-config.bash from repo: https://github.com/wiktor2200/Ubuntu-1804-firstrun-config
 
@@ -68,6 +68,7 @@ FALSE "Install VirtualBox" "Install Virtualbox virtual machines manager." \
 FALSE "Install webcam application" "Install webcam application – cheese" \
 FALSE "Replace notepad gedit with pluma" "Replace default gedit with powerful pluma notepad." \
 FALSE "Replace filemanager Nautilus with Nemo" "Replace file manager Nautilus with more powerful Nemo" \
+FALSE "Show hidden autostart system entries" "Show hidden autostart system entries" \
 FALSE "Set Grub Timeout to 1 second" "Set Grub Timeout to 1 second" \
 FALSE "Uninstall Ubuntu dock" "Uninstall annoying Ubuntu Gnome dock." \
 TRUE "Clean packages" "Perform apt autoremove, clean and autoclean" \
@@ -276,6 +277,10 @@ for word in $response ; do
  "Replace filemanager Nautilus with Nemo") 
  SUMMARY+="`cat $DIR/scripts/replace-nautilus-nemo`\n\n" 
  COMMAND_TO_RUN+="bash $DIR/scripts/replace-nautilus-nemo; " 
+ ;;
+ "Show hidden autostart system entries") 
+ SUMMARY+="`cat $DIR/scripts/show-hidden-autostart-entries`\n\n" 
+ COMMAND_TO_RUN+="bash $DIR/scripts/show-hidden-autostart-entries; " 
  ;;
  "Set Grub Timeout to 1 second") 
  SUMMARY+="`cat $DIR/scripts/set-grub`\n\n" 
