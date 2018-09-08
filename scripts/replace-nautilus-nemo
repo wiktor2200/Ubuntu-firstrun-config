@@ -20,7 +20,7 @@ X-GNOME-Autostart-Phase=Desktop \n\
 X-GNOME-Autostart-Notify=true \n\
 X-GNOME-AutoRestart=true \n\
 X-GNOME-Provides=filemanager \n\
-Comment=Start Nemo desktop at log in" | sudo tee /etc/xdg/autostart/nemo.destop > /dev/null
+Comment=Start Nemo desktop at log in" | sudo tee /etc/xdg/autostart/nemo-desktop.desktop > /dev/null
 
 # Remove Nautilus
 sudo apt remove -y --purge  nautilus nautilus-extension-gnome-terminal nautilus-sendto nautilus-share
