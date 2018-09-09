@@ -17,7 +17,7 @@ FALSE:Install AMD-Nvidia graphics drivers:Install Install AMD-Nvidia graphics dr
 FALSE:Install Atom.io IDE:Install easy to customize IDE – Atom.io:install-atom
 FALSE:Install Audacity audio editor:Install Audacity audio editor:install-audacity
 FALSE:Install batch photos utilties:Install utilties to batch modify your photos and metadata e.g. aaphoto, exiv2:install-photo-utils
-FALSE:Install better laptop’s battery support:Install better laptop’s battery support. Recommended on laptops.:install-battery-support
+FALSE:Install better laptop's battery support:Install better laptop's battery support. Recommended on laptops.:install-battery-support
 FALSE:Install bootable live USB creator – mkusb:Install bootable live USB creator – mkusb:install-mkusb
 FALSE:Install CD/DVD burner:Install CD/DVD burner – if you have disk drive:install-cd-dvd-burner
 FALSE:Install Chromium browser:Install open-source Chromium browser. Open-source Chrome.:install-chromium
@@ -46,6 +46,7 @@ FALSE:Install task manager – TaskCoach:Install powerful task manager TaskCoach
 FALSE:Install Tellico – collections manager:Install Tellico – collections manager – books, movies, coins etc.:install-tellico
 FALSE:Install VirtualBox:Install Virtualbox virtual machines manager.:install-virtualbox
 FALSE:Install webcam application:Install webcam application – cheese:install-webcam-cheese
+FALSE:Remove swapfile:Removing of swapfile is recommended when using ssd drive - to increase it's life. When swap is off hibernation is disabled!:remove-swapfile
 FALSE:Replace notepad gedit with pluma:Replace default gedit with powerful pluma notepad.:replace-gedit-pluma
 FALSE:Replace filemanager Nautilus with Nemo:Replace file manager Nautilus with more powerful Nemo:replace-nautilus-nemo
 FALSE:Show hidden autostart system entries:Show hidden autostart system entries:show-hidden-autostart-entries

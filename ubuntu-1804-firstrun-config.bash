@@ -10,7 +10,7 @@
 #         NOTES:  ---
 #        AUTHOR:  wiktor2200, https://github.com/wiktor2200
 #          REPO:  https://github.com/wiktor2200/Ubuntu-1804-firstrun-config
-#       CREATED:  2018-09-05
+#       CREATED:  2018-09-09
 #===============================================================================
 # This script is generated using: generate-script-from-config.bash from repo: https://github.com/wiktor2200/Ubuntu-1804-firstrun-config
 
@@ -37,7 +37,7 @@ FALSE "Install AMD-Nvidia graphics drivers" "Install Install AMD-Nvidia graphics
 FALSE "Install Atom.io IDE" "Install easy to customize IDE – Atom.io" \
 FALSE "Install Audacity audio editor" "Install Audacity audio editor" \
 FALSE "Install batch photos utilties" "Install utilties to batch modify your photos and metadata e.g. aaphoto, exiv2" \
-FALSE "Install better laptop’s battery support" "Install better laptop’s battery support. Recommended on laptops." \
+FALSE "Install better laptop's battery support" "Install better laptop's battery support. Recommended on laptops." \
 FALSE "Install bootable live USB creator – mkusb" "Install bootable live USB creator – mkusb" \
 FALSE "Install CD/DVD burner" "Install CD/DVD burner – if you have disk drive" \
 FALSE "Install Chromium browser" "Install open-source Chromium browser. Open-source Chrome." \
@@ -66,6 +66,7 @@ FALSE "Install task manager – TaskCoach" "Install powerful task manager TaskCo
 FALSE "Install Tellico – collections manager" "Install Tellico – collections manager – books, movies, coins etc." \
 FALSE "Install VirtualBox" "Install Virtualbox virtual machines manager." \
 FALSE "Install webcam application" "Install webcam application – cheese" \
+FALSE "Remove swapfile" "Removing of swapfile is recommended when using ssd drive - to increase it's life. When swap is off hibernation is disabled!" \
 FALSE "Replace notepad gedit with pluma" "Replace default gedit with powerful pluma notepad." \
 FALSE "Replace filemanager Nautilus with Nemo" "Replace file manager Nautilus with more powerful Nemo" \
 FALSE "Show hidden autostart system entries" "Show hidden autostart system entries" \
@@ -154,7 +155,7 @@ for word in $response ; do
  SUMMARY+="`cat $DIR/scripts/install-photo-utils`\n\n" 
  COMMAND_TO_RUN+="bash $DIR/scripts/install-photo-utils; " 
  ;;
- "Install better laptop’s battery support") 
+ "Install better laptop's battery support") 
  SUMMARY+="`cat $DIR/scripts/install-battery-support`\n\n" 
  COMMAND_TO_RUN+="bash $DIR/scripts/install-battery-support; " 
  ;;
@@ -269,6 +270,10 @@ for word in $response ; do
  "Install webcam application") 
  SUMMARY+="`cat $DIR/scripts/install-webcam-cheese`\n\n" 
  COMMAND_TO_RUN+="bash $DIR/scripts/install-webcam-cheese; " 
+ ;;
+ "Remove swapfile") 
+ SUMMARY+="`cat $DIR/scripts/remove-swapfile`\n\n" 
+ COMMAND_TO_RUN+="bash $DIR/scripts/remove-swapfile; " 
  ;;
  "Replace notepad gedit with pluma") 
  SUMMARY+="`cat $DIR/scripts/replace-gedit-pluma`\n\n" 

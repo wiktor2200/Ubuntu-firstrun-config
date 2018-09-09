@@ -1,5 +1,5 @@
 # install-battery-support
-# Install better laptop’s battery support. Recommended on laptops.
+# Install better laptop's battery support. Recommended on laptops.
 sudo apt install -y tlp tlp-rdw
 sudo tlp start
 sudo tlp-stat

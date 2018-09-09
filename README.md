@@ -23,7 +23,7 @@ Example summary:
 ## Features
 Full feature list from [config.csv](./Develop/config.csv) file in `Develop` directory in easy readable table.
 
-2018-09-05
+2018-09-09
 
 |Task|Description|Subscript|
 |---|---|---|
@@ -46,7 +46,7 @@ Full feature list from [config.csv](./Develop/config.csv) file in `Develop` dire
 |Install Atom.io IDE|Install easy to customize IDE – Atom.io|[install-atom](/scripts/install-atom)|
 |Install Audacity audio editor|Install Audacity audio editor|[install-audacity](/scripts/install-audacity)|
 |Install batch photos utilties|Install utilties to batch modify your photos and metadata e.g. aaphoto, exiv2|[install-photo-utils](/scripts/install-photo-utils)|
-|Install better laptop’s battery support|Install better laptop’s battery support. Recommended on laptops.|[install-battery-support](/scripts/install-battery-support)|
+|Install better laptop's battery support|Install better laptop's battery support. Recommended on laptops.|[install-battery-support](/scripts/install-battery-support)|
 |Install bootable live USB creator – mkusb|Install bootable live USB creator – mkusb|[install-mkusb](/scripts/install-mkusb)|
 |Install CD/DVD burner|Install CD/DVD burner – if you have disk drive|[install-cd-dvd-burner](/scripts/install-cd-dvd-burner)|
 |Install Chromium browser|Install open-source Chromium browser. Open-source Chrome.|[install-chromium](/scripts/install-chromium)|
@@ -75,6 +75,7 @@ Full feature list from [config.csv](./Develop/config.csv) file in `Develop` dire
 |Install Tellico – collections manager|Install Tellico – collections manager – books, movies, coins etc.|[install-tellico](/scripts/install-tellico)|
 |Install VirtualBox|Install Virtualbox virtual machines manager.|[install-virtualbox](/scripts/install-virtualbox)|
 |Install webcam application|Install webcam application – cheese|[install-webcam-cheese](/scripts/install-webcam-cheese)|
+|Remove swapfile|Removing of swapfile is recommended when using ssd drive - to increase it's life. When swap is off hibernation is disabled!|[remove-swapfile](/scripts/remove-swapfile)|
 |Replace notepad gedit with pluma|Replace default gedit with powerful pluma notepad.|[replace-gedit-pluma](/scripts/replace-gedit-pluma)|
 |Replace filemanager Nautilus with Nemo|Replace file manager Nautilus with more powerful Nemo|[replace-nautilus-nemo](/scripts/replace-nautilus-nemo)|
 |Show hidden autostart system entries|Show hidden autostart system entries|[show-hidden-autostart-entries](/scripts/show-hidden-autostart-entries)|
