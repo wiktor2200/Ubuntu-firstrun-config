@@ -10,7 +10,7 @@
 #         NOTES:  ---
 #        AUTHOR:  wiktor2200, https://github.com/wiktor2200
 #          REPO:  https://github.com/wiktor2200/Ubuntu-1804-firstrun-config
-#       CREATED:  2018-09-09
+#       CREATED:  2018-10-16
 #===============================================================================
 # This script is generated using: generate-script-from-config.bash from repo: https://github.com/wiktor2200/Ubuntu-1804-firstrun-config
 
@@ -69,6 +69,7 @@ FALSE "Install webcam application" "Install webcam application – cheese" \
 FALSE "Remove swapfile" "Removing of swapfile is recommended when using ssd drive - to increase it's life. When swap is off hibernation is disabled!" \
 FALSE "Replace notepad gedit with pluma" "Replace default gedit with powerful pluma notepad." \
 FALSE "Replace filemanager Nautilus with Nemo" "Replace file manager Nautilus with more powerful Nemo" \
+FALSE "Replace default snap packages with native Gnome apps." "Replace default snap packages with native Gnome apps." \
 FALSE "Show hidden autostart system entries" "Show hidden autostart system entries" \
 FALSE "Set Grub Timeout to 1 second" "Set Grub Timeout to 1 second" \
 FALSE "Uninstall Ubuntu dock" "Uninstall annoying Ubuntu Gnome dock." \
@@ -282,6 +283,10 @@ for word in $response ; do
  "Replace filemanager Nautilus with Nemo") 
  SUMMARY+="`cat $DIR/scripts/replace-nautilus-nemo`\n\n" 
  COMMAND_TO_RUN+="bash $DIR/scripts/replace-nautilus-nemo; " 
+ ;;
+ "Replace default snap packages with native Gnome apps.") 
+ SUMMARY+="`cat $DIR/scripts/replace-snap-packages`\n\n" 
+ COMMAND_TO_RUN+="bash $DIR/scripts/replace-snap-packages; " 
  ;;
  "Show hidden autostart system entries") 
  SUMMARY+="`cat $DIR/scripts/show-hidden-autostart-entries`\n\n" 

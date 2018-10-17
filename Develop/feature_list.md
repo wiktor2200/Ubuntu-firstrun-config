@@ -1,4 +1,4 @@
-2018-09-09
+2018-10-16
 
 |Task|Description|Subscript|
 |---|---|---|
@@ -53,6 +53,7 @@
 |Remove swapfile|Removing of swapfile is recommended when using ssd drive - to increase it's life. When swap is off hibernation is disabled!|[remove-swapfile](/scripts/remove-swapfile)|
 |Replace notepad gedit with pluma|Replace default gedit with powerful pluma notepad.|[replace-gedit-pluma](/scripts/replace-gedit-pluma)|
 |Replace filemanager Nautilus with Nemo|Replace file manager Nautilus with more powerful Nemo|[replace-nautilus-nemo](/scripts/replace-nautilus-nemo)|
+|Replace default snap packages with native Gnome apps.|Replace default snap packages with native Gnome apps.|[replace-snap-packages](/scripts/replace-snap-packages)|
 |Show hidden autostart system entries|Show hidden autostart system entries|[show-hidden-autostart-entries](/scripts/show-hidden-autostart-entries)|
 |Set Grub Timeout to 1 second|Set Grub Timeout to 1 second|[set-grub](/scripts/set-grub)|
 |Uninstall Ubuntu dock|Uninstall annoying Ubuntu Gnome dock.|[uninstall-ubuntu-dock](/scripts/uninstall-ubuntu-dock)|
