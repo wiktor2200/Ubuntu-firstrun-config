@@ -1,5 +1,25 @@
 # install-dropbox
-# Install official Dropbox client with nemo support. Headless moder – run as user which will be using dropbox.
+## More information: https://www.dropbox.com/install-linux
+
+# Install official Dropbox client. Headless moder – run as user which will be using dropbox.
 cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+
+# Add Dropbox to user's environment autostart (with Gnome panel icon fix)
+echo -e "[Desktop Entry]\n\
+Type=Application\n\
+Name=Dropbox\n\
+Exec=env XDG_CURRENT_DESKTOP=Gnome /home/$USER/.dropbox-dist/dropboxd\n\
+OnlyShowIn=GNOME\n\
+Terminal=false\n\
+Hidden=false\n\
+NoDisplay=false\n\
+Comment=Start Dropbox at log in" | tee ~/.config/autostart/dropbox.desktop > /dev/null
+
+# Add Dropbox python CLI script
+mkdir ~/.local/bin
+cd ~/.local/bin/ && wget "https://linux.dropbox.com/packages/dropbox.py"
+chmod +x dropbox.py
+ln -s dropbox.py dropbox
+
 # Firstrun dropbox daemon and then kill it to not freeze configuration script
 ~/.dropbox-dist/dropboxd & sleep 10 | kill -9

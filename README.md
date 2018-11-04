@@ -23,7 +23,7 @@ Example summary:
 ## Features
 Full feature list from [config.csv](./Develop/config.csv) file in `Develop` directory in easy readable table.
 
-2018-10-16
+2018-11-04
 
 |Task|Description|Subscript|
 |---|---|---|
