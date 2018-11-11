@@ -10,7 +10,8 @@
 #         NOTES:  ---
 #        AUTHOR:  wiktor2200, https://github.com/wiktor2200
 #          REPO:  https://github.com/wiktor2200/Ubuntu-1804-firstrun-config
-#       CREATED:  2018-10-16
+#       CREATED:  2018-06-12
+#       UPDATED:  2018-11-11
 #===============================================================================
 # This script is generated using: generate-script-from-config.bash from repo: https://github.com/wiktor2200/Ubuntu-1804-firstrun-config
 
@@ -65,6 +66,8 @@ FALSE "Install sysadmin network utilties" "Install utilties to monitor network t
 FALSE "Install task manager – TaskCoach" "Install powerful task manager TaskCoach" \
 FALSE "Install Tellico – collections manager" "Install Tellico – collections manager – books, movies, coins etc." \
 FALSE "Install VirtualBox" "Install Virtualbox virtual machines manager." \
+FALSE "Install Docker" "Install Docker from snap package manager." \
+FALSE "Install Slack" "Install Slack team collaboration tool from snap package." \
 FALSE "Install webcam application" "Install webcam application – cheese" \
 FALSE "Remove swapfile" "Removing of swapfile is recommended when using ssd drive - to increase it's life. When swap is off hibernation is disabled!" \
 FALSE "Replace notepad gedit with pluma" "Replace default gedit with powerful pluma notepad." \
@@ -73,6 +76,7 @@ FALSE "Replace default snap packages with native Gnome apps." "Replace default s
 FALSE "Show hidden autostart system entries" "Show hidden autostart system entries" \
 FALSE "Set Grub Timeout to 1 second" "Set Grub Timeout to 1 second" \
 FALSE "Uninstall Ubuntu dock" "Uninstall annoying Ubuntu Gnome dock." \
+FALSE "Fix top panel icons" "Fix top panel icons on systems upgraded from 16.04" \
 TRUE "Clean packages" "Perform apt autoremove, clean and autoclean" \
 --separator=":")
 
@@ -268,6 +272,14 @@ for word in $response ; do
  SUMMARY+="`cat $DIR/scripts/install-virtualbox`\n\n" 
  COMMAND_TO_RUN+="bash $DIR/scripts/install-virtualbox; " 
  ;;
+ "Install Docker") 
+ SUMMARY+="`cat $DIR/scripts/install-docker`\n\n" 
+ COMMAND_TO_RUN+="bash $DIR/scripts/install-docker; " 
+ ;;
+ "Install Slack") 
+ SUMMARY+="`cat $DIR/scripts/install-slack`\n\n" 
+ COMMAND_TO_RUN+="bash $DIR/scripts/install-slack; " 
+ ;;
  "Install webcam application") 
  SUMMARY+="`cat $DIR/scripts/install-webcam-cheese`\n\n" 
  COMMAND_TO_RUN+="bash $DIR/scripts/install-webcam-cheese; " 
@@ -299,6 +311,10 @@ for word in $response ; do
  "Uninstall Ubuntu dock") 
  SUMMARY+="`cat $DIR/scripts/uninstall-ubuntu-dock`\n\n" 
  COMMAND_TO_RUN+="bash $DIR/scripts/uninstall-ubuntu-dock; " 
+ ;;
+ "Fix top panel icons") 
+ SUMMARY+="`cat $DIR/scripts/fix-top-panel-icons`\n\n" 
+ COMMAND_TO_RUN+="bash $DIR/scripts/fix-top-panel-icons; " 
  ;;
  "Clean packages") 
  SUMMARY+="`cat $DIR/scripts/perform-cleanup`\n\n" 

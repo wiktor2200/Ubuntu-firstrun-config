@@ -1,0 +1,4 @@
+# install-slack
+# Install Slack team collaboration tool from snap package. (snap package of slack gets regular updates)
+
+sudo snap install slack

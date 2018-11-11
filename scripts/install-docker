@@ -1,0 +1,14 @@
+# install-docker
+# Install Docker from snap package manager.
+
+# Install docker snap
+sudo snap install docker
+
+# Create and join the docker group
+sudo addgroup --system docker
+sudo adduser $USER docker
+newgrp docker
+
+# Disable and re-enable the docker snap
+sudo snap disable docker
+sudo snap enable docker

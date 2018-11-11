@@ -23,7 +23,7 @@ Example summary:
 ## Features
 Full feature list from [config.csv](./Develop/config.csv) file in `Develop` directory in easy readable table.
 
-2018-11-04
+2018-11-11
 
 |Task|Description|Subscript|
 |---|---|---|
@@ -74,6 +74,8 @@ Full feature list from [config.csv](./Develop/config.csv) file in `Develop` dire
 |Install task manager – TaskCoach|Install powerful task manager TaskCoach|[install-taskcoach](/scripts/install-taskcoach)|
 |Install Tellico – collections manager|Install Tellico – collections manager – books, movies, coins etc.|[install-tellico](/scripts/install-tellico)|
 |Install VirtualBox|Install Virtualbox virtual machines manager.|[install-virtualbox](/scripts/install-virtualbox)|
+|Install Docker|Install Docker from snap package manager.|[install-docker](/scripts/install-docker)|
+|Install Slack|Install Slack team collaboration tool from snap package.|[install-slack](/scripts/install-slack)|
 |Install webcam application|Install webcam application – cheese|[install-webcam-cheese](/scripts/install-webcam-cheese)|
 |Remove swapfile|Removing of swapfile is recommended when using ssd drive - to increase it's life. When swap is off hibernation is disabled!|[remove-swapfile](/scripts/remove-swapfile)|
 |Replace notepad gedit with pluma|Replace default gedit with powerful pluma notepad.|[replace-gedit-pluma](/scripts/replace-gedit-pluma)|
@@ -82,6 +84,7 @@ Full feature list from [config.csv](./Develop/config.csv) file in `Develop` dire
 |Show hidden autostart system entries|Show hidden autostart system entries|[show-hidden-autostart-entries](/scripts/show-hidden-autostart-entries)|
 |Set Grub Timeout to 1 second|Set Grub Timeout to 1 second|[set-grub](/scripts/set-grub)|
 |Uninstall Ubuntu dock|Uninstall annoying Ubuntu Gnome dock.|[uninstall-ubuntu-dock](/scripts/uninstall-ubuntu-dock)|
+|Fix top panel icons|Fix top panel icons on systems upgraded from 16.04|[fix-top-panel-icons](/scripts/fix-top-panel-icons)|
 |Clean packages|Perform apt autoremove, clean and autoclean|[perform-cleanup](/scripts/perform-cleanup)|
 
 

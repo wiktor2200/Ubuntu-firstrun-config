@@ -45,6 +45,8 @@ FALSE:Install sysadmin network utilties:Install utilties to monitor network traf
 FALSE:Install task manager – TaskCoach:Install powerful task manager TaskCoach:install-taskcoach
 FALSE:Install Tellico – collections manager:Install Tellico – collections manager – books, movies, coins etc.:install-tellico
 FALSE:Install VirtualBox:Install Virtualbox virtual machines manager.:install-virtualbox
+FALSE:Install Docker:Install Docker from snap package manager.:install-docker
+FALSE:Install Slack:Install Slack team collaboration tool from snap package.:install-slack
 FALSE:Install webcam application:Install webcam application – cheese:install-webcam-cheese
 FALSE:Remove swapfile:Removing of swapfile is recommended when using ssd drive - to increase it's life. When swap is off hibernation is disabled!:remove-swapfile
 FALSE:Replace notepad gedit with pluma:Replace default gedit with powerful pluma notepad.:replace-gedit-pluma
@@ -53,4 +55,5 @@ FALSE:Replace default snap packages with native Gnome apps.:Replace default snap
 FALSE:Show hidden autostart system entries:Show hidden autostart system entries:show-hidden-autostart-entries
 FALSE:Set Grub Timeout to 1 second:Set Grub Timeout to 1 second:set-grub
 FALSE:Uninstall Ubuntu dock:Uninstall annoying Ubuntu Gnome dock.:uninstall-ubuntu-dock
+FALSE:Fix top panel icons:Fix top panel icons on systems upgraded from 16.04:fix-top-panel-icons
 TRUE:Clean packages:Perform apt autoremove, clean and autoclean:perform-cleanup
