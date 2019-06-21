@@ -1,3 +1,3 @@
 # install-system-utilties
 # Install Partitioning tools, space usage tools, hardware info tools.
-sudo apt install -y bleachbit build-essential curl dialog dconf-editor exfat-fuse exfat-utils filelight fslint git gparted gufw hardinfo htop incron lm-sensors luckybackup mc meld ncdu printer-driver-cups-pdf silversearcher-ag sqlite3 sqlitebrowser tree
+sudo apt install -y bleachbit build-essential curl dialog dconf-editor exfat-fuse exfat-utils filelight fslint git gparted gufw hardinfo htop incron lm-sensors luckybackup mc meld ncdu printer-driver-cups-pdf silversearcher-ag sqlite3 sqlitebrowser tree unattended-upgrades

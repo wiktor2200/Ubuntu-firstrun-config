@@ -1,0 +1,10 @@
+# install-vs-code 
+# Install Visual Studio Code - easy, customizable and powerful IDE for almost all languages.
+
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > /tmp/microsoft.gpg
+sudo install -o root -g root -m 644 /tmp/microsoft.gpg /etc/apt/trusted.gpg.d/
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
+
+sudo apt update
+sudo apt install -y apt-transport-https
+sudo apt install -y code

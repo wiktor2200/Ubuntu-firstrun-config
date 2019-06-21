@@ -11,7 +11,7 @@
 #        AUTHOR:  wiktor2200, https://github.com/wiktor2200
 #          REPO:  https://github.com/wiktor2200/Ubuntu-1804-firstrun-config
 #       CREATED:  2018-06-12
-#       UPDATED:  2018-11-11
+#       UPDATED:  2019-06-21
 #===============================================================================
 # This script is generated using: generate-script-from-config.bash from repo: https://github.com/wiktor2200/Ubuntu-1804-firstrun-config
 
@@ -35,6 +35,7 @@ TRUE "Upgrade packages" "Perform apt dist-upgrade" \
 FALSE "Enable /tmp folder in RAM" "Increase efficiency of your system and enable /tmp folder in RAM. Recommended if >8GB of RAM" \
 FALSE "Install Amarok" "Install powerful music player – Amarok" \
 FALSE "Install AMD-Nvidia graphics drivers" "Install Install AMD-Nvidia graphics drivers" \
+FALSE "Install Visual Studio Code IDE" "Install Visual Studio Code - easy, customizable and powerful IDE for almost all languages." \
 FALSE "Install Atom.io IDE" "Install easy to customize IDE – Atom.io" \
 FALSE "Install Audacity audio editor" "Install Audacity audio editor" \
 FALSE "Install batch photos utilties" "Install utilties to batch modify your photos and metadata e.g. aaphoto, exiv2" \
@@ -76,6 +77,7 @@ FALSE "Replace default snap packages with native Gnome apps." "Replace default s
 FALSE "Show hidden autostart system entries" "Show hidden autostart system entries" \
 FALSE "Set Grub Timeout to 1 second" "Set Grub Timeout to 1 second" \
 FALSE "Uninstall Ubuntu dock" "Uninstall annoying Ubuntu Gnome dock." \
+FALSE "Uninstall Ubuntu 16.04 old dependencies." "Uninstall 16.04 garbage dependencies after upgrade to 18.04." \
 FALSE "Fix top panel icons" "Fix top panel icons on systems upgraded from 16.04" \
 TRUE "Clean packages" "Perform apt autoremove, clean and autoclean" \
 --separator=":")
@@ -147,6 +149,10 @@ for word in $response ; do
  "Install AMD-Nvidia graphics drivers") 
  SUMMARY+="`cat $DIR/scripts/install-amd-nvidia-drivers`\n\n" 
  COMMAND_TO_RUN+="bash $DIR/scripts/install-amd-nvidia-drivers; " 
+ ;;
+ "Install Visual Studio Code IDE") 
+ SUMMARY+="`cat $DIR/scripts/install-vs-code`\n\n" 
+ COMMAND_TO_RUN+="bash $DIR/scripts/install-vs-code; " 
  ;;
  "Install Atom.io IDE") 
  SUMMARY+="`cat $DIR/scripts/install-atom`\n\n" 
@@ -311,6 +317,10 @@ for word in $response ; do
  "Uninstall Ubuntu dock") 
  SUMMARY+="`cat $DIR/scripts/uninstall-ubuntu-dock`\n\n" 
  COMMAND_TO_RUN+="bash $DIR/scripts/uninstall-ubuntu-dock; " 
+ ;;
+ "Uninstall Ubuntu 16.04 old dependencies.") 
+ SUMMARY+="`cat $DIR/scripts/uninstall-old-1604-dependencies`\n\n" 
+ COMMAND_TO_RUN+="bash $DIR/scripts/uninstall-old-1604-dependencies; " 
  ;;
  "Fix top panel icons") 
  SUMMARY+="`cat $DIR/scripts/fix-top-panel-icons`\n\n" 

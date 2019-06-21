@@ -1,4 +1,4 @@
-2018-11-11
+2019-06-21
 
 |Task|Description|Subscript|
 |---|---|---|
@@ -18,6 +18,7 @@
 |Enable /tmp folder in RAM|Increase efficiency of your system and enable /tmp folder in RAM. Recommended if >8GB of RAM|[enable-tmp-ram](/scripts/enable-tmp-ram)|
 |Install Amarok|Install powerful music player – Amarok|[install-amarok](/scripts/install-amarok)|
 |Install AMD-Nvidia graphics drivers|Install Install AMD-Nvidia graphics drivers|[install-amd-nvidia-drivers](/scripts/install-amd-nvidia-drivers)|
+|Install Visual Studio Code IDE|Install Visual Studio Code - easy, customizable and powerful IDE for almost all languages.|[install-vs-code](/scripts/install-vs-code)|
 |Install Atom.io IDE|Install easy to customize IDE – Atom.io|[install-atom](/scripts/install-atom)|
 |Install Audacity audio editor|Install Audacity audio editor|[install-audacity](/scripts/install-audacity)|
 |Install batch photos utilties|Install utilties to batch modify your photos and metadata e.g. aaphoto, exiv2|[install-photo-utils](/scripts/install-photo-utils)|
@@ -59,5 +60,6 @@
 |Show hidden autostart system entries|Show hidden autostart system entries|[show-hidden-autostart-entries](/scripts/show-hidden-autostart-entries)|
 |Set Grub Timeout to 1 second|Set Grub Timeout to 1 second|[set-grub](/scripts/set-grub)|
 |Uninstall Ubuntu dock|Uninstall annoying Ubuntu Gnome dock.|[uninstall-ubuntu-dock](/scripts/uninstall-ubuntu-dock)|
+|Uninstall Ubuntu 16.04 old dependencies.|Uninstall 16.04 garbage dependencies after upgrade to 18.04.|[uninstall-old-1604-dependencies](/scripts/uninstall-old-1604-dependencies)|
 |Fix top panel icons|Fix top panel icons on systems upgraded from 16.04|[fix-top-panel-icons](/scripts/fix-top-panel-icons)|
 |Clean packages|Perform apt autoremove, clean and autoclean|[perform-cleanup](/scripts/perform-cleanup)|
