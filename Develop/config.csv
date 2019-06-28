@@ -31,6 +31,7 @@ FALSE:Install fzf – CLI fuzzy finder:Install fzf – CLI fuzzy finder. Git clo
 FALSE:Install Guake – gnome dropdown terminal:Install Guake – gnome dropdown terminal:install-guake
 FALSE:Install Simple HEX editor - ghex:Install simple Gnome hex editor.:install-hex-gnome-editor
 FALSE:Install Powerful HEX editor – bless:Install hex editor - bless - more powerful, but needs more dependencies. – bless.:install-hex-bless-editor
+FALSE:Install Gnome Paint - replacement for MSPaint.:Install Gnome Paint - Linux alternative for MSPaint.:install-gnome-paint
 FALSE:Install Inkscape – vector graphic editor:Install vector graphic editor – Inkscape:install-inkscape
 FALSE:Install ISO images tool:Install ISO images tool, mount, unmount, modify. - acetoneiso:install-acetoneiso
 FALSE:Install Nextcloud client:Install Nextcloud client.:install-nextcloud
