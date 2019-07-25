@@ -23,7 +23,7 @@ Example summary:
 ## Features
 Full feature list from [config.csv](./Develop/config.csv) file in `Develop` directory in easy readable table.
 
-2019-06-21
+2019-07-25
 
 |Task|Description|Subscript|
 |---|---|---|
@@ -60,6 +60,7 @@ Full feature list from [config.csv](./Develop/config.csv) file in `Develop` dire
 |Install Guake – gnome dropdown terminal|Install Guake – gnome dropdown terminal|[install-guake](/scripts/install-guake)|
 |Install Simple HEX editor - ghex|Install simple Gnome hex editor.|[install-hex-gnome-editor](/scripts/install-hex-gnome-editor)|
 |Install Powerful HEX editor – bless|Install hex editor - bless - more powerful, but needs more dependencies. – bless.|[install-hex-bless-editor](/scripts/install-hex-bless-editor)|
+|Install Gnome Paint - replacement for MSPaint.|Install Gnome Paint - Linux alternative for MSPaint.|[install-gnome-paint](/scripts/install-gnome-paint)|
 |Install Inkscape – vector graphic editor|Install vector graphic editor – Inkscape|[install-inkscape](/scripts/install-inkscape)|
 |Install ISO images tool|Install ISO images tool, mount, unmount, modify. - acetoneiso|[install-acetoneiso](/scripts/install-acetoneiso)|
 |Install Nextcloud client|Install Nextcloud client.|[install-nextcloud](/scripts/install-nextcloud)|

@@ -11,7 +11,7 @@
 #        AUTHOR:  wiktor2200, https://github.com/wiktor2200
 #          REPO:  https://github.com/wiktor2200/Ubuntu-1804-firstrun-config
 #       CREATED:  2018-06-12
-#       UPDATED:  2019-06-21
+#       UPDATED:  2019-07-25
 #===============================================================================
 # This script is generated using: generate-script-from-config.bash from repo: https://github.com/wiktor2200/Ubuntu-1804-firstrun-config
 
@@ -52,6 +52,7 @@ FALSE "Install fzf – CLI fuzzy finder" "Install fzf – CLI fuzzy finder. Git 
 FALSE "Install Guake – gnome dropdown terminal" "Install Guake – gnome dropdown terminal" \
 FALSE "Install Simple HEX editor - ghex" "Install simple Gnome hex editor." \
 FALSE "Install Powerful HEX editor – bless" "Install hex editor - bless - more powerful, but needs more dependencies. – bless." \
+FALSE "Install Gnome Paint - replacement for MSPaint." "Install Gnome Paint - Linux alternative for MSPaint." \
 FALSE "Install Inkscape – vector graphic editor" "Install vector graphic editor – Inkscape" \
 FALSE "Install ISO images tool" "Install ISO images tool, mount, unmount, modify. - acetoneiso" \
 FALSE "Install Nextcloud client" "Install Nextcloud client." \
@@ -217,6 +218,10 @@ for word in $response ; do
  "Install Powerful HEX editor – bless") 
  SUMMARY+="`cat $DIR/scripts/install-hex-bless-editor`\n\n" 
  COMMAND_TO_RUN+="bash $DIR/scripts/install-hex-bless-editor; " 
+ ;;
+ "Install Gnome Paint - replacement for MSPaint.") 
+ SUMMARY+="`cat $DIR/scripts/install-gnome-paint`\n\n" 
+ COMMAND_TO_RUN+="bash $DIR/scripts/install-gnome-paint; " 
  ;;
  "Install Inkscape – vector graphic editor") 
  SUMMARY+="`cat $DIR/scripts/install-inkscape`\n\n" 
