@@ -1,14 +1,14 @@
 #===============================================================================
-#          FILE:  ubuntu-1804-firstrun-config.bash
+#          FILE:  ubuntu-firstrun-config.bash
 #         USAGE:  sudo bash ./ubuntu-firstrun-config.bash
 #   DESCRIPTION:  The script enables installation and configuration of some
 #                 essential apps and utilties that make your Ubuntu more
 #                 useful and powerful.
 #       OPTIONS:  ---
-#  REQUIREMENTS:  zenity (preinstalled with Ubuntu 18.04)
+#  REQUIREMENTS:  zenity (preinstalled with Ubuntu)
 #         NOTES:  ---
 #        AUTHOR:  wiktor2200, https://github.com/wiktor2200
-#          REPO:  https://github.com/wiktor2200/Ubuntu-1804-firstrun-config
+#          REPO:  https://github.com/wiktor2200/Ubuntu-firstrun-config
 #       CREATED:  2018-06-12
 #       UPDATED:  CURRENT_DATE
 #===============================================================================

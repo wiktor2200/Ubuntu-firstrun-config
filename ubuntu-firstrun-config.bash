@@ -1,25 +1,25 @@
 #!/bin/bash
 #===============================================================================
-#          FILE:  ubuntu-1804-firstrun-config.bash
+#          FILE:  ubuntu-firstrun-config.bash
 #         USAGE:  sudo bash ./ubuntu-firstrun-config.bash
 #   DESCRIPTION:  The script enables installation and configuration of some
 #                 essential apps and utilties that make your Ubuntu more
 #                 useful and powerful.
 #       OPTIONS:  ---
-#  REQUIREMENTS:  zenity (preinstalled with Ubuntu 18.04)
+#  REQUIREMENTS:  zenity (preinstalled with Ubuntu)
 #         NOTES:  ---
 #        AUTHOR:  wiktor2200, https://github.com/wiktor2200
-#          REPO:  https://github.com/wiktor2200/Ubuntu-1804-firstrun-config
+#          REPO:  https://github.com/wiktor2200/Ubuntu-firstrun-config
 #       CREATED:  2018-06-12
 #       UPDATED:  2019-07-25
 #===============================================================================
-# This script is generated using: generate-script-from-config.bash from repo: https://github.com/wiktor2200/Ubuntu-1804-firstrun-config
+# This script is generated using: generate-script-from-config.bash from repo: https://github.com/wiktor2200/Ubuntu-firstrun-config
 
 # Get script's main directory
 DIR=`dirname $0`
 
 # Render zenity menu
-response=$(zenity --height=700 --width=1200 --window-icon=$DIR/ubuntu_icon.png --list --checklist --title="Configure your Ubuntu 18.04" --column="State" --column="Task" --column="Description" TRUE "Install archives tools" "Support for zip, rar, 7zip etc." \
+response=$(zenity --height=700 --width=1200 --window-icon=$DIR/ubuntu_icon.png --list --checklist --title="Configure your Ubuntu!" --column="State" --column="Task" --column="Description" TRUE "Install archives tools" "Support for zip, rar, 7zip etc." \
 TRUE "Uninstall garbage Gnome/Ubuntu packages" "Uninstall some garbage packages e.g. orca, shotwell, rhythmbox, totem, transmission" \
 TRUE "Install codecs" "Codecs to support common audio, video formats and additional fonts." \
 TRUE "Install Gnome tools" "Install Gnome settings managers and utils." \

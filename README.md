@@ -5,13 +5,13 @@ Script is using `zenity` graphical interface, which is preinstalled by default w
 # Usage
 ```bash
 # Clone repo
-git clone https://github.com/wiktor2200/Ubuntu-1804-firstrun-config.git
-cd Ubuntu-1804-firstrun-config
+git clone https://github.com/wiktor2200/Ubuntu-firstrun-config.git
+cd Ubuntu-firstrun-config
 ```
 **Then run main script:**
 ```bash
 # Run main config script
-bash ubuntu-1804-firstrun-config.bash
+bash ubuntu-firstrun-config.bash
 ```
 # Screenshots
 Main menu:
