@@ -9,7 +9,7 @@
 #  REQUIREMENTS:  ---
 #         NOTES:  ---
 #        AUTHOR:  wiktor2200, https://github.com/wiktor2200
-#          REPO:  https://github.com/wiktor2200/Ubuntu-1804-firstrun-config
+#          REPO:  https://github.com/wiktor2200/Ubuntu-firstrun-config
 #       CREATED:  2018-06-12
 #===============================================================================
 
@@ -23,7 +23,7 @@ function start_generate () {
       echo -e "#!/bin/bash"
 # Add information header from file to generated script including current date
   cat $DIR/description.txt | sed "s/CURRENT_DATE/`date +%F`/g"
-      echo -e "# This script is generated using: generate-script-from-config.bash from repo: https://github.com/wiktor2200/Ubuntu-1804-firstrun-config\n"
+      echo -e "# This script is generated using: generate-script-from-config.bash from repo: https://github.com/wiktor2200/Ubuntu-firstrun-config\n"
       echo "# Get script's main directory"
       echo -e 'DIR=`dirname $0`\n'
 }
@@ -48,7 +48,7 @@ function generate_subscripts_files () {
 # Generate zenity menu from CSV file
 function generate_zenity_menu () {
       echo "# Render zenity menu"
-      echo -n 'response=$(zenity --height=700 --width=1200 --window-icon=$DIR/ubuntu_icon.png --list --checklist --title="Configure your Ubuntu 18.04" --column="State" --column="Task" --column="Description" '
+      echo -n 'response=$(zenity --height=700 --width=1200 --window-icon=$DIR/ubuntu_icon.png --list --checklist --title="Configure your Ubuntu!" --column="State" --column="Task" --column="Description" '
   INPUT="$DIR/config.csv"
 
   IFS=':'
@@ -119,8 +119,9 @@ function generate_markdown_feature_table () {
 
 # Main program
 generate_subscripts_files
-start_generate > $DIR/../ubuntu-1804-firstrun-config.bash
-generate_zenity_menu >> $DIR/../ubuntu-1804-firstrun-config.bash
-generate_case >> $DIR/../ubuntu-1804-firstrun-config.bash
-generate_summary >> $DIR/../ubuntu-1804-firstrun-config.bash
+start_generate > $DIR/../ubuntu-firstrun-config.bash
+generate_zenity_menu >> $DIR/../ubuntu-firstrun-config.bash
+generate_case >> $DIR/../ubuntu-firstrun-config.bash
+generate_summary >> $DIR/../ubuntu-firstrun-config.bash
 generate_markdown_feature_table > $DIR/feature_list.md
+echo "Done!"
