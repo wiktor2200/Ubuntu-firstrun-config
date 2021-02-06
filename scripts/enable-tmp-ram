@@ -1,5 +1,5 @@
 # enable-tmp-ram
-# Increase efficiency of your system and enable /tmp folder in RAM. Recommended if >8GB of RAM
-
+# Performance - Enable tmp folder in RAM
+# Increase efficiency of your system and enable tmp folder in RAM. Recommended if more than 8GB of RAM
 
 sudo echo 'tmpfs  /tmp  tmpfs defaults,noatime,nosuid,nodev,noexec,mode=1777  0 0' | sudo tee -a /etc/fstab > /dev/null

@@ -1,5 +1,5 @@
 # uninstall-garbage-packages
-# Uninstall some garbage packages e.g. orca, shotwell, rhythmbox, totem, transmission
+# Cleanup - Uninstall garbage Gnome and Ubuntu packages
 # Uninstall some garbage packages e.g. orca, shotwell, rhythmbox, totem, transmission
 
 sudo apt remove -y --purge aisleriot baobab branding-ubuntu cheese deja-dup example-content gnome-calendar gnome-initial-setup gnome-mahjongg gnome-mines gnome-shell-extension-appindicator gnome-sudoku gnome-todo gnome-todo-common libgnome-todo orca remmina remmina-common remmina-plugin-rdp remmina-plugin-secret remmina-plugin-vnc rhythmbox rhythmbox-data rhythmbox-plugin-alternative-toolbar rhythmbox-plugins shotwell shotwell-common simple-scan totem totem-common totem-plugins transmission-common transmission-gtk ubuntu-advantage-tools ubuntu-desktop ubuntu-report ubuntu-web-launchers usb-creator-gtk vino zeitgeist-core

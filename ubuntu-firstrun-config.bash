@@ -21,7 +21,7 @@ DIR=`dirname $0`
 # Render zenity menu
 response=$(zenity --height=700 --width=1200 --window-icon=$DIR/ubuntu_icon.png --list --checklist --title="Configure your Ubuntu!" --column="State" --column="Task" --column="Description" TRUE "0Upgrade - Upgrade packages" "Perform apt dist-upgrade" \
 TRUE "Cleanup - Clean packages" "Perform apt autoremove, clean and autoclean" \
-TRUE "Cleanup - Uninstall garbage Gnome/Ubuntu packages" "Uninstall some garbage packages e.g. orca, shotwell, rhythmbox, totem, transmission" \
+TRUE "Cleanup - Uninstall garbage Gnome and Ubuntu packages" "Uninstall some garbage packages e.g. orca, shotwell, rhythmbox, totem, transmission" \
 TRUE "Documents - Install Libreoffice" "Install full Libreoffice package with language packages." \
 TRUE "IDE - Install Visual Studio Code IDE" "Install Visual Studio Code - easy, customizable and powerful IDE for almost all languages." \
 TRUE "Multimedia - Install VLC" "Install popular media player - both music and videos." \
@@ -54,7 +54,7 @@ FALSE "IDE - Install Simple HEX editor - ghex" "Install simple Gnome hex editor.
 FALSE "Multimedia - Install Amarok" "Install powerful music player – Amarok" \
 FALSE "Multimedia - Install Audacity audio editor" "Install Audacity audio editor" \
 FALSE "Network - Install sysadmin network utilties" "Install utilties to monitor network traffic e.g. nethogs, nmap, iftop, whois, net-tools etc." \
-FALSE "Performance - Enable /tmp folder in RAM" "Increase efficiency of your system and enable /tmp folder in RAM. Recommended if >8GB of RAM" \
+FALSE "Performance - Enable tmp folder in RAM" "Increase efficiency of your system and enable tmp folder in RAM. Recommended if more than 8GB of RAM" \
 FALSE "Performance - Remove swapfile" "Removing of swapfile is recommended when using ssd drive - to increase it's life. When swap is off hibernation is disabled!" \
 FALSE "Photos - Install batch photos utilties" "Install utilties to batch modify your photos and metadata e.g. aaphoto, exiv2" \
 FALSE "Photos - Install Digikam" "Install Powerful tool for photos managment" \
@@ -72,7 +72,7 @@ FALSE "Useful - Install Tellico – collections manager" "Install Tellico – co
 FALSE "Useful - Install Thunderbird" "Install Thunderbird mail client" \
 FALSE "Utilties - Install AMD-Nvidia graphics drivers" "Install Install AMD-Nvidia graphics drivers" \
 FALSE "Utilties - Install bootable live USB creator – mkusb" "Install bootable live USB creator – mkusb" \
-FALSE "Utilties - Install CD/DVD burner" "Install CD/DVD burner – if you have disk drive" \
+FALSE "Utilties - Install CD-DVD burner" "Install CD-DVD burner – if you have disk drive" \
 FALSE "Utilties - Install fzf – CLI fuzzy finder" "Install fzf – CLI fuzzy finder. Git clone installation – run as user which will be using script" \
 FALSE "Utilties - Install Guake – gnome dropdown terminal" "Install Guake – gnome dropdown terminal" \
 FALSE "Utilties - Install ISO images tool" "Install ISO images tool, mount, unmount, modify. - acetoneiso" \
@@ -97,7 +97,7 @@ for word in $response ; do
  SUMMARY+="`cat $DIR/scripts/perform-cleanup`\n\n" 
  COMMAND_TO_RUN+="bash $DIR/scripts/perform-cleanup; " 
  ;;
- "Cleanup - Uninstall garbage Gnome/Ubuntu packages") 
+ "Cleanup - Uninstall garbage Gnome and Ubuntu packages") 
  SUMMARY+="`cat $DIR/scripts/uninstall-garbage-packages`\n\n" 
  COMMAND_TO_RUN+="bash $DIR/scripts/uninstall-garbage-packages; " 
  ;;
@@ -229,7 +229,7 @@ for word in $response ; do
  SUMMARY+="`cat $DIR/scripts/install-sysadmin-network-tools`\n\n" 
  COMMAND_TO_RUN+="bash $DIR/scripts/install-sysadmin-network-tools; " 
  ;;
- "Performance - Enable /tmp folder in RAM") 
+ "Performance - Enable tmp folder in RAM") 
  SUMMARY+="`cat $DIR/scripts/enable-tmp-ram`\n\n" 
  COMMAND_TO_RUN+="bash $DIR/scripts/enable-tmp-ram; " 
  ;;
@@ -301,7 +301,7 @@ for word in $response ; do
  SUMMARY+="`cat $DIR/scripts/install-mkusb`\n\n" 
  COMMAND_TO_RUN+="bash $DIR/scripts/install-mkusb; " 
  ;;
- "Utilties - Install CD/DVD burner") 
+ "Utilties - Install CD-DVD burner") 
  SUMMARY+="`cat $DIR/scripts/install-cd-dvd-burner`\n\n" 
  COMMAND_TO_RUN+="bash $DIR/scripts/install-cd-dvd-burner; " 
  ;;

@@ -33,7 +33,7 @@ Full feature list from [config.csv](./Develop/config.csv) file in `Develop` dire
 |---|---|---|
 |0Upgrade - Upgrade packages|Perform apt dist-upgrade|[perform-upgrade](/scripts/perform-upgrade)|
 |Cleanup - Clean packages|Perform apt autoremove, clean and autoclean|[perform-cleanup](/scripts/perform-cleanup)|
-|Cleanup - Uninstall garbage Gnome/Ubuntu packages|Uninstall some garbage packages e.g. orca, shotwell, rhythmbox, totem, transmission|[uninstall-garbage-packages](/scripts/uninstall-garbage-packages)|
+|Cleanup - Uninstall garbage Gnome and Ubuntu packages|Uninstall some garbage packages e.g. orca, shotwell, rhythmbox, totem, transmission|[uninstall-garbage-packages](/scripts/uninstall-garbage-packages)|
 |Documents - Install Libreoffice|Install full Libreoffice package with language packages.|[install-libreoffice](/scripts/install-libreoffice)|
 |IDE - Install Visual Studio Code IDE|Install Visual Studio Code - easy, customizable and powerful IDE for almost all languages.|[install-vs-code](/scripts/install-vs-code)|
 |Multimedia - Install VLC|Install popular media player - both music and videos.|[install-vlc](/scripts/install-vlc)|
@@ -66,7 +66,7 @@ Full feature list from [config.csv](./Develop/config.csv) file in `Develop` dire
 |Multimedia - Install Amarok|Install powerful music player – Amarok|[install-amarok](/scripts/install-amarok)|
 |Multimedia - Install Audacity audio editor|Install Audacity audio editor|[install-audacity](/scripts/install-audacity)|
 |Network - Install sysadmin network utilties|Install utilties to monitor network traffic e.g. nethogs, nmap, iftop, whois, net-tools etc.|[install-sysadmin-network-tools](/scripts/install-sysadmin-network-tools)|
-|Performance - Enable /tmp folder in RAM|Increase efficiency of your system and enable /tmp folder in RAM. Recommended if >8GB of RAM|[enable-tmp-ram](/scripts/enable-tmp-ram)|
+|Performance - Enable tmp folder in RAM|Increase efficiency of your system and enable tmp folder in RAM. Recommended if more than 8GB of RAM|[enable-tmp-ram](/scripts/enable-tmp-ram)|
 |Performance - Remove swapfile|Removing of swapfile is recommended when using ssd drive - to increase it's life. When swap is off hibernation is disabled!|[remove-swapfile](/scripts/remove-swapfile)|
 |Photos - Install batch photos utilties|Install utilties to batch modify your photos and metadata e.g. aaphoto, exiv2|[install-photo-utils](/scripts/install-photo-utils)|
 |Photos - Install Digikam|Install Powerful tool for photos managment|[install-digikam](/scripts/install-digikam)|
@@ -84,7 +84,7 @@ Full feature list from [config.csv](./Develop/config.csv) file in `Develop` dire
 |Useful - Install Thunderbird|Install Thunderbird mail client|[install-thunderbird](/scripts/install-thunderbird)|
 |Utilties - Install AMD-Nvidia graphics drivers|Install Install AMD-Nvidia graphics drivers|[install-amd-nvidia-drivers](/scripts/install-amd-nvidia-drivers)|
 |Utilties - Install bootable live USB creator – mkusb|Install bootable live USB creator – mkusb|[install-mkusb](/scripts/install-mkusb)|
-|Utilties - Install CD/DVD burner|Install CD/DVD burner – if you have disk drive|[install-cd-dvd-burner](/scripts/install-cd-dvd-burner)|
+|Utilties - Install CD-DVD burner|Install CD-DVD burner – if you have disk drive|[install-cd-dvd-burner](/scripts/install-cd-dvd-burner)|
 |Utilties - Install fzf – CLI fuzzy finder|Install fzf – CLI fuzzy finder. Git clone installation – run as user which will be using script|[install-fzf](/scripts/install-fzf)|
 |Utilties - Install Guake – gnome dropdown terminal|Install Guake – gnome dropdown terminal|[install-guake](/scripts/install-guake)|
 |Utilties - Install ISO images tool|Install ISO images tool, mount, unmount, modify. - acetoneiso|[install-acetoneiso](/scripts/install-acetoneiso)|
