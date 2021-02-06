@@ -8,7 +8,7 @@ git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 # Install silversearch - more powerfull searcher
 if [ $(dpkg-query -W -f='${Status}' silversearcher-ag 2>/dev/null | grep -c "ok installed") -eq 0 ];
 then
-  sudo apt install silversearcher-ag
+  sudo apt install -y silversearcher-ag
 fi
 
 # Add fzf-ag support in .bashrc file
