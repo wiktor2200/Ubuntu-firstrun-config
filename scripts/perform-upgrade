@@ -1,4 +1,6 @@
 # perform-upgrade
+# 0Upgrade - Upgrade packages
 # Perform apt dist-upgrade
+
 sudo apt update
 sudo apt dist-upgrade -y

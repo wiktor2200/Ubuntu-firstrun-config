@@ -1,8 +1,9 @@
 # replace-snap-packages
+# Utilties - Replace default snap packages with native Gnome apps.
 # Replace default snap packages with native Gnome apps.
 
 # Remove snaps of Gnome Calculator and Gnome System Monitor
-sudo snap remove gnome-calculator gnome-system-monitor
+sudo snap remove gnome-calculator gnome-system-monitor gnome-logs gnome-characters
 
 # Replace with native apps
-sudo apt install gnome-calculator gnome-system-monitor
+sudo apt install gnome-calculator gnome-system-monitor gnome-logs

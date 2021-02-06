@@ -1,4 +1,7 @@
 # install-dropbox
+# Storage - Install Dropbox client
+# Install official Dropbox client with nemo support. Headless moder – run as user which will be using dropbox.
+
 ## More information: https://www.dropbox.com/install-linux
 
 # Install official Dropbox client. Headless moder – run as user which will be using dropbox.

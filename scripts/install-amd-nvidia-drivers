@@ -1,3 +1,5 @@
-# install-nvidia
-# Install Nvidia driver – if you have nvidia graphics
+# install-amd-nvidia-drivers
+# Utilties - Install AMD-Nvidia graphics drivers
+# Install Install AMD-Nvidia graphics drivers
+
 sudo ubuntu-drivers autoinstall

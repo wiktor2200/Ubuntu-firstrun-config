@@ -1,5 +1,7 @@
 # install-vlc
+# Multimedia - Install VLC
 # Install popular media player - both music and videos.
+
 sudo apt install -y vlc
 
 # Set as default media player

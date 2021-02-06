@@ -1,4 +1,6 @@
 # install-tellico
+# Useful - Install Tellico – collections manager
 # Install Tellico – collections manager – books, movies, coins etc.
+
 # http://tellico-project.org/
 sudo apt install -y tellico

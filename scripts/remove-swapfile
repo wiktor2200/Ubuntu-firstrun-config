@@ -1,6 +1,10 @@
 # remove-swapfile
+# Performance - Remove swapfile
 # Removing of swapfile is recommended when using ssd drive - to increase it's life. When swap is off hibernation is disabled!
 
+## Turn off swap
 sudo swapoff -a
-sudo sed -i '/\/swapfile/d' /etc/fstab
-sudo rm -f /swapfile
+
+## Removing swapfile is deprecated since LVM Partitioning system is default in Ubuntu
+# sudo sed -i '/\/swapfile/d' /etc/fstab
+# sudo rm -f /swapfile

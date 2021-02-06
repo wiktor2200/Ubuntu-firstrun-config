@@ -1,5 +1,7 @@
 # install-taskcoach
+# Useful - Install task manager – TaskCoach
 # Install powerful task manager TaskCoach
+
 sudo apt install -y taskcoach
 
 # Install patches which enables taskcoach to run properly on Ubuntu 18.04

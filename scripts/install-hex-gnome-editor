@@ -1,3 +1,5 @@
 # install-hex-gnome-editor
+# IDE - Install Simple HEX editor - ghex
 # Install simple Gnome hex editor.
+
 sudo apt install -y ghex

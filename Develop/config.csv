@@ -1,62 +1,64 @@
-TRUE:Install archives tools:Support for zip, rar, 7zip etc.:install-archives-tools
-TRUE:Uninstall garbage Gnome/Ubuntu packages:Uninstall some garbage packages e.g. orca, shotwell, rhythmbox, totem, transmission:uninstall-garbage-packages
-TRUE:Install codecs:Codecs to support common audio, video formats and additional fonts.:install-codecs
-TRUE:Install Gnome tools:Install Gnome settings managers and utils.:install-gnome-tools
-TRUE:Install language packages:Installing language packages for your locale different than English.:install-language-packages
-TRUE:Install Libreoffice:Install full Libreoffice package with language packages.:install-libreoffice
-TRUE:Install password manager:Install password manager – keepassXC:install-password-manager
-TRUE:Install Synaptic package manager:Install Synaptic package manager:install-synaptic
-TRUE:Install Thunderbird:Install Thunderbird mail client:install-thunderbird
-TRUE:Install useful system utilties:Install Partitioning tools, space usage tools, hardware info tools.:install-system-utilties
-TRUE:Install ClamAV Antivirus:Install and configure ClamAV Antivirus:install-antivir
-TRUE:Install VLC:Install popular media player - both music and videos.:install-vlc
-TRUE:Upgrade packages:Perform apt dist-upgrade:perform-upgrade
-FALSE:Enable /tmp folder in RAM:Increase efficiency of your system and enable /tmp folder in RAM. Recommended if >8GB of RAM:enable-tmp-ram
-FALSE:Install Amarok:Install powerful music player – Amarok:install-amarok
-FALSE:Install AMD-Nvidia graphics drivers:Install Install AMD-Nvidia graphics drivers:install-amd-nvidia-drivers
-FALSE:Install Visual Studio Code IDE:Install Visual Studio Code - easy, customizable and powerful IDE for almost all languages.:install-vs-code
-FALSE:Install Atom.io IDE:Install easy to customize IDE – Atom.io:install-atom
-FALSE:Install Audacity audio editor:Install Audacity audio editor:install-audacity
-FALSE:Install batch photos utilties:Install utilties to batch modify your photos and metadata e.g. aaphoto, exiv2:install-photo-utils
-FALSE:Install better laptop's battery support:Install better laptop's battery support. Recommended on laptops.:install-battery-support
-FALSE:Install bootable live USB creator – mkusb:Install bootable live USB creator – mkusb:install-mkusb
-FALSE:Install CD/DVD burner:Install CD/DVD burner – if you have disk drive:install-cd-dvd-burner
-FALSE:Install Chromium browser:Install open-source Chromium browser. Open-source Chrome.:install-chromium
-FALSE:Install Dia – diagram creator:Install Dia – diagram creator – easy and powerful:install-dia
-FALSE:Install Digikam:Install Powerful tool for photos managment:install-digikam
-FALSE:Install Dropbox client:Install official Dropbox client with nemo support. Headless moder – run as user which will be using dropbox.:install-dropbox
-FALSE:Install ebook reader:Install ebook reader – calibre:install-calibre
-FALSE:Install Eclipse IDE:Install IDE for java programing:install-eclipse
-FALSE:Install fzf – CLI fuzzy finder:Install fzf – CLI fuzzy finder. Git clone installation – run as user which will be using script:install-fzf
-FALSE:Install Guake – gnome dropdown terminal:Install Guake – gnome dropdown terminal:install-guake
-FALSE:Install Simple HEX editor - ghex:Install simple Gnome hex editor.:install-hex-gnome-editor
-FALSE:Install Powerful HEX editor – bless:Install hex editor - bless - more powerful, but needs more dependencies. – bless.:install-hex-bless-editor
-FALSE:Install Gnome Paint - replacement for MSPaint.:Install Gnome Paint - Linux alternative for MSPaint.:install-gnome-paint
-FALSE:Install Inkscape – vector graphic editor:Install vector graphic editor – Inkscape:install-inkscape
-FALSE:Install ISO images tool:Install ISO images tool, mount, unmount, modify. - acetoneiso:install-acetoneiso
-FALSE:Install Nextcloud client:Install Nextcloud client.:install-nextcloud
-FALSE:Install OCR Reader:Install utilties to OCR read files.:install-ocr
-FALSE:Install Owncloud client:Install Owncloud client.:install-owncloud
-FALSE:Install PDF tools:Install utilties to support pdf modifications  - merging, spliting, replacing pages etc.:install-pdf-tools
-FALSE:Install Qalculate scientific calculator:Install Qalculate scientific calculator:install-qalculate
-FALSE:Install QownNotes:Install notepad with markdown support and todo list manager supporting sync.:install-qownnotes
-FALSE:Install qtCreator IDE:Install IDE for qt programs:install-qtcreator
-FALSE:Install sandboxing app – Firejail:Install sandboxing app Firejail.:install-firejail
-FALSE:Install scanner support:Install utilties to support scanner in Ubuntu.:install-scanner-support
-FALSE:Install sysadmin network utilties:Install utilties to monitor network traffic e.g. nethogs, nmap, iftop, whois, net-tools etc.:install-sysadmin-network-tools
-FALSE:Install task manager – TaskCoach:Install powerful task manager TaskCoach:install-taskcoach
-FALSE:Install Tellico – collections manager:Install Tellico – collections manager – books, movies, coins etc.:install-tellico
-FALSE:Install VirtualBox:Install Virtualbox virtual machines manager.:install-virtualbox
-FALSE:Install Docker:Install Docker from snap package manager.:install-docker
-FALSE:Install Slack:Install Slack team collaboration tool from snap package.:install-slack
-FALSE:Install webcam application:Install webcam application – cheese:install-webcam-cheese
-FALSE:Remove swapfile:Removing of swapfile is recommended when using ssd drive - to increase it's life. When swap is off hibernation is disabled!:remove-swapfile
-FALSE:Replace notepad gedit with pluma:Replace default gedit with powerful pluma notepad.:replace-gedit-pluma
-FALSE:Replace filemanager Nautilus with Nemo:Replace file manager Nautilus with more powerful Nemo:replace-nautilus-nemo
-FALSE:Replace default snap packages with native Gnome apps.:Replace default snap packages with native Gnome apps.:replace-snap-packages
-FALSE:Show hidden autostart system entries:Show hidden autostart system entries:show-hidden-autostart-entries
-FALSE:Set Grub Timeout to 1 second:Set Grub Timeout to 1 second:set-grub
-FALSE:Uninstall Ubuntu dock:Uninstall annoying Ubuntu Gnome dock.:uninstall-ubuntu-dock
-FALSE:Uninstall Ubuntu 16.04 old dependencies.:Uninstall 16.04 garbage dependencies after upgrade to 18.04.:uninstall-old-1604-dependencies
-FALSE:Fix top panel icons:Fix top panel icons on systems upgraded from 16.04:fix-top-panel-icons
-TRUE:Clean packages:Perform apt autoremove, clean and autoclean:perform-cleanup
+TRUE:0Upgrade - Upgrade packages:Perform apt dist-upgrade:perform-upgrade
+TRUE:Cleanup - Clean packages:Perform apt autoremove, clean and autoclean:perform-cleanup
+TRUE:Cleanup - Uninstall garbage Gnome/Ubuntu packages:Uninstall some garbage packages e.g. orca, shotwell, rhythmbox, totem, transmission:uninstall-garbage-packages
+TRUE:Documents - Install Libreoffice:Install full Libreoffice package with language packages.:install-libreoffice
+TRUE:IDE - Install Visual Studio Code IDE:Install Visual Studio Code - easy, customizable and powerful IDE for almost all languages.:install-vs-code
+TRUE:Multimedia - Install VLC:Install popular media player - both music and videos.:install-vlc
+TRUE:Useful - Install password manager:Install password manager – keepassXC:install-password-manager
+TRUE:Utilties - Install archives tools:Support for zip, rar, 7zip etc.:install-archives-tools
+TRUE:Utilties - Install codecs:Codecs to support common audio, video formats and additional fonts.:install-codecs
+TRUE:Utilties - Install Gnome tools:Install Gnome settings managers and utils.:install-gnome-tools
+TRUE:Utilties - Install language packages:Installing language packages for your locale different than English.:install-language-packages
+TRUE:Utilties - Install useful system utilties:Install Partitioning tools, space usage tools, hardware info tools.:install-system-utilties
+TRUE:Utilties - Replace default snap packages with native Gnome apps.:Replace default snap packages with native Gnome apps.:replace-snap-packages
+FALSE:Cleanup - Uninstall Ubuntu dock:Uninstall Ubuntu Gnome dock.:uninstall-ubuntu-dock
+FALSE:Developer - Install Docker:Install Docker from snap package manager.:install-docker
+FALSE:Developer - Install VirtualBox:Install Virtualbox virtual machines manager.:install-virtualbox
+FALSE:Documents - Install ebook reader:Install ebook reader – calibre:install-calibre
+FALSE:Documents - Install OCR Reader:Install utilties to OCR read files.:install-ocr
+FALSE:Documents - Install PDF tools:Install utilties to support pdf modifications  - merging, spliting, replacing pages etc.:install-pdf-tools
+FALSE:Documents - Install QownNotes:Install notepad with markdown support and todo list manager supporting sync.:install-qownnotes
+FALSE:Fixes - Fix top panel icons:Fix top panel icons on systems upgraded from 16.04:fix-top-panel-icons
+FALSE:Graphics - Install Dia – diagram creator:Install Dia – diagram creator – easy and powerful:install-dia
+FALSE:Graphics - Install Gnome Paint - replacement for MSPaint.:Install Gnome Paint - Linux alternative for MSPaint.:install-gnome-paint
+FALSE:Graphics - Install Inkscape – vector graphic editor:Install vector graphic editor – Inkscape:install-inkscape
+FALSE:Hardware - Install better laptop's battery support:Install better laptop's battery support. Recommended on laptops.:install-battery-support
+FALSE:Hardware - Install scanner support:Install utilties to support scanner in Ubuntu.:install-scanner-support
+FALSE:Hardware - Install webcam application:Install webcam application – cheese:install-webcam-cheese
+FALSE:IDE - Install Atom.io IDE:Install easy to customize IDE – Atom.io:install-atom
+FALSE:IDE - Install Eclipse IDE:Install IDE for java programing:install-eclipse
+FALSE:IDE - Install Powerful HEX editor – bless:Install hex editor - bless - more powerful, but needs more dependencies. – bless.:install-hex-bless-editor
+FALSE:IDE - Install qtCreator IDE:Install IDE for qt programs:install-qtcreator
+FALSE:IDE - Install Simple HEX editor - ghex:Install simple Gnome hex editor.:install-hex-gnome-editor
+FALSE:Multimedia - Install Amarok:Install powerful music player – Amarok:install-amarok
+FALSE:Multimedia - Install Audacity audio editor:Install Audacity audio editor:install-audacity
+FALSE:Network - Install sysadmin network utilties:Install utilties to monitor network traffic e.g. nethogs, nmap, iftop, whois, net-tools etc.:install-sysadmin-network-tools
+FALSE:Performance - Enable /tmp folder in RAM:Increase efficiency of your system and enable /tmp folder in RAM. Recommended if >8GB of RAM:enable-tmp-ram
+FALSE:Performance - Remove swapfile:Removing of swapfile is recommended when using ssd drive - to increase it's life. When swap is off hibernation is disabled!:remove-swapfile
+FALSE:Photos - Install batch photos utilties:Install utilties to batch modify your photos and metadata e.g. aaphoto, exiv2:install-photo-utils
+FALSE:Photos - Install Digikam:Install Powerful tool for photos managment:install-digikam
+FALSE:Storage - Install Dropbox client:Install official Dropbox client with nemo support. Headless moder – run as user which will be using dropbox.:install-dropbox
+FALSE:Storage - Install Nextcloud client:Install Nextcloud client.:install-nextcloud
+FALSE:Storage - Install Owncloud client:Install Owncloud client.:install-owncloud
+FALSE:System - Install Cinnamon desktop manager:Install Cinnamon desktop manager:install-cinnamon
+FALSE:Useful - Install Chromium browser:Install open-source Chromium browser. Open-source Chrome.:install-chromium
+FALSE:Useful - Install ClamAV Antivirus:Install and configure ClamAV Antivirus:install-antivir
+FALSE:Useful - Install Kazam desktop recorder:Install Kazam - simple desktop recorder:install-desktop-recorder
+FALSE:Useful - Install Qalculate scientific calculator:Install Qalculate scientific calculator:install-qalculate
+FALSE:Useful - Install Slack:Install Slack team collaboration tool from snap package.:install-slack
+FALSE:Useful - Install task manager – TaskCoach:Install powerful task manager TaskCoach:install-taskcoach
+FALSE:Useful - Install Tellico – collections manager:Install Tellico – collections manager – books, movies, coins etc.:install-tellico
+FALSE:Useful - Install Thunderbird:Install Thunderbird mail client:install-thunderbird
+FALSE:Utilties - Install AMD-Nvidia graphics drivers:Install Install AMD-Nvidia graphics drivers:install-amd-nvidia-drivers
+FALSE:Utilties - Install bootable live USB creator – mkusb:Install bootable live USB creator – mkusb:install-mkusb
+FALSE:Utilties - Install CD/DVD burner:Install CD/DVD burner – if you have disk drive:install-cd-dvd-burner
+FALSE:Utilties - Install fzf – CLI fuzzy finder:Install fzf – CLI fuzzy finder. Git clone installation – run as user which will be using script:install-fzf
+FALSE:Utilties - Install Guake – gnome dropdown terminal:Install Guake – gnome dropdown terminal:install-guake
+FALSE:Utilties - Install ISO images tool:Install ISO images tool, mount, unmount, modify. - acetoneiso:install-acetoneiso
+FALSE:Utilties - Install sandboxing app – Firejail:Install sandboxing app Firejail.:install-firejail
+FALSE:Utilties - Install Synaptic package manager:Install Synaptic package manager:install-synaptic
+FALSE:System - Replace filemanager Nautilus with Nemo:Replace file manager Nautilus with more powerful Nemo:replace-nautilus-nemo
+FALSE:System - Replace notepad gedit with pluma:Replace default gedit with powerful pluma notepad.:replace-gedit-pluma
+FALSE:System - Set Grub Timeout to 1 second:Set Grub Timeout to 1 second:set-grub
+FALSE:System - Show hidden autostart system entries:Show hidden autostart system entries:show-hidden-autostart-entries
+FALSE:Cleanup - Uninstall Ubuntu 16.04 old dependencies.:Uninstall 16.04 garbage dependencies after upgrade to 18.04.:uninstall-old-1604-dependencies

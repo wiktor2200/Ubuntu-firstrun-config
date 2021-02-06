@@ -1,5 +1,7 @@
 # install-mkusb
+# Utilties - Install bootable live USB creator – mkusb
 # Install bootable live USB creator – mkusb
+
 sudo apt-add-repository -y ppa:mkusb/ppa
 sudo apt update
 sudo apt install -y mkusb mkusb-nox usb-pack-efi
