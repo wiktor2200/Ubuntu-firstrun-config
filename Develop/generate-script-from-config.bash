@@ -39,7 +39,7 @@ function generate_subscripts_files () {
   do
     # Check if script exist in subfolder, if not create it.
     if [ ! -f $DIR/../scripts/$script ]; then
-          echo -e "# $script \n# $description" > $DIR/../scripts/$script
+          echo -e "# $script \n# $task \n# $description" > $DIR/../scripts/$script
     fi
     # If script exist in subfolder, replace 3 first lines
     if [ -f $DIR/../scripts/$script ]; then

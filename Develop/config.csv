@@ -4,6 +4,7 @@ TRUE:Cleanup - Uninstall garbage Gnome and Ubuntu packages:Uninstall some garbag
 TRUE:Documents - Install Libreoffice:Install full Libreoffice package with language packages.:install-libreoffice
 TRUE:IDE - Install Visual Studio Code IDE:Install Visual Studio Code - easy, customizable and powerful IDE for almost all languages.:install-vs-code
 TRUE:Multimedia - Install VLC:Install popular media player - both music and videos.:install-vlc
+TRUE:Photos - Install GIMP:Install popular photo editor GIMP.:install-gimp
 TRUE:Useful - Install password manager:Install password manager – keepassXC:install-password-manager
 TRUE:Utilties - Install archives tools:Support for zip, rar, 7zip etc.:install-archives-tools
 TRUE:Utilties - Install codecs:Codecs to support common audio, video formats and additional fonts.:install-codecs

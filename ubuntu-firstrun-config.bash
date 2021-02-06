@@ -25,6 +25,7 @@ TRUE "Cleanup - Uninstall garbage Gnome and Ubuntu packages" "Uninstall some gar
 TRUE "Documents - Install Libreoffice" "Install full Libreoffice package with language packages." \
 TRUE "IDE - Install Visual Studio Code IDE" "Install Visual Studio Code - easy, customizable and powerful IDE for almost all languages." \
 TRUE "Multimedia - Install VLC" "Install popular media player - both music and videos." \
+TRUE "Photos - Install GIMP" "Install popular photo editor GIMP." \
 TRUE "Useful - Install password manager" "Install password manager – keepassXC" \
 TRUE "Utilties - Install archives tools" "Support for zip, rar, 7zip etc." \
 TRUE "Utilties - Install codecs" "Codecs to support common audio, video formats and additional fonts." \
@@ -112,6 +113,10 @@ for word in $response ; do
  "Multimedia - Install VLC") 
  SUMMARY+="`cat $DIR/scripts/install-vlc`\n\n" 
  COMMAND_TO_RUN+="bash $DIR/scripts/install-vlc; " 
+ ;;
+ "Photos - Install GIMP") 
+ SUMMARY+="`cat $DIR/scripts/install-gimp`\n\n" 
+ COMMAND_TO_RUN+="bash $DIR/scripts/install-gimp; " 
  ;;
  "Useful - Install password manager") 
  SUMMARY+="`cat $DIR/scripts/install-password-manager`\n\n" 
