@@ -1,5 +1,6 @@
 # fix-top-panel-icons
-# Fix top panel icons on systems upgraded from 16.04 (old Unity related files from indicator causes problems with nwe icons)
+# Fixes - Fix top panel icons
+# Fix top panel icons on systems upgraded from 16.04
 
 sudo apt remove --purge indicator-common
 sudo apt -y autoremove

@@ -1,5 +1,7 @@
 # install-fzf
-# Install CLI fuzzy finder
+# Utilties - Install fzf – CLI fuzzy finder
+# Install fzf – CLI fuzzy finder. Git clone installation – run as user which will be using script
+
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
 ~/.fzf/install --all
 

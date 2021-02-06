@@ -1,0 +1,5 @@
+# install-cinnamon
+# System - Install Cinnamon desktop manager
+# Install Cinnamon desktop manager
+
+sudo apt install -y cinnamon-core

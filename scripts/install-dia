@@ -1,3 +1,5 @@
-# Install-dia
+# install-dia
+# Graphics - Install Dia – diagram creator
 # Install Dia – diagram creator – easy and powerful
+
 sudo apt install -y dia

@@ -1,3 +1,5 @@
 # install-qtcreator
+# IDE - Install qtCreator IDE
 # Install IDE for qt programs
+
 sudo apt install -y qtcreator

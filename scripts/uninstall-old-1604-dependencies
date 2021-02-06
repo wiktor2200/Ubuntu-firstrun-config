@@ -1,4 +1,5 @@
-# uninstall-old-1604-dependencies 
+# uninstall-old-1604-dependencies
+# Cleanup - Uninstall Ubuntu 16.04 old dependencies.
 # Uninstall 16.04 garbage dependencies after upgrade to 18.04.
 
 sudo apt remove --purge -y account-plugin-*

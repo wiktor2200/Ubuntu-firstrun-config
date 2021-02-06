@@ -1,4 +1,6 @@
 # install-pdf-tools
+# Documents - Install PDF tools
 # Install utilties to support pdf modifications  - merging, spliting, replacing pages etc.
+
 sudo apt install -y pdfshuffler
 sudo snap install krop

@@ -1,5 +1,7 @@
 # perform-cleanup
+# Cleanup - Clean packages
 # Perform apt autoremove, clean and autoclean
+
 sudo apt clean
 sudo apt autoclean
 sudo apt autoremove -y

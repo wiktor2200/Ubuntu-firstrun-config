@@ -1,5 +1,7 @@
 # replace-nautilus-nemo
+# System - Replace filemanager Nautilus with Nemo
 # Replace file manager Nautilus with more powerful Nemo
+
 sudo apt install -y nemo nemo-fileroller
 
 # Set nemo as main filemanager

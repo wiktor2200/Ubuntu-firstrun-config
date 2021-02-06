@@ -1,3 +1,5 @@
 # install-amarok
+# Multimedia - Install Amarok
 # Install powerful music player – Amarok
+
 sudo apt install -y amarok

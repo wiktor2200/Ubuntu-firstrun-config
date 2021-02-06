@@ -1,3 +1,5 @@
 # install-photo-utils
-# Install utilties to batch modify your photos and metadata e.g. gimp, aaphoto, exiv2
-sudo apt install -y gimp gimp-data-extras gimp-plugin-registry aaphoto exiv2 gthumb
+# Photos - Install batch photos utilties
+# Install utilties to batch modify your photos and metadata e.g. aaphoto, exiv2
+
+sudo apt install -y aaphoto exiv2 gthumb

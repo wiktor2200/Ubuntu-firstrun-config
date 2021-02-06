@@ -1,4 +1,5 @@
 # show-hidden-autostart-entries
+# System - Show hidden autostart system entries
 # Show hidden autostart system entries
 
 # Script will change flag `NoDisplay` to show system defined startup application
