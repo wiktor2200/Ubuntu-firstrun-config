@@ -11,3 +11,6 @@ wget -P /tmp https://sourceforge.net/p/taskcoach/bugs/_discuss/thread/ecfa3f41/f
 sudo patch -p0 -i /tmp/taskcoach_gtk3_v3.patch -d /usr/lib/python2.7/dist-packages
 wget -P /tmp https://sourceforge.net/p/taskcoach/bugs/_discuss/thread/389b0393/4aaf/attachment/warning_gi_libnotify.patch
 sudo patch -p0 -i /tmp/warning_gi_libnotify.patch -d /usr/lib/python2.7/dist-packages
+
+
+## TODO!!! Still not ported for 20.04

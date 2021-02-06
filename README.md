@@ -42,6 +42,7 @@ Full feature list from [config.csv](./Develop/config.csv) file in `Develop` dire
 |Utilties - Install language packages|Installing language packages for your locale different than English.|[install-language-packages](/scripts/install-language-packages)|
 |Utilties - Install useful system utilties|Install Partitioning tools, space usage tools, hardware info tools.|[install-system-utilties](/scripts/install-system-utilties)|
 |Utilties - Replace default snap packages with native Gnome apps.|Replace default snap packages with native Gnome apps.|[replace-snap-packages](/scripts/replace-snap-packages)|
+|Utilties - Install duplicate finder fslint|Install duplicate finder fslint|[install-fslint](/scripts/install-fslint)|
 |Cleanup - Uninstall Ubuntu dock|Uninstall Ubuntu Gnome dock.|[uninstall-ubuntu-dock](/scripts/uninstall-ubuntu-dock)|
 |Developer - Install Docker|Install Docker from snap package manager.|[install-docker](/scripts/install-docker)|
 |Developer - Install VirtualBox|Install Virtualbox virtual machines manager.|[install-virtualbox](/scripts/install-virtualbox)|
@@ -57,7 +58,6 @@ Full feature list from [config.csv](./Develop/config.csv) file in `Develop` dire
 |Hardware - Install scanner support|Install utilties to support scanner in Ubuntu.|[install-scanner-support](/scripts/install-scanner-support)|
 |Hardware - Install webcam application|Install webcam application – cheese|[install-webcam-cheese](/scripts/install-webcam-cheese)|
 |IDE - Install Atom.io IDE|Install easy to customize IDE – Atom.io|[install-atom](/scripts/install-atom)|
-|IDE - Install Eclipse IDE|Install IDE for java programing|[install-eclipse](/scripts/install-eclipse)|
 |IDE - Install Powerful HEX editor – bless|Install hex editor - bless - more powerful, but needs more dependencies. – bless.|[install-hex-bless-editor](/scripts/install-hex-bless-editor)|
 |IDE - Install qtCreator IDE|Install IDE for qt programs|[install-qtcreator](/scripts/install-qtcreator)|
 |IDE - Install Simple HEX editor - ghex|Install simple Gnome hex editor.|[install-hex-gnome-editor](/scripts/install-hex-gnome-editor)|

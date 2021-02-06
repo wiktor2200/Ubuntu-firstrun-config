@@ -4,7 +4,9 @@
 
 ## Source: https://download.owncloud.com/desktop/ownCloud/stable/latest/linux/download/
 
-wget -nv https://download.owncloud.com/desktop/ownCloud/stable/latest/linux/Ubuntu_18.04/Release.key -O - | sudo apt-key add -
-echo 'deb https://download.owncloud.com/desktop/ownCloud/stable/latest/linux/Ubuntu_18.04/ /' | sudo tee -a /etc/apt/sources.list.d/owncloud.list
+wget -nv https://download.owncloud.com/desktop/ownCloud/stable/latest/linux/Ubuntu_20.04/Release.key -O - | sudo apt-key add -
+echo 'deb https://download.owncloud.com/desktop/ownCloud/stable/latest/linux/Ubuntu_20.04/ /' | sudo tee -a /etc/apt/sources.list.d/owncloud.list
 sudo apt update
 sudo apt install -y owncloud-client
+
+## TODO!!! - QT5 libraries are still not ported for 20.04
