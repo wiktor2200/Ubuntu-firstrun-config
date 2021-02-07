@@ -2,4 +2,13 @@
 # Utilties - Install sandboxing app – Firejail
 # Install sandboxing app Firejail.
 
+## Source: https://github.com/netblue30/firejail
+
+## Add PPA repository for firejail
+sudo add-apt-repository ppa:deki/firejail
+sudo apt update
+
+## Install dependencies
+sudo apt install -y git build-essential libapparmor-dev pkg-config gawk
+
 sudo apt install -y firejail

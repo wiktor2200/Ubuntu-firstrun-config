@@ -20,6 +20,6 @@ source ~/.bashrc
 # Create upgrade command in .git_upgrades directory
 mkdir -p ~/.git_upgrades
 echo "cd ~/.fzf && git pull && ./install" > ~/.git_upgrades/fzf.upgrade
-chmod -x ~/.git_upgrades/fzf.upgrade
+chmod +x ~/.git_upgrades/fzf.upgrade
 # Add crontab job to auto upgrade once a week - "At 00:00 on Monday."
 crontab -l | { cat; echo "0 0 * * 1 bash ~/.git_upgrades/fzf.upgrade"; } | crontab -

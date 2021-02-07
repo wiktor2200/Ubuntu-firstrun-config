@@ -11,7 +11,7 @@
 #        AUTHOR:  wiktor2200, https://github.com/wiktor2200
 #          REPO:  https://github.com/wiktor2200/Ubuntu-firstrun-config
 #       CREATED:  2018-06-12
-#       UPDATED:  2021-02-06
+#       UPDATED:  2021-02-07
 #===============================================================================
 # This script is generated using: generate-script-from-config.bash from repo: https://github.com/wiktor2200/Ubuntu-firstrun-config
 
@@ -68,7 +68,7 @@ FALSE "Useful - Install ClamAV Antivirus" "Install and configure ClamAV Antiviru
 FALSE "Useful - Install Kazam desktop recorder" "Install Kazam - simple desktop recorder" \
 FALSE "Useful - Install Qalculate scientific calculator" "Install Qalculate scientific calculator" \
 FALSE "Useful - Install Slack" "Install Slack team collaboration tool from snap package." \
-FALSE "Useful - Install task manager – TaskCoach" "Install powerful task manager TaskCoach" \
+FALSE "Useful - Install task manager – TaskCoach (using AppImage)" "Install powerful task manager TaskCoach (using AppImage)" \
 FALSE "Useful - Install Tellico – collections manager" "Install Tellico – collections manager – books, movies, coins etc." \
 FALSE "Useful - Install Thunderbird" "Install Thunderbird mail client" \
 FALSE "Utilties - Install AMD-Nvidia graphics drivers" "Install Install AMD-Nvidia graphics drivers" \
@@ -286,7 +286,7 @@ for word in $response ; do
  SUMMARY+="`cat $DIR/scripts/install-slack`\n\n" 
  COMMAND_TO_RUN+="bash $DIR/scripts/install-slack; " 
  ;;
- "Useful - Install task manager – TaskCoach") 
+ "Useful - Install task manager – TaskCoach (using AppImage)") 
  SUMMARY+="`cat $DIR/scripts/install-taskcoach`\n\n" 
  COMMAND_TO_RUN+="bash $DIR/scripts/install-taskcoach; " 
  ;;
