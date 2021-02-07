@@ -17,6 +17,7 @@
 
 # Get script's main directory
 DIR=`dirname $0`
+LOG_FILE=/tmp/`date +%F_%T_ubuntu_firstrun_config_log`
 
 # Render zenity menu
 response=$(zenity --height=700 --width=1200 --window-icon=$DIR/ubuntu_icon.png --list --checklist --title="Configure your Ubuntu!" --column="State" --column="Task" --column="Description" TRUE "0Upgrade - Upgrade packages" "Perform apt dist-upgrade" \
@@ -363,7 +364,7 @@ if [ ! -n "$SUMMARY" ]; then
               # Check if OK was pressed
               if [ $? = 0 ] ; then
                   # OK pressed
-                  pkexec -u `whoami` bash -c "cd $PWD; $COMMAND_TO_RUN"
+                  (pkexec -u `whoami` bash -c "cd $PWD; $COMMAND_TO_RUN") 2>&1 | tee -a "$LOG_FILE"
                   zenity --info --text "All done!\nPress OK to quit."
               else
                   # Cancel pressed

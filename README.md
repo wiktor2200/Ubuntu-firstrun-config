@@ -14,6 +14,11 @@ cd Ubuntu-firstrun-config
 # Run main config script
 bash ubuntu-firstrun-config.bash
 ```
+
+## Troubleshooting
+In case of any problems and not being able to scroll the very long TTY output. There was logging feature introduced.
+> Logs location: `/tmp/YYYY-MM-DD_HH-MM-SS_ubuntu_firstrun_config_log`
+
 # Screenshots
 Main menu:
 ![Screenshot1](./screenshots/screenshot1.png)

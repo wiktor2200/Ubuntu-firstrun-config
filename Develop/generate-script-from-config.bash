@@ -25,7 +25,8 @@ function start_generate () {
   cat $DIR/description.txt | sed "s/CURRENT_DATE/`date +%F`/g"
       echo -e "# This script is generated using: generate-script-from-config.bash from repo: https://github.com/wiktor2200/Ubuntu-firstrun-config\n"
       echo "# Get script's main directory"
-      echo -e 'DIR=`dirname $0`\n'
+      echo -e 'DIR=`dirname $0`'
+      echo -e 'LOG_FILE=/tmp/`date +%F_%T_ubuntu_firstrun_config_log`\n'
 }
 
 function generate_subscripts_files () {
@@ -97,7 +98,7 @@ function generate_summary () {
               # Check if OK was pressed
               if [ \$? = 0 ] ; then
                   # OK pressed
-                  pkexec -u \`whoami\` bash -c \"cd \$PWD; \$COMMAND_TO_RUN\"
+                  (pkexec -u \`whoami\` bash -c \"cd \$PWD; \$COMMAND_TO_RUN\") 2>&1 | tee -a \"\$LOG_FILE\"
                   zenity --info --text \"All done!\nPress OK to quit.\"
               else
                   # Cancel pressed
