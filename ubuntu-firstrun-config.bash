@@ -11,7 +11,7 @@
 #        AUTHOR:  wiktor2200, https://github.com/wiktor2200
 #          REPO:  https://github.com/wiktor2200/Ubuntu-firstrun-config
 #       CREATED:  2018-06-12
-#       UPDATED:  2021-02-06
+#       UPDATED:  2021-02-07
 #===============================================================================
 # This script is generated using: generate-script-from-config.bash from repo: https://github.com/wiktor2200/Ubuntu-firstrun-config
 
@@ -33,6 +33,7 @@ TRUE "Utilties - Install Gnome tools" "Install Gnome settings managers and utils
 TRUE "Utilties - Install language packages" "Installing language packages for your locale different than English." \
 TRUE "Utilties - Install useful system utilties" "Install Partitioning tools, space usage tools, hardware info tools." \
 TRUE "Utilties - Replace default snap packages with native Gnome apps." "Replace default snap packages with native Gnome apps." \
+FALSE "Utilties - Install duplicate finder fslint" "Install duplicate finder fslint" \
 FALSE "Cleanup - Uninstall Ubuntu dock" "Uninstall Ubuntu Gnome dock." \
 FALSE "Developer - Install Docker" "Install Docker from snap package manager." \
 FALSE "Developer - Install VirtualBox" "Install Virtualbox virtual machines manager." \
@@ -48,7 +49,6 @@ FALSE "Hardware - Install better laptop's battery support" "Install better lapto
 FALSE "Hardware - Install scanner support" "Install utilties to support scanner in Ubuntu." \
 FALSE "Hardware - Install webcam application" "Install webcam application – cheese" \
 FALSE "IDE - Install Atom.io IDE" "Install easy to customize IDE – Atom.io" \
-FALSE "IDE - Install Eclipse IDE" "Install IDE for java programing" \
 FALSE "IDE - Install Powerful HEX editor – bless" "Install hex editor - bless - more powerful, but needs more dependencies. – bless." \
 FALSE "IDE - Install qtCreator IDE" "Install IDE for qt programs" \
 FALSE "IDE - Install Simple HEX editor - ghex" "Install simple Gnome hex editor." \
@@ -68,7 +68,7 @@ FALSE "Useful - Install ClamAV Antivirus" "Install and configure ClamAV Antiviru
 FALSE "Useful - Install Kazam desktop recorder" "Install Kazam - simple desktop recorder" \
 FALSE "Useful - Install Qalculate scientific calculator" "Install Qalculate scientific calculator" \
 FALSE "Useful - Install Slack" "Install Slack team collaboration tool from snap package." \
-FALSE "Useful - Install task manager – TaskCoach" "Install powerful task manager TaskCoach" \
+FALSE "Useful - Install task manager – TaskCoach (using AppImage)" "Install powerful task manager TaskCoach (using AppImage)" \
 FALSE "Useful - Install Tellico – collections manager" "Install Tellico – collections manager – books, movies, coins etc." \
 FALSE "Useful - Install Thunderbird" "Install Thunderbird mail client" \
 FALSE "Utilties - Install AMD-Nvidia graphics drivers" "Install Install AMD-Nvidia graphics drivers" \
@@ -146,6 +146,10 @@ for word in $response ; do
  SUMMARY+="`cat $DIR/scripts/replace-snap-packages`\n\n" 
  COMMAND_TO_RUN+="bash $DIR/scripts/replace-snap-packages; " 
  ;;
+ "Utilties - Install duplicate finder fslint") 
+ SUMMARY+="`cat $DIR/scripts/install-fslint`\n\n" 
+ COMMAND_TO_RUN+="bash $DIR/scripts/install-fslint; " 
+ ;;
  "Cleanup - Uninstall Ubuntu dock") 
  SUMMARY+="`cat $DIR/scripts/uninstall-ubuntu-dock`\n\n" 
  COMMAND_TO_RUN+="bash $DIR/scripts/uninstall-ubuntu-dock; " 
@@ -205,10 +209,6 @@ for word in $response ; do
  "IDE - Install Atom.io IDE") 
  SUMMARY+="`cat $DIR/scripts/install-atom`\n\n" 
  COMMAND_TO_RUN+="bash $DIR/scripts/install-atom; " 
- ;;
- "IDE - Install Eclipse IDE") 
- SUMMARY+="`cat $DIR/scripts/install-eclipse`\n\n" 
- COMMAND_TO_RUN+="bash $DIR/scripts/install-eclipse; " 
  ;;
  "IDE - Install Powerful HEX editor – bless") 
  SUMMARY+="`cat $DIR/scripts/install-hex-bless-editor`\n\n" 
@@ -286,7 +286,7 @@ for word in $response ; do
  SUMMARY+="`cat $DIR/scripts/install-slack`\n\n" 
  COMMAND_TO_RUN+="bash $DIR/scripts/install-slack; " 
  ;;
- "Useful - Install task manager – TaskCoach") 
+ "Useful - Install task manager – TaskCoach (using AppImage)") 
  SUMMARY+="`cat $DIR/scripts/install-taskcoach`\n\n" 
  COMMAND_TO_RUN+="bash $DIR/scripts/install-taskcoach; " 
  ;;

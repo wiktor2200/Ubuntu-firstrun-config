@@ -2,4 +2,11 @@
 # Multimedia - Install Amarok
 # Install powerful music player – Amarok
 
+## Source: https://forum.kde.org/viewtopic.php?f=114&t=165859
+### While the work on Amarok 3 is still in progress (porting to KDE5), that's to only option to install it.
+
+### https://launchpad.net/~pgomes/+archive/ubuntu/amarok
+sudo add-apt-repository ppa:pgomes/amarok
+sudo apt update
+
 sudo apt install -y amarok

@@ -12,6 +12,7 @@ TRUE:Utilties - Install Gnome tools:Install Gnome settings managers and utils.:i
 TRUE:Utilties - Install language packages:Installing language packages for your locale different than English.:install-language-packages
 TRUE:Utilties - Install useful system utilties:Install Partitioning tools, space usage tools, hardware info tools.:install-system-utilties
 TRUE:Utilties - Replace default snap packages with native Gnome apps.:Replace default snap packages with native Gnome apps.:replace-snap-packages
+FALSE:Utilties - Install duplicate finder fslint:Install duplicate finder fslint:install-fslint
 FALSE:Cleanup - Uninstall Ubuntu dock:Uninstall Ubuntu Gnome dock.:uninstall-ubuntu-dock
 FALSE:Developer - Install Docker:Install Docker from snap package manager.:install-docker
 FALSE:Developer - Install VirtualBox:Install Virtualbox virtual machines manager.:install-virtualbox
@@ -27,7 +28,6 @@ FALSE:Hardware - Install better laptop's battery support:Install better laptop's
 FALSE:Hardware - Install scanner support:Install utilties to support scanner in Ubuntu.:install-scanner-support
 FALSE:Hardware - Install webcam application:Install webcam application – cheese:install-webcam-cheese
 FALSE:IDE - Install Atom.io IDE:Install easy to customize IDE – Atom.io:install-atom
-FALSE:IDE - Install Eclipse IDE:Install IDE for java programing:install-eclipse
 FALSE:IDE - Install Powerful HEX editor – bless:Install hex editor - bless - more powerful, but needs more dependencies. – bless.:install-hex-bless-editor
 FALSE:IDE - Install qtCreator IDE:Install IDE for qt programs:install-qtcreator
 FALSE:IDE - Install Simple HEX editor - ghex:Install simple Gnome hex editor.:install-hex-gnome-editor
@@ -47,7 +47,7 @@ FALSE:Useful - Install ClamAV Antivirus:Install and configure ClamAV Antivirus:i
 FALSE:Useful - Install Kazam desktop recorder:Install Kazam - simple desktop recorder:install-desktop-recorder
 FALSE:Useful - Install Qalculate scientific calculator:Install Qalculate scientific calculator:install-qalculate
 FALSE:Useful - Install Slack:Install Slack team collaboration tool from snap package.:install-slack
-FALSE:Useful - Install task manager – TaskCoach:Install powerful task manager TaskCoach:install-taskcoach
+FALSE:Useful - Install task manager – TaskCoach (using AppImage):Install powerful task manager TaskCoach (using AppImage):install-taskcoach
 FALSE:Useful - Install Tellico – collections manager:Install Tellico – collections manager – books, movies, coins etc.:install-tellico
 FALSE:Useful - Install Thunderbird:Install Thunderbird mail client:install-thunderbird
 FALSE:Utilties - Install AMD-Nvidia graphics drivers:Install Install AMD-Nvidia graphics drivers:install-amd-nvidia-drivers

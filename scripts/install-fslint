@@ -1,0 +1,13 @@
+# install-fslint
+# Utilties - Install duplicate finder fslint
+# Install duplicate finder fslint
+
+## Duplicate finder fslint - has problem with python2 dependencies
+## Source: https://askubuntu.com/questions/1233710/where-is-fslint-duplicate-file-finder-for-ubuntu-20-04
+
+mkdir -p ~/Downloads/fslint
+cd ~/Downloads/fslint
+wget http://old-releases.ubuntu.com/ubuntu/pool/universe/p/pygtk/python-gtk2_2.24.0-6_amd64.deb
+wget http://old-releases.ubuntu.com/ubuntu/pool/universe/p/pygtk/python-glade2_2.24.0-6_amd64.deb
+wget http://old-releases.ubuntu.com/ubuntu/pool/universe/f/fslint/fslint_2.46-1_all.deb
+sudo apt-get install ./*.deb
