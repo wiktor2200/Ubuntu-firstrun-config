@@ -26,7 +26,7 @@ function start_generate () {
       echo -e "# This script is generated using: generate-script-from-config.bash from repo: https://github.com/wiktor2200/Ubuntu-firstrun-config\n"
       echo "# Get script's main directory"
       echo -e 'DIR=`dirname $0`'
-      echo -e 'LOG_FILE=/tmp/`date +%F_%T_ubuntu_firstrun_config_log`\n'
+      echo -e 'LOG_FILE=/home/$USER/`date +%F_%T_ubuntu_firstrun_config_log`\n'
 }
 
 function generate_subscripts_files () {

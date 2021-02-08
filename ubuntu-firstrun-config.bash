@@ -11,13 +11,13 @@
 #        AUTHOR:  wiktor2200, https://github.com/wiktor2200
 #          REPO:  https://github.com/wiktor2200/Ubuntu-firstrun-config
 #       CREATED:  2018-06-12
-#       UPDATED:  2021-02-07
+#       UPDATED:  2021-02-08
 #===============================================================================
 # This script is generated using: generate-script-from-config.bash from repo: https://github.com/wiktor2200/Ubuntu-firstrun-config
 
 # Get script's main directory
 DIR=`dirname $0`
-LOG_FILE=/tmp/`date +%F_%T_ubuntu_firstrun_config_log`
+LOG_FILE=/home/$USER/`date +%F_%T_ubuntu_firstrun_config_log`
 
 # Render zenity menu
 response=$(zenity --height=700 --width=1200 --window-icon=$DIR/ubuntu_icon.png --list --checklist --title="Configure your Ubuntu!" --column="State" --column="Task" --column="Description" TRUE "0Upgrade - Upgrade packages" "Perform apt dist-upgrade" \

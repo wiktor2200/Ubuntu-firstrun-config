@@ -17,7 +17,8 @@ bash ubuntu-firstrun-config.bash
 
 ## Troubleshooting
 In case of any problems and not being able to scroll the very long TTY output. There was logging feature introduced.
-> Logs location: `/tmp/YYYY-MM-DD_HH-MM-SS_ubuntu_firstrun_config_log`
+> Logs location: `~/YYYY-MM-DD_HH-MM-SS_ubuntu_firstrun_config_log`
+Logs are located in home directory on purpose. User has access to them and they are not deleted while `Performance - Enable tmp folder in RAM` option is run.
 
 # Screenshots
 Main menu:
