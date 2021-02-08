@@ -6,7 +6,7 @@
 ### While the work on Amarok 3 is still in progress (porting to KDE5), that's to only option to install it.
 
 ### https://launchpad.net/~pgomes/+archive/ubuntu/amarok
-sudo add-apt-repository ppa:pgomes/amarok
+sudo add-apt-repository -y ppa:pgomes/amarok
 sudo apt update
 
 sudo apt install -y amarok

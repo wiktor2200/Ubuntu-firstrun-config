@@ -6,9 +6,8 @@
 sudo snap install docker
 
 # Create and join the docker group
-sudo addgroup --system docker
-sudo adduser $USER docker
-newgrp docker
+sudo groupadd --system docker
+sudo usermod -a -G docker $USER
 
 # Disable and re-enable the docker snap
 sudo snap disable docker

@@ -10,4 +10,4 @@ cd ~/Downloads/fslint
 wget http://old-releases.ubuntu.com/ubuntu/pool/universe/p/pygtk/python-gtk2_2.24.0-6_amd64.deb
 wget http://old-releases.ubuntu.com/ubuntu/pool/universe/p/pygtk/python-glade2_2.24.0-6_amd64.deb
 wget http://old-releases.ubuntu.com/ubuntu/pool/universe/f/fslint/fslint_2.46-1_all.deb
-sudo apt-get install ./*.deb
+sudo apt-get install -y ./*.deb
