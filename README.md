@@ -30,7 +30,7 @@ Example summary:
 ## Features
 Full feature list from [config.csv](./Develop/config.csv) file in `Develop` directory in easy readable table.
 
-2021-02-07
+2021-02-12
 
 |Task|Description|Subscript|
 |---|---|---|
@@ -47,8 +47,10 @@ Full feature list from [config.csv](./Develop/config.csv) file in `Develop` dire
 |Utilties - Install Gnome tools|Install Gnome settings managers and utils.|[install-gnome-tools](/scripts/install-gnome-tools)|
 |Utilties - Install language packages|Installing language packages for your locale different than English.|[install-language-packages](/scripts/install-language-packages)|
 |Utilties - Install useful system utilties|Install Partitioning tools, space usage tools, hardware info tools.|[install-system-utilties](/scripts/install-system-utilties)|
+|Utilties - Install backup tools.|Install backup tools - luckybackup AKA rsync-gui and unison syncronizer.|[install-backup-tools](/scripts/install-backup-tools)|
 |Utilties - Replace default snap packages with native Gnome apps.|Replace default snap packages with native Gnome apps.|[replace-snap-packages](/scripts/replace-snap-packages)|
-|Utilties - Install duplicate finder fslint|Install duplicate finder fslint|[install-fslint](/scripts/install-fslint)|
+|Utilties - Install duplicate finder fslint.|Install duplicate finder fslint.|[install-fslint](/scripts/install-fslint)|
+|Utilties - Install Bleachbit cleaner.|Install Bleachbit powerful cache, temp files and garbage cleaner.|[install-bleachbit](/scripts/install-bleachbit)|
 |Cleanup - Uninstall Ubuntu dock|Uninstall Ubuntu Gnome dock.|[uninstall-ubuntu-dock](/scripts/uninstall-ubuntu-dock)|
 |Developer - Install Docker|Install Docker from snap package manager.|[install-docker](/scripts/install-docker)|
 |Developer - Install VirtualBox|Install Virtualbox virtual machines manager.|[install-virtualbox](/scripts/install-virtualbox)|

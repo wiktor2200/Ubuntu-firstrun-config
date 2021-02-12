@@ -11,7 +11,7 @@
 #        AUTHOR:  wiktor2200, https://github.com/wiktor2200
 #          REPO:  https://github.com/wiktor2200/Ubuntu-firstrun-config
 #       CREATED:  2018-06-12
-#       UPDATED:  2021-02-08
+#       UPDATED:  2021-02-12
 #===============================================================================
 # This script is generated using: generate-script-from-config.bash from repo: https://github.com/wiktor2200/Ubuntu-firstrun-config
 
@@ -33,8 +33,10 @@ TRUE "Utilties - Install codecs" "Codecs to support common audio, video formats 
 TRUE "Utilties - Install Gnome tools" "Install Gnome settings managers and utils." \
 TRUE "Utilties - Install language packages" "Installing language packages for your locale different than English." \
 TRUE "Utilties - Install useful system utilties" "Install Partitioning tools, space usage tools, hardware info tools." \
+TRUE "Utilties - Install backup tools." "Install backup tools - luckybackup AKA rsync-gui and unison syncronizer." \
 TRUE "Utilties - Replace default snap packages with native Gnome apps." "Replace default snap packages with native Gnome apps." \
-FALSE "Utilties - Install duplicate finder fslint" "Install duplicate finder fslint" \
+FALSE "Utilties - Install duplicate finder fslint." "Install duplicate finder fslint." \
+FALSE "Utilties - Install Bleachbit cleaner." "Install Bleachbit powerful cache, temp files and garbage cleaner." \
 FALSE "Cleanup - Uninstall Ubuntu dock" "Uninstall Ubuntu Gnome dock." \
 FALSE "Developer - Install Docker" "Install Docker from snap package manager." \
 FALSE "Developer - Install VirtualBox" "Install Virtualbox virtual machines manager." \
@@ -143,13 +145,21 @@ for word in $response ; do
  SUMMARY+="`cat $DIR/scripts/install-system-utilties`\n\n" 
  COMMAND_TO_RUN+="bash $DIR/scripts/install-system-utilties; " 
  ;;
+ "Utilties - Install backup tools.") 
+ SUMMARY+="`cat $DIR/scripts/install-backup-tools`\n\n" 
+ COMMAND_TO_RUN+="bash $DIR/scripts/install-backup-tools; " 
+ ;;
  "Utilties - Replace default snap packages with native Gnome apps.") 
  SUMMARY+="`cat $DIR/scripts/replace-snap-packages`\n\n" 
  COMMAND_TO_RUN+="bash $DIR/scripts/replace-snap-packages; " 
  ;;
- "Utilties - Install duplicate finder fslint") 
+ "Utilties - Install duplicate finder fslint.") 
  SUMMARY+="`cat $DIR/scripts/install-fslint`\n\n" 
  COMMAND_TO_RUN+="bash $DIR/scripts/install-fslint; " 
+ ;;
+ "Utilties - Install Bleachbit cleaner.") 
+ SUMMARY+="`cat $DIR/scripts/install-bleachbit`\n\n" 
+ COMMAND_TO_RUN+="bash $DIR/scripts/install-bleachbit; " 
  ;;
  "Cleanup - Uninstall Ubuntu dock") 
  SUMMARY+="`cat $DIR/scripts/uninstall-ubuntu-dock`\n\n" 

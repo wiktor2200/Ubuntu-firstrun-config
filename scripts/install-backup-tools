@@ -1,0 +1,5 @@
+# install-backup-tools
+# Utilties - Install backup tools.
+# Install backup tools - luckybackup AKA rsync-gui and unison syncronizer.
+
+sudo apt install -y luckybackup unison-gtk

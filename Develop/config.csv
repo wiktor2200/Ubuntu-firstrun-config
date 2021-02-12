@@ -11,8 +11,10 @@ TRUE:Utilties - Install codecs:Codecs to support common audio, video formats and
 TRUE:Utilties - Install Gnome tools:Install Gnome settings managers and utils.:install-gnome-tools
 TRUE:Utilties - Install language packages:Installing language packages for your locale different than English.:install-language-packages
 TRUE:Utilties - Install useful system utilties:Install Partitioning tools, space usage tools, hardware info tools.:install-system-utilties
+TRUE:Utilties - Install backup tools.:Install backup tools - luckybackup AKA rsync-gui and unison syncronizer.:install-backup-tools
 TRUE:Utilties - Replace default snap packages with native Gnome apps.:Replace default snap packages with native Gnome apps.:replace-snap-packages
-FALSE:Utilties - Install duplicate finder fslint:Install duplicate finder fslint:install-fslint
+FALSE:Utilties - Install duplicate finder fslint.:Install duplicate finder fslint.:install-fslint
+FALSE:Utilties - Install Bleachbit cleaner.:Install Bleachbit powerful cache, temp files and garbage cleaner.:install-bleachbit
 FALSE:Cleanup - Uninstall Ubuntu dock:Uninstall Ubuntu Gnome dock.:uninstall-ubuntu-dock
 FALSE:Developer - Install Docker:Install Docker from snap package manager.:install-docker
 FALSE:Developer - Install VirtualBox:Install Virtualbox virtual machines manager.:install-virtualbox
