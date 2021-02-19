@@ -11,8 +11,8 @@ mkdir -p $APPIMAGES_PATH
 ## Add PATH for AppImage entries
 echo -e "# Setup AppImage
 # ---------
-if [[ ! \"$PATH\" == *$APPIMAGES_PATH* ]]; then
-  export PATH=\"${PATH:+${PATH}:}$APPIMAGES_PATH\"
+if [[ ! \"\$PATH\" == *$APPIMAGES_PATH* ]]; then
+  export PATH=\"\${PATH:+\${PATH}:}$APPIMAGES_PATH\"
 fi" > /home/$USER/.appimage.bash
 
 ## AppImage entry to .bashrc (if not exist)
