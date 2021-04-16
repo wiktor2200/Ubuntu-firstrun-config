@@ -10,3 +10,17 @@ sudo add-apt-repository -y ppa:pgomes/amarok
 sudo apt update
 
 sudo apt install -y amarok
+
+# Fix broken desktop-entry for Amarok
+echo -e "[Desktop Entry]\n\
+Type=Application\n\
+Name=Amarok\n\
+GenericName=Audio Player\n\
+Exec=amarok %U\n\
+StartupWMClass=amarok\n\
+Comment=Amarok - Rediscover Your Music\n\
+Icon=amarok\n\
+# Add pure audio formats here, for other formats see amarok_*.desktop files\n\
+# See bug 242292\n\
+MimeType=audio/aac;audio/mp4;audio/mpeg;audio/mpegurl;audio/vnd.rn-realaudio;audio/vorbis;audio/x-flac;audio/x-mp3;audio/x-mpegurl;audio/x-ms-wma;audio/x-musepack;audio/x-oggflac;audio/x-pn-realaudio;audio/x-scpls;audio/x-speex;audio/x-vorbis;audio/x-wav;application/x-ogm-audio;audio/x-vorbis+ogg;audio/ogg;\n\
+Terminal=false" | sudo tee /usr/share/applications/org.kde.amarok.desktop > /dev/null
