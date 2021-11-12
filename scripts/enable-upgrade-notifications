@@ -1,0 +1,15 @@
+# enable-upgrade-notifications
+# 0Upgrade - Set upgrade notifications for all users
+# Set upgrade notifications for all users
+
+# Add update notifier to desktop entries
+echo -e "[Desktop Entry]\n\
+Name=Update Notifier\n\
+Comment=Check for available updates automatically\n\
+Icon=update-notifier\n\
+Exec=update-notifier --force\n\
+Terminal=false\n\
+Type=Application\n\
+NoDisplay=false\n\
+X-GNOME-Autostart-Delay=60\n\
+X-Ubuntu-Gettext-Domain=update-notifier" | tee ~/.config/autostart/update-notifier.desktop > /dev/null

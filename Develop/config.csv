@@ -1,4 +1,5 @@
 TRUE:0Upgrade - Upgrade packages:Perform apt dist-upgrade:perform-upgrade
+TRUE:0Upgrade - Set upgrade notifications for all users:Set upgrade notifications for all users:enable-upgrade-notifications
 TRUE:Cleanup - Clean packages:Perform apt autoremove, clean and autoclean:perform-cleanup
 TRUE:Cleanup - Uninstall garbage Gnome and Ubuntu packages:Uninstall some garbage packages e.g. orca, shotwell, rhythmbox, totem, transmission:uninstall-garbage-packages
 TRUE:Documents - Install Libreoffice:Install full Libreoffice package with language packages.:install-libreoffice

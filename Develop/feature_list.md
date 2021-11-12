@@ -1,8 +1,9 @@
-2021-02-12
+2021-11-12
 
 |Task|Description|Subscript|
 |---|---|---|
 |0Upgrade - Upgrade packages|Perform apt dist-upgrade|[perform-upgrade](/scripts/perform-upgrade)|
+|0Upgrade - Set upgrade notifications for all users|Set upgrade notifications for all users|[enable-upgrade-notifications](/scripts/enable-upgrade-notifications)|
 |Cleanup - Clean packages|Perform apt autoremove, clean and autoclean|[perform-cleanup](/scripts/perform-cleanup)|
 |Cleanup - Uninstall garbage Gnome and Ubuntu packages|Uninstall some garbage packages e.g. orca, shotwell, rhythmbox, totem, transmission|[uninstall-garbage-packages](/scripts/uninstall-garbage-packages)|
 |Documents - Install Libreoffice|Install full Libreoffice package with language packages.|[install-libreoffice](/scripts/install-libreoffice)|

@@ -11,7 +11,7 @@
 #        AUTHOR:  wiktor2200, https://github.com/wiktor2200
 #          REPO:  https://github.com/wiktor2200/Ubuntu-firstrun-config
 #       CREATED:  2018-06-12
-#       UPDATED:  2021-02-12
+#       UPDATED:  2021-11-12
 #===============================================================================
 # This script is generated using: generate-script-from-config.bash from repo: https://github.com/wiktor2200/Ubuntu-firstrun-config
 
@@ -21,6 +21,7 @@ LOG_FILE=/home/$USER/`date +%F_%T_ubuntu_firstrun_config_log`
 
 # Render zenity menu
 response=$(zenity --height=700 --width=1200 --window-icon=$DIR/ubuntu_icon.png --list --checklist --title="Configure your Ubuntu!" --column="State" --column="Task" --column="Description" TRUE "0Upgrade - Upgrade packages" "Perform apt dist-upgrade" \
+TRUE "0Upgrade - Set upgrade notifications for all users" "Set upgrade notifications for all users" \
 TRUE "Cleanup - Clean packages" "Perform apt autoremove, clean and autoclean" \
 TRUE "Cleanup - Uninstall garbage Gnome and Ubuntu packages" "Uninstall some garbage packages e.g. orca, shotwell, rhythmbox, totem, transmission" \
 TRUE "Documents - Install Libreoffice" "Install full Libreoffice package with language packages." \
@@ -96,6 +97,10 @@ for word in $response ; do
  "0Upgrade - Upgrade packages") 
  SUMMARY+="`cat $DIR/scripts/perform-upgrade`\n\n" 
  COMMAND_TO_RUN+="bash $DIR/scripts/perform-upgrade; " 
+ ;;
+ "0Upgrade - Set upgrade notifications for all users") 
+ SUMMARY+="`cat $DIR/scripts/enable-upgrade-notifications`\n\n" 
+ COMMAND_TO_RUN+="bash $DIR/scripts/enable-upgrade-notifications; " 
  ;;
  "Cleanup - Clean packages") 
  SUMMARY+="`cat $DIR/scripts/perform-cleanup`\n\n" 
