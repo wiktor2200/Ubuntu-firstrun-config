@@ -5,6 +5,6 @@
 ## Turn off swap
 sudo swapoff -a
 
-## Removing swapfile is deprecated since LVM Partitioning system is default in Ubuntu
-# sudo sed -i '/\/swapfile/d' /etc/fstab
-# sudo rm -f /swapfile
+## Remove swapfile
+sudo sed -i '/\/swapfile/d' /etc/fstab
+sudo rm -f /swapfile

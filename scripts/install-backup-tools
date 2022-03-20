@@ -2,4 +2,27 @@
 # Utilties - Install backup tools.
 # Install backup tools - luckybackup AKA rsync-gui and unison syncronizer.
 
-sudo apt install -y luckybackup unison-gtk
+sudo apt install -y luckybackup
+
+## Unison is installed from official repository: https://github.com/bcpierce00/unison
+wget https://github.com/bcpierce00/unison/releases/download/v2.52.0/unison-v2.52.0+ocaml-4.12.1+x86_64.linux.tar.gz -O /tmp/unison.tar.gz
+mkdir /tmp/unison
+tar -xzf /tmp/unison.tar.gz -C /tmp/unison
+sudo install -C -o root -m 755 /tmp/unison/bin/* /usr/local/bin/
+
+wget https://raw.githubusercontent.com/bcpierce00/unison/master/icons/U.svg -O /tmp/unison/unison.svg
+sudo install -C -o root -m 644 /tmp/unison/unison.svg /usr/share/icons/
+
+# Add Unison Desktop Entry
+echo -e "[Desktop Entry]\n\
+Name=Unison\n\
+Comment=GTK interface for the unison file synchronization tool\n\
+GenericName=File synchronization tool\n\
+Exec=unison-gtk2\n\
+Terminal=false\n\
+X-MultipleArgs=false\n\
+Type=Application\n\
+Icon=unison.svg\n\
+Categories=Utility;FileTools;GTK;\n\
+StartupWMClass=Unison-gtk\n\
+StartupNotify=true" | sudo tee /usr/share/applications/unison.desktop > /dev/null
