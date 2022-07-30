@@ -10,4 +10,4 @@ jobs:
       - name: Run enable-tmp-ram
         run: sudo bash ./scripts/enable-tmp-ram
       - name: Run install-acetoneiso
-        run: sudo bash ./scripts.install-acetoneiso
+        run: sudo bash ./scripts/install-acetoneiso
