@@ -40,6 +40,7 @@ else
 fi
 
 ## Integrate TaskCoach AppImage with desktop
+mkdir -p /home/$USER/.local/share/applications
 echo -e "[Desktop Entry]\n\
 Type=Application\n\
 Name=Task Coach\n\

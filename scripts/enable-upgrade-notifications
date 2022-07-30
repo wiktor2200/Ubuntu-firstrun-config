@@ -3,6 +3,7 @@
 # Set upgrade notifications for all users
 
 # Add update notifier to desktop entries
+mkdir -p ~/.config/autostart
 echo -e "[Desktop Entry]\n\
 Name=Update Notifier\n\
 Comment=Check for available updates automatically\n\

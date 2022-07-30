@@ -7,6 +7,11 @@ sudo apt remove -y --purge aisleriot branding-ubuntu cheese deja-dup example-con
 # Get system language (locale)
 SYS_LANGUAGE=`locale | grep LANG | cut -d= -f2 | cut -d_ -f1`
 
+## Solve problem when locale is not set at all
+if [[ $SYS_LANGUAGE == "C.UTF-8" ]] ; then
+  SYS_LANGUAGE="en"
+fi
+
 # uninstall non-english language packages
 sudo apt remove --purge -y `dpkg-query -W --showformat='${Package}\n' | grep language-pack | egrep -v '\-en' | egrep -v "$SYS_LANGUAGE"`
 sudo apt remove --purge -y `dpkg-query -W --showformat='${Package}\n' | grep firefox-locale | egrep -v '\-en' | egrep -v "$SYS_LANGUAGE"`

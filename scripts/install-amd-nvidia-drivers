@@ -2,4 +2,5 @@
 # Utilties - Install AMD-Nvidia graphics drivers
 # Install Install AMD-Nvidia graphics drivers
 
+sudo apt install ubuntu-drivers-common
 sudo ubuntu-drivers autoinstall
