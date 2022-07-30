@@ -3,7 +3,7 @@
 # Install Nextcloud client.
 
 sudo add-apt-repository -y ppa:nextcloud-devs/client
-sudo apt update
+sudo apt-get update
 sudo apt-get install -y nextcloud-client 
 
 ## Install nemo integration if nemo is installed

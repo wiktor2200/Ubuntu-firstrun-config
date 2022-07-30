@@ -9,5 +9,5 @@ sudo apt-get install -y wget gnupg2 curl binutils apt-transport-https
 
 wget -nv https://download.owncloud.com/desktop/ownCloud/stable/latest/linux/Ubuntu_22.04/Release.key -O - | sudo apt-key add -
 echo 'deb https://download.owncloud.com/desktop/ownCloud/stable/latest/linux/Ubuntu_22.04/ /' | sudo tee -a /etc/apt/sources.list.d/owncloud.list
-sudo apt update
+sudo apt-get update
 sudo apt-get install -y owncloud-client
