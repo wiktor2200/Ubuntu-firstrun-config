@@ -18,142 +18,209 @@ on: [pull_request]
 jobs:
   check_bash_scripts:
     runs-on: ubuntu-22.04
-    continue-on-error: true
     steps:
       - uses: actions/checkout@v3
       - name: Run perform-upgrade
         run: sudo bash ./scripts/perform-upgrade
+        continue-on-error: true
       - name: Run enable-upgrade-notifications
         run: sudo bash ./scripts/enable-upgrade-notifications
+        continue-on-error: true
       - name: Run perform-cleanup
         run: sudo bash ./scripts/perform-cleanup
+        continue-on-error: true
       - name: Run uninstall-garbage-packages
         run: sudo bash ./scripts/uninstall-garbage-packages
+        continue-on-error: true
       - name: Run install-libreoffice
         run: sudo bash ./scripts/install-libreoffice
+        continue-on-error: true
       - name: Run install-vs-code
         run: sudo bash ./scripts/install-vs-code
+        continue-on-error: true
       - name: Run install-vlc
         run: sudo bash ./scripts/install-vlc
+        continue-on-error: true
       - name: Run install-gimp
         run: sudo bash ./scripts/install-gimp
+        continue-on-error: true
       - name: Run install-password-manager
         run: sudo bash ./scripts/install-password-manager
+        continue-on-error: true
       - name: Run install-archives-tools
         run: sudo bash ./scripts/install-archives-tools
+        continue-on-error: true
       - name: Run install-codecs
         run: sudo bash ./scripts/install-codecs
+        continue-on-error: true
       - name: Run install-gnome-tools
         run: sudo bash ./scripts/install-gnome-tools
+        continue-on-error: true
       - name: Run install-language-packages
         run: sudo bash ./scripts/install-language-packages
+        continue-on-error: true
       - name: Run install-system-utilties
         run: sudo bash ./scripts/install-system-utilties
+        continue-on-error: true
       - name: Run install-backup-tools
         run: sudo bash ./scripts/install-backup-tools
+        continue-on-error: true
       - name: Run replace-snap-packages
         run: sudo bash ./scripts/replace-snap-packages
+        continue-on-error: true
       - name: Run install-fslint
         run: sudo bash ./scripts/install-fslint
+        continue-on-error: true
       - name: Run install-bleachbit
         run: sudo bash ./scripts/install-bleachbit
+        continue-on-error: true
       - name: Run uninstall-ubuntu-dock
         run: sudo bash ./scripts/uninstall-ubuntu-dock
+        continue-on-error: true
       - name: Run install-docker
         run: sudo bash ./scripts/install-docker
+        continue-on-error: true
       - name: Run install-virtualbox
         run: sudo bash ./scripts/install-virtualbox
+        continue-on-error: true
       - name: Run install-calibre
         run: sudo bash ./scripts/install-calibre
+        continue-on-error: true
       - name: Run install-ocr
         run: sudo bash ./scripts/install-ocr
+        continue-on-error: true
       - name: Run install-pdf-tools
         run: sudo bash ./scripts/install-pdf-tools
+        continue-on-error: true
       - name: Run install-qownnotes
         run: sudo bash ./scripts/install-qownnotes
+        continue-on-error: true
       - name: Run fix-top-panel-icons
         run: sudo bash ./scripts/fix-top-panel-icons
+        continue-on-error: true
       - name: Run install-dia
         run: sudo bash ./scripts/install-dia
+        continue-on-error: true
       - name: Run install-gnome-paint
         run: sudo bash ./scripts/install-gnome-paint
+        continue-on-error: true
       - name: Run install-inkscape
         run: sudo bash ./scripts/install-inkscape
+        continue-on-error: true
       - name: Run install-battery-support
         run: sudo bash ./scripts/install-battery-support
+        continue-on-error: true
       - name: Run install-scanner-support
         run: sudo bash ./scripts/install-scanner-support
+        continue-on-error: true
       - name: Run install-webcam-cheese
         run: sudo bash ./scripts/install-webcam-cheese
+        continue-on-error: true
       - name: Run install-atom
         run: sudo bash ./scripts/install-atom
+        continue-on-error: true
       - name: Run install-hex-bless-editor
         run: sudo bash ./scripts/install-hex-bless-editor
+        continue-on-error: true
       - name: Run install-qtcreator
         run: sudo bash ./scripts/install-qtcreator
+        continue-on-error: true
       - name: Run install-hex-gnome-editor
         run: sudo bash ./scripts/install-hex-gnome-editor
+        continue-on-error: true
       - name: Run install-amarok
         run: sudo bash ./scripts/install-amarok
+        continue-on-error: true
       - name: Run install-audacity
         run: sudo bash ./scripts/install-audacity
+        continue-on-error: true
       - name: Run install-sysadmin-network-tools
         run: sudo bash ./scripts/install-sysadmin-network-tools
+        continue-on-error: true
       - name: Run enable-tmp-ram
         run: sudo bash ./scripts/enable-tmp-ram
+        continue-on-error: true
       - name: Run remove-swapfile
         run: sudo bash ./scripts/remove-swapfile
+        continue-on-error: true
       - name: Run install-photo-utils
         run: sudo bash ./scripts/install-photo-utils
+        continue-on-error: true
       - name: Run install-digikam
         run: sudo bash ./scripts/install-digikam
+        continue-on-error: true
       - name: Run install-dropbox
         run: sudo bash ./scripts/install-dropbox
+        continue-on-error: true
       - name: Run install-nextcloud
         run: sudo bash ./scripts/install-nextcloud
+        continue-on-error: true
       - name: Run install-owncloud
         run: sudo bash ./scripts/install-owncloud
+        continue-on-error: true
       - name: Run install-cinnamon
         run: sudo bash ./scripts/install-cinnamon
+        continue-on-error: true
       - name: Run install-chromium
         run: sudo bash ./scripts/install-chromium
+        continue-on-error: true
       - name: Run install-antivir
         run: sudo bash ./scripts/install-antivir
+        continue-on-error: true
       - name: Run install-desktop-recorder
         run: sudo bash ./scripts/install-desktop-recorder
+        continue-on-error: true
       - name: Run install-qalculate
         run: sudo bash ./scripts/install-qalculate
+        continue-on-error: true
       - name: Run install-slack
         run: sudo bash ./scripts/install-slack
+        continue-on-error: true
       - name: Run install-taskcoach
         run: sudo bash ./scripts/install-taskcoach
+        continue-on-error: true
       - name: Run install-tellico
         run: sudo bash ./scripts/install-tellico
+        continue-on-error: true
       - name: Run install-thunderbird
         run: sudo bash ./scripts/install-thunderbird
+        continue-on-error: true
       - name: Run install-amd-nvidia-drivers
         run: sudo bash ./scripts/install-amd-nvidia-drivers
+        continue-on-error: true
       - name: Run install-mkusb
         run: sudo bash ./scripts/install-mkusb
+        continue-on-error: true
       - name: Run install-cd-dvd-burner
         run: sudo bash ./scripts/install-cd-dvd-burner
+        continue-on-error: true
       - name: Run install-fzf
         run: sudo bash ./scripts/install-fzf
+        continue-on-error: true
       - name: Run install-guake
         run: sudo bash ./scripts/install-guake
+        continue-on-error: true
       - name: Run install-acetoneiso
         run: sudo bash ./scripts/install-acetoneiso
+        continue-on-error: true
       - name: Run install-firejail
         run: sudo bash ./scripts/install-firejail
+        continue-on-error: true
       - name: Run install-synaptic
         run: sudo bash ./scripts/install-synaptic
+        continue-on-error: true
       - name: Run replace-nautilus-nemo
         run: sudo bash ./scripts/replace-nautilus-nemo
+        continue-on-error: true
       - name: Run replace-gedit-pluma
         run: sudo bash ./scripts/replace-gedit-pluma
+        continue-on-error: true
       - name: Run set-grub
         run: sudo bash ./scripts/set-grub
+        continue-on-error: true
       - name: Run show-hidden-autostart-entries
         run: sudo bash ./scripts/show-hidden-autostart-entries
+        continue-on-error: true
       - name: Run uninstall-old-1604-dependencies
         run: sudo bash ./scripts/uninstall-old-1604-dependencies
+        continue-on-error: true
