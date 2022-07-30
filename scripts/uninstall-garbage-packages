@@ -2,7 +2,7 @@
 # Cleanup - Uninstall garbage Gnome and Ubuntu packages
 # Uninstall some garbage packages e.g. orca, shotwell, rhythmbox, totem, transmission
 
-sudo apt remove -y --purge aisleriot branding-ubuntu cheese deja-dup example-content gnome-calendar gnome-initial-setup gnome-mahjongg gnome-mines gnome-shell-extension-appindicator gnome-sudoku gnome-todo gnome-todo-common libgnome-todo orca remmina remmina-common remmina-plugin-rdp remmina-plugin-secret remmina-plugin-vnc rhythmbox rhythmbox-data rhythmbox-plugin-alternative-toolbar rhythmbox-plugins shotwell shotwell-common simple-scan totem totem-common totem-plugins transmission-common transmission-gtk ubuntu-advantage-tools ubuntu-desktop ubuntu-report ubuntu-web-launchers usb-creator-gtk vino zeitgeist-core
+sudo apt-get remove -y --purge aisleriot branding-ubuntu cheese deja-dup example-content gnome-calendar gnome-initial-setup gnome-mahjongg gnome-mines gnome-shell-extension-appindicator gnome-sudoku gnome-todo gnome-todo-common libgnome-todo orca remmina remmina-common remmina-plugin-rdp remmina-plugin-secret remmina-plugin-vnc rhythmbox rhythmbox-data rhythmbox-plugin-alternative-toolbar rhythmbox-plugins shotwell shotwell-common simple-scan totem totem-common totem-plugins transmission-common transmission-gtk ubuntu-advantage-tools ubuntu-desktop ubuntu-report ubuntu-web-launchers usb-creator-gtk vino zeitgeist-core
 
 # Get system language (locale)
 SYS_LANGUAGE=`locale | grep LANG | cut -d= -f2 | cut -d_ -f1`
@@ -13,8 +13,8 @@ if [[ $SYS_LANGUAGE == "C.UTF-8" ]] ; then
 fi
 
 # uninstall non-english language packages
-sudo apt remove --purge -y `dpkg-query -W --showformat='${Package}\n' | grep language-pack | egrep -v '\-en' | egrep -v "$SYS_LANGUAGE"`
-sudo apt remove --purge -y `dpkg-query -W --showformat='${Package}\n' | grep firefox-locale | egrep -v '\-en' | egrep -v "$SYS_LANGUAGE"`
-sudo apt remove --purge -y `dpkg-query -W --showformat='${Package}\n' | grep thunderbird-locale | egrep -v '\-en' | egrep -v "$SYS_LANGUAGE"`
-sudo apt remove --purge -y `dpkg-query -W --showformat='${Package}\n' | grep libreoffice-help | egrep -v '\-en' | egrep -v "$SYS_LANGUAGE"`
-sudo apt remove --purge -y `dpkg-query -W --showformat='${Package}\n' | grep libreoffice-l10n | egrep -v '\-en' | egrep -v "$SYS_LANGUAGE"`
+sudo apt-get remove -y --purge `dpkg-query -W --showformat='${Package}\n' | grep language-pack | egrep -v '\-en' | egrep -v "$SYS_LANGUAGE"`
+sudo apt-get remove -y --purge `dpkg-query -W --showformat='${Package}\n' | grep firefox-locale | egrep -v '\-en' | egrep -v "$SYS_LANGUAGE"`
+sudo apt-get remove -y --purge `dpkg-query -W --showformat='${Package}\n' | grep thunderbird-locale | egrep -v '\-en' | egrep -v "$SYS_LANGUAGE"`
+sudo apt-get remove -y --purge `dpkg-query -W --showformat='${Package}\n' | grep libreoffice-help | egrep -v '\-en' | egrep -v "$SYS_LANGUAGE"`
+sudo apt-get remove -y --purge `dpkg-query -W --showformat='${Package}\n' | grep libreoffice-l10n | egrep -v '\-en' | egrep -v "$SYS_LANGUAGE"`

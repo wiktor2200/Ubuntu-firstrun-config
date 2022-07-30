@@ -2,4 +2,4 @@
 # System - Install Cinnamon desktop manager
 # Install Cinnamon desktop manager
 
-sudo apt install -y cinnamon-core
+sudo apt-get install -y cinnamon-core

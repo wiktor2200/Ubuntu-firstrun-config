@@ -2,4 +2,4 @@
 # Photos - Install GIMP
 # Install popular photo editor GIMP.
 
-sudo apt install -y gimp gimp-data-extras gimp-plugin-registry
+sudo apt-get install -y gimp gimp-data-extras gimp-plugin-registry

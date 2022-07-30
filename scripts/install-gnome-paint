@@ -2,4 +2,4 @@
 # Graphics - Install Gnome Paint - replacement for MSPaint.
 # Install Gnome Paint - Linux alternative for MSPaint.
 
-sudo apt install -y gnome-paint
+sudo apt-get install -y gnome-paint

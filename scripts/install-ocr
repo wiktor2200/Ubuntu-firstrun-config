@@ -2,4 +2,4 @@
 # Documents - Install OCR Reader
 # Install utilties to OCR read files.
 
-sudo apt install -y gimagereader tesseract-ocr tesseract-ocr-pol
+sudo apt-get install -y gimagereader tesseract-ocr tesseract-ocr-pol

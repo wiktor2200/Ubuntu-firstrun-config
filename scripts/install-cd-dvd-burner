@@ -2,4 +2,4 @@
 # Utilties - Install CD-DVD burner
 # Install CD-DVD burner – if you have disk drive
 
-sudo apt install -y brasero
+sudo apt-get install -y brasero

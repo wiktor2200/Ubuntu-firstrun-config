@@ -2,4 +2,4 @@
 # Multimedia - Install Audacity audio editor
 # Install Audacity audio editor
 
-sudo apt install -y audacity
+sudo apt-get install -y audacity

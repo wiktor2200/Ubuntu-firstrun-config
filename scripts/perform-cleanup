@@ -3,5 +3,5 @@
 # Perform apt autoremove, clean and autoclean
 
 sudo apt clean
-sudo apt autoclean
-sudo apt autoremove -y
+sudo apt-get autoclean
+sudo apt-get autoremove -y --purge

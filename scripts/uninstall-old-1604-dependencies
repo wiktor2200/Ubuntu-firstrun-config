@@ -2,9 +2,9 @@
 # Cleanup - Uninstall Ubuntu 16.04 old dependencies.
 # Uninstall 16.04 garbage dependencies after upgrade to 18.04.
 
-sudo apt remove --purge -y account-plugin-*
-sudo apt remove --purge -y libaccount-plugin-*
-sudo apt remove --purge -y flashplugin-installer
-sudo apt remove --purge -y libunity-* unity-accessibility-profiles unity-asset-pool unity-greeter unity-lens-* unity-schemas unity-scope* 
-sudo apt remove --purge -y xserver-.*-16.04
-sudo apt autoremove -y
+sudo apt-get remove -y --purge account-plugin-*
+sudo apt-get remove -y --purge libaccount-plugin-*
+sudo apt-get remove -y --purge flashplugin-installer
+sudo apt-get remove -y --purge libunity-* unity-accessibility-profiles unity-asset-pool unity-greeter unity-lens-* unity-schemas unity-scope* 
+sudo apt-get remove -y --purge xserver-.*-16.04
+sudo apt-get autoremove -y

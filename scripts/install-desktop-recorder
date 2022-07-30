@@ -2,4 +2,4 @@
 # Useful - Install Kazam desktop recorder
 # Install Kazam - simple desktop recorder
 
-sudo apt install -y kazam
+sudo apt-get install -y kazam

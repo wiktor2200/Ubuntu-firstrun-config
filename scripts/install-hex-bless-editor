@@ -2,4 +2,4 @@
 # IDE - Install Powerful HEX editor – bless
 # Install hex editor - bless - more powerful, but needs more dependencies. – bless.
 
-sudo apt install -y bless
+sudo apt-get install -y bless

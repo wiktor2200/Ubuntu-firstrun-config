@@ -2,4 +2,4 @@
 # Hardware - Install webcam application
 # Install webcam application – cheese
 
-sudo apt install -y cheese
+sudo apt-get install -y cheese

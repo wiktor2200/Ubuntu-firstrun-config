@@ -2,4 +2,4 @@
 # Documents - Install ebook reader
 # Install ebook reader – calibre
 
-sudo apt install -y calibre
+sudo apt-get install -y calibre

@@ -2,7 +2,7 @@
 # Multimedia - Install VLC
 # Install popular media player - both music and videos.
 
-sudo apt install -y vlc
+sudo apt-get install -y vlc
 
 # Set as default Gnome media player
 sudo mkdir -p /etc/gnome

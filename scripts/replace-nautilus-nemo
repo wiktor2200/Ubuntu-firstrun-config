@@ -2,7 +2,7 @@
 # System - Replace filemanager Nautilus with Nemo
 # Replace file manager Nautilus with more powerful Nemo
 
-sudo apt install -y nemo nemo-fileroller
+sudo apt-get install -y nemo nemo-fileroller
 
 # Set nemo as main filemanager
 sudo xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
@@ -25,4 +25,4 @@ X-GNOME-Provides=filemanager\n\
 Comment=Start Nemo desktop at log in" | sudo tee /etc/xdg/autostart/nemo-desktop.desktop > /dev/null
 
 # Remove Nautilus
-sudo apt remove -y --purge  nautilus nautilus-extension-gnome-terminal nautilus-sendto nautilus-share
+sudo apt-get remove -y --purge  nautilus nautilus-extension-gnome-terminal nautilus-sendto nautilus-share

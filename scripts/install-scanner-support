@@ -2,4 +2,4 @@
 # Hardware - Install scanner support
 # Install utilties to support scanner in Ubuntu.
 
-sudo apt install -y xsane simple-scan
+sudo apt-get install -y xsane simple-scan

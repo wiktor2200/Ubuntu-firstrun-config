@@ -2,4 +2,4 @@
 # Utilties - Install Bleachbit cleaner.
 # Install Bleachbit powerful cache, temp files and garbage cleaner.
 
-sudo apt install -y bleachbit
+sudo apt-get install -y bleachbit

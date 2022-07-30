@@ -2,4 +2,4 @@
 # Utilties - Install Synaptic package manager
 # Install Synaptic package manager
 
-sudo apt install -y synaptic
+sudo apt-get install -y synaptic

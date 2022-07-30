@@ -2,10 +2,10 @@
 # System - Replace notepad gedit with pluma
 # Replace default gedit with powerful pluma notepad.
 
-sudo apt install -y pluma
+sudo apt-get install -y pluma
 
 # Set as default notepad
 sudo sed -i 's/gedit.desktop/pluma.desktop/g' /etc/gnome/defaults.list
 
 # Uninstall gedit
-sudo apt remove -y --purge gedit*
+sudo apt-get remove -y --purge gedit*

@@ -10,4 +10,4 @@ if [[ $SYS_LANGUAGE == "C.UTF-8" ]] ; then
   SYS_LANGUAGE="en"
 fi
 
-sudo apt install -y thunderbird thunderbird-gnome-support thunderbird-locale-en thunderbird-locale-$SYS_LANGUAGE
+sudo apt-get install -y thunderbird thunderbird-gnome-support thunderbird-locale-en thunderbird-locale-$SYS_LANGUAGE

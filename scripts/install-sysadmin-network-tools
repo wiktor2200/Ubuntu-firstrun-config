@@ -2,4 +2,4 @@
 # Network - Install sysadmin network utilties
 # Install utilties to monitor network traffic e.g. nethogs, nmap, iftop, whois, net-tools etc.
 
-sudo apt install -y iftop nethogs net-tools nmap whois wireshark
+sudo apt-get install -y iftop nethogs net-tools nmap whois wireshark

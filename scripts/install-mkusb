@@ -4,4 +4,4 @@
 
 sudo add-apt-repository -y ppa:mkusb/ppa
 sudo apt update
-sudo apt install -y mkusb mkusb-nox usb-pack-efi
+sudo apt-get install -y mkusb mkusb-nox usb-pack-efi
