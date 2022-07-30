@@ -13,7 +13,7 @@
 #       CREATED:  2018-06-12
 #===============================================================================
 
-UBUNTU_VERSION="20.04"
+UBUNTU_VERSION="22.04"
 
 # Get script's main directory
 DIR=`dirname $0`
