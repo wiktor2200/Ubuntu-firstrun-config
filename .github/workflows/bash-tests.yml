@@ -1,11 +1,13 @@
 ---
 name: Check Bash scripts
-on: [push, pull_request]
+on: [pull_request]
 
 jobs:
   check_bash_scripts:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
-      - name: Run 
+      - name: Run enable-tmp-ram
         run: sudo bash ./scripts/enable-tmp-ram
+      - name: Run install-acetoneiso
+        run: sudo bash ./scripts.install-acetoneiso
