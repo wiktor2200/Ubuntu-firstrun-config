@@ -8,5 +8,5 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run 
-        run: ./scripts/enable-tmp-ram
+        run: sudo ./scripts/enable-tmp-ram
         shell: bash
