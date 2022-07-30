@@ -2,7 +2,7 @@
 # Cleanup - Uninstall garbage Gnome and Ubuntu packages
 # Uninstall some garbage packages e.g. orca, shotwell, rhythmbox, totem, transmission
 
-sudo apt-get remove -y --purge aisleriot branding-ubuntu cheese deja-dup example-content gnome-calendar gnome-initial-setup gnome-mahjongg gnome-mines gnome-shell-extension-appindicator gnome-sudoku gnome-todo gnome-todo-common libgnome-todo orca remmina remmina-common remmina-plugin-rdp remmina-plugin-secret remmina-plugin-vnc rhythmbox rhythmbox-data rhythmbox-plugin-alternative-toolbar rhythmbox-plugins shotwell shotwell-common simple-scan totem totem-common totem-plugins transmission-common transmission-gtk ubuntu-advantage-tools ubuntu-desktop ubuntu-report ubuntu-web-launchers usb-creator-gtk vino zeitgeist-core
+sudo apt-get remove -y --purge aisleriot branding-ubuntu cheese deja-dup example-content gnome-calendar gnome-initial-setup gnome-mahjongg gnome-mines gnome-shell-extension-appindicator gnome-sudoku gnome-todo gnome-todo-common libgnome-todo orca remmina remmina-common remmina-plugin-rdp remmina-plugin-secret remmina-plugin-vnc rhythmbox rhythmbox-data rhythmbox-plugin-alternative-toolbar rhythmbox-plugins shotwell shotwell-common simple-scan totem totem-common totem-plugins transmission-common transmission-gtk ubuntu-desktop ubuntu-report usb-creator-gtk vino zeitgeist-core
 
 # Get system language (locale)
 SYS_LANGUAGE=`locale | grep LANG | cut -d= -f2 | cut -d_ -f1`
