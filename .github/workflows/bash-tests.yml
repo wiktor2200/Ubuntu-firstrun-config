@@ -16,19 +16,21 @@ name: Check Bash scripts
 on: [pull_request]
 
 jobs:
-  check_bash_scripts:
+  perform-upgrade:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run perform-upgrade
         run: sudo bash ./scripts/perform-upgrade
-        continue-on-error: true
+  enable-upgrade-notifications:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
       - name: Run enable-upgrade-notifications
         run: sudo bash ./scripts/enable-upgrade-notifications
-        continue-on-error: true
+  perform-cleanup:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
       - name: Run perform-cleanup
         run: sudo bash ./scripts/perform-cleanup
-        continue-on-error: true
-      - name: Run uninstall-garbage-packages
-        run: sudo bash ./scripts/uninstall-garbage-packages
-        continue-on-error: true
