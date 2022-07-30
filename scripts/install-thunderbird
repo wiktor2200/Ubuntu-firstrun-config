@@ -3,6 +3,11 @@
 # Install Thunderbird mail client
 
 # Get system language (locale)
-SYS_LANGUAGE=`locale | grep LANG | cut -d= -f2 | cut -d_ -f1`
+if [[ -v SYS_LANGUAGE ]];
+then
+    echo "SYS_LANGUAGE variable is already set $SYS_LANGUAGE"
+else
+    SYS_LANGUAGE=`locale | grep LANG | cut -d= -f2 | cut -d_ -f1`
+fi
 
 sudo apt install -y thunderbird thunderbird-gnome-support thunderbird-locale-en thunderbird-locale-$SYS_LANGUAGE

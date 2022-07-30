@@ -3,6 +3,11 @@
 # Install full Libreoffice package with language packages.
 
 # Get system language (locale)
-SYS_LANGUAGE=`locale | grep LANG | cut -d= -f2 | cut -d_ -f1`
+if [[ -v SYS_LANGUAGE ]];
+then
+    echo "SYS_LANGUAGE variable is already set $SYS_LANGUAGE"
+else
+    SYS_LANGUAGE=`locale | grep LANG | cut -d= -f2 | cut -d_ -f1`
+fi
 
 sudo apt install -y libreoffice-calc libreoffice-draw libreoffice-gnome libreoffice-help-$SYS_LANGUAGE  libreoffice-impress libreoffice-java-common libreoffice-l10n-$SYS_LANGUAGE libreoffice-l10n-en-gb libreoffice-math libreoffice-ogltrans libreoffice-pdfimport libreoffice-style-breeze libreoffice-writer

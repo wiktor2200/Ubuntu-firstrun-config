@@ -15,6 +15,9 @@
 name: Check Bash scripts
 on: [pull_request]
 
+env:
+  SYS_LANGUAGE: en
+
 jobs:
   perform-upgrade:
     runs-on: ubuntu-20.04
