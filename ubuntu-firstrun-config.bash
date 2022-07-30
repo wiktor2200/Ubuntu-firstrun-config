@@ -36,7 +36,8 @@ TRUE "Utilties - Install language packages" "Installing language packages for yo
 TRUE "Utilties - Install useful system utilties" "Install Partitioning tools, space usage tools, hardware info tools." \
 TRUE "Utilties - Install backup tools." "Install backup tools - luckybackup AKA rsync-gui and unison syncronizer." \
 TRUE "Utilties - Replace default snap packages with native Gnome apps." "Replace default snap packages with native Gnome apps." \
-FALSE "Utilties - Install duplicate finder fslint." "Install duplicate finder fslint." \
+TRUE "Utilties - Replace firefox snap package with native apt." "Replace firefox snap package with native apt." \
+FALSE "Utilties - Install duplicate finder czkawka. (using AppImage)" "Install duplicate finder czkawka. (using AppImage)" \
 FALSE "Utilties - Install Bleachbit cleaner." "Install Bleachbit powerful cache, temp files and garbage cleaner." \
 FALSE "Cleanup - Uninstall Ubuntu dock" "Uninstall Ubuntu Gnome dock." \
 FALSE "Developer - Install Docker" "Install Docker from snap package manager." \
@@ -158,9 +159,13 @@ for word in $response ; do
  SUMMARY+="`cat $DIR/scripts/replace-snap-packages`\n\n" 
  COMMAND_TO_RUN+="bash $DIR/scripts/replace-snap-packages; " 
  ;;
- "Utilties - Install duplicate finder fslint.") 
- SUMMARY+="`cat $DIR/scripts/install-fslint`\n\n" 
- COMMAND_TO_RUN+="bash $DIR/scripts/install-fslint; " 
+ "Utilties - Replace firefox snap package with native apt.") 
+ SUMMARY+="`cat $DIR/scripts/replace-snap-firefox`\n\n" 
+ COMMAND_TO_RUN+="bash $DIR/scripts/replace-snap-firefox; " 
+ ;;
+ "Utilties - Install duplicate finder czkawka. (using AppImage)") 
+ SUMMARY+="`cat $DIR/scripts/install-czkawka`\n\n" 
+ COMMAND_TO_RUN+="bash $DIR/scripts/install-czkawka; " 
  ;;
  "Utilties - Install Bleachbit cleaner.") 
  SUMMARY+="`cat $DIR/scripts/install-bleachbit`\n\n" 

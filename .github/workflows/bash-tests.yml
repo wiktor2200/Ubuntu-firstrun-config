@@ -112,12 +112,18 @@ jobs:
       - uses: actions/checkout@v3
       - name: Run replace-snap-packages
         run: sudo apt-get update; sudo bash ./scripts/replace-snap-packages
-  install-fslint:
+  replace-snap-firefox:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
-      - name: Run install-fslint
-        run: sudo apt-get update; sudo bash ./scripts/install-fslint
+      - name: Run replace-snap-firefox
+        run: sudo apt-get update; sudo bash ./scripts/replace-snap-firefox
+  install-czkawka:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run install-czkawka
+        run: sudo apt-get update; sudo bash ./scripts/install-czkawka
   install-bleachbit:
     runs-on: ubuntu-22.04
     steps:

@@ -40,7 +40,7 @@ Example summary:
 # Features
 Full feature list from [config.csv](./Develop/config.csv) file in `Develop` directory in easy readable table.
 
-2021-11-12
+2022-07-30
 
 |Task|Description|Subscript|
 |---|---|---|
@@ -60,7 +60,8 @@ Full feature list from [config.csv](./Develop/config.csv) file in `Develop` dire
 |Utilties - Install useful system utilties|Install Partitioning tools, space usage tools, hardware info tools.|[install-system-utilties](/scripts/install-system-utilties)|
 |Utilties - Install backup tools.|Install backup tools - luckybackup AKA rsync-gui and unison syncronizer.|[install-backup-tools](/scripts/install-backup-tools)|
 |Utilties - Replace default snap packages with native Gnome apps.|Replace default snap packages with native Gnome apps.|[replace-snap-packages](/scripts/replace-snap-packages)|
-|Utilties - Install duplicate finder fslint.|Install duplicate finder fslint.|[install-fslint](/scripts/install-fslint)|
+|Utilties - Replace firefox snap package with native apt.|Replace firefox snap package with native apt.|[replace-snap-firefox](/scripts/replace-snap-firefox)|
+|Utilties - Install duplicate finder czkawka. (using AppImage)|Install duplicate finder czkawka. (using AppImage)|[install-czkawka](/scripts/install-czkawka)|
 |Utilties - Install Bleachbit cleaner.|Install Bleachbit powerful cache, temp files and garbage cleaner.|[install-bleachbit](/scripts/install-bleachbit)|
 |Cleanup - Uninstall Ubuntu dock|Uninstall Ubuntu Gnome dock.|[uninstall-ubuntu-dock](/scripts/uninstall-ubuntu-dock)|
 |Developer - Install Docker|Install Docker from snap package manager.|[install-docker](/scripts/install-docker)|

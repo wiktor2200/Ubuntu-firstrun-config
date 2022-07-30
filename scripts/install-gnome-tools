@@ -2,4 +2,4 @@
 # Utilties - Install Gnome tools
 # Install Gnome settings managers and utils.
 
-sudo apt install -y chrome-gnome-shell gnome-calculator gnome-system-monitor gnome-system-tools gnome-tweak-tool gucharmap
+sudo apt install -y chrome-gnome-shell gnome-calculator gnome-system-monitor gnome-system-tools gnome-tweaks gucharmap

@@ -2,4 +2,4 @@
 # Useful - Install Qalculate scientific calculator
 # Install Qalculate scientific calculator
 
-sudo apt install -y qalculate
+sudo apt install -y qalculate-gtk

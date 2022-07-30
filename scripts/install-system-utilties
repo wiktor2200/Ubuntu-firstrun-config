@@ -2,4 +2,4 @@
 # Utilties - Install useful system utilties
 # Install Partitioning tools, space usage tools, hardware info tools.
 
-sudo apt install -y baobab build-essential curl dconf-editor exfat-fuse exfat-utils git gparted gufw hardinfo htop incron lm-sensors mc meld ncdu printer-driver-cups-pdf silversearcher-ag sqlite3 sqlitebrowser tree unattended-upgrades
+sudo apt install -y baobab build-essential curl dconf-editor exfatprogs git git-lfs gparted gufw hardinfo htop incron lm-sensors mc meld ncdu printer-driver-cups-pdf silversearcher-ag sqlite3 sqlitebrowser tree unattended-upgrades

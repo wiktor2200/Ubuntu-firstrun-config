@@ -14,7 +14,8 @@ TRUE:Utilties - Install language packages:Installing language packages for your 
 TRUE:Utilties - Install useful system utilties:Install Partitioning tools, space usage tools, hardware info tools.:install-system-utilties
 TRUE:Utilties - Install backup tools.:Install backup tools - luckybackup AKA rsync-gui and unison syncronizer.:install-backup-tools
 TRUE:Utilties - Replace default snap packages with native Gnome apps.:Replace default snap packages with native Gnome apps.:replace-snap-packages
-FALSE:Utilties - Install duplicate finder fslint.:Install duplicate finder fslint.:install-fslint
+TRUE:Utilties - Replace firefox snap package with native apt.:Replace firefox snap package with native apt.:replace-snap-firefox
+FALSE:Utilties - Install duplicate finder czkawka. (using AppImage):Install duplicate finder czkawka. (using AppImage):install-czkawka
 FALSE:Utilties - Install Bleachbit cleaner.:Install Bleachbit powerful cache, temp files and garbage cleaner.:install-bleachbit
 FALSE:Cleanup - Uninstall Ubuntu dock:Uninstall Ubuntu Gnome dock.:uninstall-ubuntu-dock
 FALSE:Developer - Install Docker:Install Docker from snap package manager.:install-docker
