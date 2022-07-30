@@ -13,6 +13,8 @@
 #       CREATED:  2018-06-12
 #===============================================================================
 
+UBUNTU_VERSION="22.04"
+
 # Get script's main directory
 DIR=`dirname $0`
 
@@ -107,6 +109,30 @@ function generate_summary () {
 fi"
 }
 
+function generate_github_actions () {
+  cat $DIR/description.txt | sed "s/CURRENT_DATE/`date +%F`/g"
+      echo -e "name: Check Bash scripts"
+      echo -e "on: [pull_request]\n"
+      echo -e "jobs:"
+
+  # Read config file from main script directory
+  INPUT="$DIR/config.csv"
+  IFS=':'
+
+  # Read config from CSV file
+  [ ! -f $INPUT ] && { echo "$INPUT File not found"; exit 99; }
+  while read state task description script
+  do
+      echo -e "  $script:"
+      echo -e "    runs-on: ubuntu-$UBUNTU_VERSION"
+      echo -e "    steps:"
+      echo -e "      - uses: actions/checkout@v3"
+      echo -e "      - name: Run $script"
+      echo -e "        run: sudo bash ./scripts/$script"
+  done < $INPUT
+  unset IFS
+}
+
 # Generate Markdown features table
 function generate_markdown_feature_table () {
   # Read config file from main script directory
@@ -131,4 +157,5 @@ generate_zenity_menu >> $DIR/../ubuntu-firstrun-config.bash
 generate_case >> $DIR/../ubuntu-firstrun-config.bash
 generate_summary >> $DIR/../ubuntu-firstrun-config.bash
 generate_markdown_feature_table > $DIR/feature_list.md
+generate_github_actions > $DIR/../.github/workflows/bash-tests.yml
 echo "Done!"
