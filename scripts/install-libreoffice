@@ -7,7 +7,7 @@ SYS_LANGUAGE=`locale | grep LANG | cut -d= -f2 | cut -d_ -f1`
 
 ## Solve problem when locale is not set at all
 if [[ $SYS_LANGUAGE == "C.UTF-8" ]] ; then
-  SYS_LANGUAGE="en"
+  SYS_LANGUAGE="en-us"
 fi
 
 sudo apt install -y libreoffice-calc libreoffice-draw libreoffice-gnome libreoffice-help-$SYS_LANGUAGE  libreoffice-impress libreoffice-java-common libreoffice-l10n-$SYS_LANGUAGE libreoffice-l10n-en-gb libreoffice-math libreoffice-ogltrans libreoffice-pdfimport libreoffice-style-breeze libreoffice-writer
