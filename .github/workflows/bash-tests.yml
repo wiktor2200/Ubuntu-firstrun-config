@@ -1,0 +1,12 @@
+---
+name: Check Bash scripts
+on: [push, pull_request]
+
+jobs:
+  check_bash_scripts:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run 
+        run: ./scripts/enable-tmp-ram
+        shell: bash
