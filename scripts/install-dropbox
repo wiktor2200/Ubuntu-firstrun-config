@@ -25,6 +25,6 @@ Comment=Start Dropbox at log in" | tee ~/.config/autostart/dropbox.desktop > /de
 # chmod +x dropbox.py
 # ln -s dropbox.py dropbox
 
-# Firstrun dropbox daemon and then kill it to not freeze configuration script
-~/.dropbox-dist/dropboxd & sleep 10
-killall dropbox*
+# # Firstrun dropbox daemon and then kill it to not freeze configuration script
+# ~/.dropbox-dist/dropboxd & sleep 10
+# killall dropbox*

@@ -6,5 +6,6 @@ sudo apt install -y vlc
 
 # Set as default Gnome media player
 sudo mkdir -p /etc/gnome
+sudo touch /etc/gnome/defaults.list
 sudo sed -i 's/org.gnome.Totem.desktop/vlc.desktop/g' /etc/gnome/defaults.list
 sudo sed -i 's/rhythmbox.desktop/vlc.desktop/g' /etc/gnome/defaults.list
