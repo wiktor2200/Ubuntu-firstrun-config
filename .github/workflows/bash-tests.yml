@@ -21,406 +21,406 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run perform-upgrade
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/perform-upgrade
+        run: sudo apt-get update; sudo bash ./scripts/perform-upgrade
   enable-upgrade-notifications:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run enable-upgrade-notifications
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/enable-upgrade-notifications
+        run: sudo apt-get update; sudo bash ./scripts/enable-upgrade-notifications
   perform-cleanup:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run perform-cleanup
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/perform-cleanup
+        run: sudo apt-get update; sudo bash ./scripts/perform-cleanup
   uninstall-garbage-packages:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run uninstall-garbage-packages
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/uninstall-garbage-packages
+        run: sudo apt-get update; sudo bash ./scripts/uninstall-garbage-packages
   install-libreoffice:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-libreoffice
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-libreoffice
+        run: sudo apt-get update; sudo bash ./scripts/install-libreoffice
   install-vs-code:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-vs-code
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-vs-code
+        run: sudo apt-get update; sudo bash ./scripts/install-vs-code
   install-vlc:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-vlc
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-vlc
+        run: sudo apt-get update; sudo bash ./scripts/install-vlc
   install-gimp:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-gimp
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-gimp
+        run: sudo apt-get update; sudo bash ./scripts/install-gimp
   install-password-manager:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-password-manager
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-password-manager
+        run: sudo apt-get update; sudo bash ./scripts/install-password-manager
   install-archives-tools:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-archives-tools
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-archives-tools
+        run: sudo apt-get update; sudo bash ./scripts/install-archives-tools
   install-codecs:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-codecs
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-codecs
+        run: sudo apt-get update; sudo bash ./scripts/install-codecs
   install-gnome-tools:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-gnome-tools
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-gnome-tools
+        run: sudo apt-get update; sudo bash ./scripts/install-gnome-tools
   install-language-packages:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-language-packages
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-language-packages
+        run: sudo apt-get update; sudo bash ./scripts/install-language-packages
   install-system-utilties:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-system-utilties
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-system-utilties
+        run: sudo apt-get update; sudo bash ./scripts/install-system-utilties
   install-backup-tools:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-backup-tools
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-backup-tools
+        run: sudo apt-get update; sudo bash ./scripts/install-backup-tools
   replace-snap-packages:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run replace-snap-packages
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/replace-snap-packages
+        run: sudo apt-get update; sudo bash ./scripts/replace-snap-packages
   install-fslint:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-fslint
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-fslint
+        run: sudo apt-get update; sudo bash ./scripts/install-fslint
   install-bleachbit:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-bleachbit
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-bleachbit
+        run: sudo apt-get update; sudo bash ./scripts/install-bleachbit
   uninstall-ubuntu-dock:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run uninstall-ubuntu-dock
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/uninstall-ubuntu-dock
+        run: sudo apt-get update; sudo bash ./scripts/uninstall-ubuntu-dock
   install-docker:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-docker
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-docker
+        run: sudo apt-get update; sudo bash ./scripts/install-docker
   install-virtualbox:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-virtualbox
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-virtualbox
+        run: sudo apt-get update; sudo bash ./scripts/install-virtualbox
   install-calibre:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-calibre
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-calibre
+        run: sudo apt-get update; sudo bash ./scripts/install-calibre
   install-ocr:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-ocr
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-ocr
+        run: sudo apt-get update; sudo bash ./scripts/install-ocr
   install-pdf-tools:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-pdf-tools
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-pdf-tools
+        run: sudo apt-get update; sudo bash ./scripts/install-pdf-tools
   install-qownnotes:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-qownnotes
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-qownnotes
+        run: sudo apt-get update; sudo bash ./scripts/install-qownnotes
   fix-top-panel-icons:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run fix-top-panel-icons
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/fix-top-panel-icons
+        run: sudo apt-get update; sudo bash ./scripts/fix-top-panel-icons
   install-dia:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-dia
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-dia
+        run: sudo apt-get update; sudo bash ./scripts/install-dia
   install-gnome-paint:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-gnome-paint
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-gnome-paint
+        run: sudo apt-get update; sudo bash ./scripts/install-gnome-paint
   install-inkscape:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-inkscape
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-inkscape
+        run: sudo apt-get update; sudo bash ./scripts/install-inkscape
   install-battery-support:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-battery-support
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-battery-support
+        run: sudo apt-get update; sudo bash ./scripts/install-battery-support
   install-scanner-support:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-scanner-support
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-scanner-support
+        run: sudo apt-get update; sudo bash ./scripts/install-scanner-support
   install-webcam-cheese:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-webcam-cheese
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-webcam-cheese
+        run: sudo apt-get update; sudo bash ./scripts/install-webcam-cheese
   install-atom:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-atom
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-atom
+        run: sudo apt-get update; sudo bash ./scripts/install-atom
   install-hex-bless-editor:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-hex-bless-editor
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-hex-bless-editor
+        run: sudo apt-get update; sudo bash ./scripts/install-hex-bless-editor
   install-qtcreator:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-qtcreator
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-qtcreator
+        run: sudo apt-get update; sudo bash ./scripts/install-qtcreator
   install-hex-gnome-editor:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-hex-gnome-editor
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-hex-gnome-editor
+        run: sudo apt-get update; sudo bash ./scripts/install-hex-gnome-editor
   install-amarok:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-amarok
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-amarok
+        run: sudo apt-get update; sudo bash ./scripts/install-amarok
   install-audacity:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-audacity
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-audacity
+        run: sudo apt-get update; sudo bash ./scripts/install-audacity
   install-sysadmin-network-tools:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-sysadmin-network-tools
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-sysadmin-network-tools
+        run: sudo apt-get update; sudo bash ./scripts/install-sysadmin-network-tools
   enable-tmp-ram:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run enable-tmp-ram
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/enable-tmp-ram
+        run: sudo apt-get update; sudo bash ./scripts/enable-tmp-ram
   remove-swapfile:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run remove-swapfile
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/remove-swapfile
+        run: sudo apt-get update; sudo bash ./scripts/remove-swapfile
   install-photo-utils:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-photo-utils
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-photo-utils
+        run: sudo apt-get update; sudo bash ./scripts/install-photo-utils
   install-digikam:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-digikam
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-digikam
+        run: sudo apt-get update; sudo bash ./scripts/install-digikam
   install-dropbox:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-dropbox
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-dropbox
+        run: sudo apt-get update; sudo bash ./scripts/install-dropbox
   install-nextcloud:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-nextcloud
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-nextcloud
+        run: sudo apt-get update; sudo bash ./scripts/install-nextcloud
   install-owncloud:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-owncloud
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-owncloud
+        run: sudo apt-get update; sudo bash ./scripts/install-owncloud
   install-cinnamon:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-cinnamon
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-cinnamon
+        run: sudo apt-get update; sudo bash ./scripts/install-cinnamon
   install-chromium:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-chromium
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-chromium
+        run: sudo apt-get update; sudo bash ./scripts/install-chromium
   install-antivir:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-antivir
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-antivir
+        run: sudo apt-get update; sudo bash ./scripts/install-antivir
   install-desktop-recorder:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-desktop-recorder
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-desktop-recorder
+        run: sudo apt-get update; sudo bash ./scripts/install-desktop-recorder
   install-qalculate:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-qalculate
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-qalculate
+        run: sudo apt-get update; sudo bash ./scripts/install-qalculate
   install-slack:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-slack
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-slack
+        run: sudo apt-get update; sudo bash ./scripts/install-slack
   install-taskcoach:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-taskcoach
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-taskcoach
+        run: sudo apt-get update; sudo bash ./scripts/install-taskcoach
   install-tellico:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-tellico
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-tellico
+        run: sudo apt-get update; sudo bash ./scripts/install-tellico
   install-thunderbird:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-thunderbird
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-thunderbird
+        run: sudo apt-get update; sudo bash ./scripts/install-thunderbird
   install-amd-nvidia-drivers:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-amd-nvidia-drivers
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-amd-nvidia-drivers
+        run: sudo apt-get update; sudo bash ./scripts/install-amd-nvidia-drivers
   install-mkusb:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-mkusb
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-mkusb
+        run: sudo apt-get update; sudo bash ./scripts/install-mkusb
   install-cd-dvd-burner:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-cd-dvd-burner
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-cd-dvd-burner
+        run: sudo apt-get update; sudo bash ./scripts/install-cd-dvd-burner
   install-fzf:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-fzf
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-fzf
+        run: sudo apt-get update; sudo bash ./scripts/install-fzf
   install-guake:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-guake
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-guake
+        run: sudo apt-get update; sudo bash ./scripts/install-guake
   install-acetoneiso:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-acetoneiso
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-acetoneiso
+        run: sudo apt-get update; sudo bash ./scripts/install-acetoneiso
   install-firejail:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-firejail
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-firejail
+        run: sudo apt-get update; sudo bash ./scripts/install-firejail
   install-synaptic:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-synaptic
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/install-synaptic
+        run: sudo apt-get update; sudo bash ./scripts/install-synaptic
   replace-nautilus-nemo:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run replace-nautilus-nemo
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/replace-nautilus-nemo
+        run: sudo apt-get update; sudo bash ./scripts/replace-nautilus-nemo
   replace-gedit-pluma:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run replace-gedit-pluma
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/replace-gedit-pluma
+        run: sudo apt-get update; sudo bash ./scripts/replace-gedit-pluma
   set-grub:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run set-grub
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/set-grub
+        run: sudo apt-get update; sudo bash ./scripts/set-grub
   show-hidden-autostart-entries:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run show-hidden-autostart-entries
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/show-hidden-autostart-entries
+        run: sudo apt-get update; sudo bash ./scripts/show-hidden-autostart-entries
   uninstall-old-1604-dependencies:
     runs-on: ubuntu-20.04
     steps:
       - uses: actions/checkout@v3
       - name: Run uninstall-old-1604-dependencies
-        run: export SYS_LANGUAGE=en; sudo apt-get update; sudo bash ./scripts/uninstall-old-1604-dependencies
+        run: sudo apt-get update; sudo bash ./scripts/uninstall-old-1604-dependencies
