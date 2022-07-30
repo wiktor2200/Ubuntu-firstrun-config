@@ -13,7 +13,7 @@
 #       CREATED:  2018-06-12
 #===============================================================================
 
-UBUNTU_VERSION="22.04"
+UBUNTU_VERSION="20.04"
 
 # Get script's main directory
 DIR=`dirname $0`
@@ -113,6 +113,8 @@ function generate_github_actions () {
   cat $DIR/description.txt | sed "s/CURRENT_DATE/`date +%F`/g"
       echo -e "name: Check Bash scripts"
       echo -e "on: [pull_request]\n"
+      echo -e "env:"
+      echo -e "  SYS_LANGUAGE: en\n"
       echo -e "jobs:"
 
   # Read config file from main script directory
@@ -128,7 +130,7 @@ function generate_github_actions () {
       echo -e "    steps:"
       echo -e "      - uses: actions/checkout@v3"
       echo -e "      - name: Run $script"
-      echo -e "        run: sudo bash ./scripts/$script"
+      echo -e "        run: export SYS_LANGUAGE=\$SYS_LANGUAGE; sudo apt-get update; sudo bash ./scripts/$script"
   done < $INPUT
   unset IFS
 }
