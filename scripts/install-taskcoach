@@ -52,6 +52,8 @@ Comment=Task Coach Your Friendly Task Manager" | tee /home/$USER/.local/share/ap
 
 if [ $? -eq 0 ]; then
    echo -e "\\nOK\\n"
+   exit 1
 else
    echo -e "\\nFAIL\\n"
+   exit 0
 fi

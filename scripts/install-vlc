@@ -13,6 +13,8 @@ sudo sed -i 's/rhythmbox.desktop/vlc.desktop/g' /etc/gnome/defaults.list
 
 if [ $? -eq 0 ]; then
    echo -e "\\nOK\\n"
+   exit 1
 else
    echo -e "\\nFAIL\\n"
+   exit 0
 fi

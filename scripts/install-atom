@@ -11,6 +11,8 @@ sudo apt-get install -y atom
 
 if [ $? -eq 0 ]; then
    echo -e "\\nOK\\n"
+   exit 1
 else
    echo -e "\\nFAIL\\n"
+   exit 0
 fi

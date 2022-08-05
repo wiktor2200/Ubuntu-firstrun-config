@@ -30,6 +30,8 @@ sudo apt-get remove -y --purge  nautilus nautilus-extension-gnome-terminal nauti
 
 if [ $? -eq 0 ]; then
    echo -e "\\nOK\\n"
+   exit 1
 else
    echo -e "\\nFAIL\\n"
+   exit 0
 fi

@@ -54,6 +54,8 @@ Comment=Multi functional app to find duplicates, empty folders, similar images e
 
 if [ $? -eq 0 ]; then
    echo -e "\\nOK\\n"
+   exit 1
 else
    echo -e "\\nFAIL\\n"
+   exit 0
 fi
