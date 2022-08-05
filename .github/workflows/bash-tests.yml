@@ -16,11 +16,6 @@ name: Check Bash scripts
 on: [pull_request]
 
 jobs:
-  build:
-    runs-on: ubuntu-22.04
-    steps:
-      - name: Install ubuntu-desktop package
-        run: sudo apt-get update; sudo apt-get install ubuntu-desktop
   perform-upgrade:
     needs: build
     runs-on: ubuntu-22.04
@@ -477,10 +472,9 @@ jobs:
       - name: Run replace-nautilus-nemo
         run: sudo apt-get update; sudo bash ./scripts/replace-nautilus-nemo
   replace-gedit-pluma:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
-      - uses: actions/checkout@v3
+      - uses: ./.github/workflows/install-ubuntu-desktop.yml
       - name: Run replace-gedit-pluma
         run: sudo apt-get update; sudo bash ./scripts/replace-gedit-pluma
   set-grub:
