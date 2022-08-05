@@ -19,6 +19,7 @@ jobs:
   replace-gedit-pluma:
     runs-on: ubuntu-22.04
     steps:
+      - uses: actions/checkout@v3
       - uses: ./.github/workflows/install-ubuntu-desktop.yml
       - name: Run replace-gedit-pluma
         run: sudo apt-get update; sudo bash ./scripts/replace-gedit-pluma
