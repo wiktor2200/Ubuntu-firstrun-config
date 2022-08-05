@@ -1,5 +1,14 @@
 # install-gimp
 # Photos - Install GIMP
 # Install popular photo editor GIMP.
+echo -e "Running: Photos - Install GIMP - ./scripts/install-gimp"
 
-sudo apt install -y gimp gimp-data-extras gimp-plugin-registry
+sudo apt-get install -y gimp gimp-data-extras gimp-plugin-registry
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+   exit 0
+else
+   echo -e "\\nFAIL\\n"
+   exit 1
+fi

@@ -1,10 +1,19 @@
 # remove-swapfile
 # Performance - Remove swapfile
 # Removing of swapfile is recommended when using ssd drive - to increase it's life. When swap is off hibernation is disabled!
+echo -e "Running: Performance - Remove swapfile - ./scripts/remove-swapfile"
 
 ## Turn off swap
-sudo swapoff -a
+sudo swapoff -a &&
 
 ## Remove swapfile
-sudo sed -i '/\/swapfile/d' /etc/fstab
+sudo sed -i '/\/swapfile/d' /etc/fstab &&
 sudo rm -f /swapfile
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+   exit 0
+else
+   echo -e "\\nFAIL\\n"
+   exit 1
+fi

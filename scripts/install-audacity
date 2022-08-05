@@ -1,5 +1,14 @@
 # install-audacity
 # Multimedia - Install Audacity audio editor
 # Install Audacity audio editor
+echo -e "Running: Multimedia - Install Audacity audio editor - ./scripts/install-audacity"
 
-sudo apt install -y audacity
+sudo apt-get install -y audacity
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+   exit 0
+else
+   echo -e "\\nFAIL\\n"
+   exit 1
+fi

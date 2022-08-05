@@ -13,7 +13,7 @@
 #       CREATED:  2018-06-12
 #===============================================================================
 
-UBUNTU_VERSION="20.04"
+UBUNTU_VERSION="22.04"
 
 # Get script's main directory
 DIR=`dirname $0`
@@ -42,13 +42,14 @@ function generate_subscripts_files () {
   do
     # Check if script exist in subfolder, if not create it.
     if [ ! -f $DIR/../scripts/$script ]; then
-          echo -e "# $script \n# $task \n# $description" > $DIR/../scripts/$script
+          echo -e "# $script \n# $task \n# $description\necho -e \"Running: $task - $script\"" > $DIR/../scripts/$script
     fi
-    # If script exist in subfolder, replace 3 first lines
+    # If script exist in subfolder, replace 4 first lines
     if [ -f $DIR/../scripts/$script ]; then
           sed -i "1 s/^.*$/# $script/" $DIR/../scripts/$script
           sed -i "2 s/^.*$/# $task/" $DIR/../scripts/$script
           sed -i "3 s/^.*$/# $description/" $DIR/../scripts/$script
+          sed -i "4 s/^.*$/echo -e \"Running: $task - .\/scripts\/$script\"/" $DIR/../scripts/$script
     fi
   done < $INPUT
   unset IFS
@@ -127,8 +128,10 @@ function generate_github_actions () {
       echo -e "    runs-on: ubuntu-$UBUNTU_VERSION"
       echo -e "    steps:"
       echo -e "      - uses: actions/checkout@v3"
+      echo -e "      - name: Install ubuntu-desktop package"
+      echo -e "        run: sudo apt-get update; sudo apt-get install ubuntu-desktop"
       echo -e "      - name: Run $script"
-      echo -e "        run: sudo apt-get update; sudo bash ./scripts/$script"
+      echo -e "        run: sudo bash ./scripts/$script"
   done < $INPUT
   unset IFS
 }

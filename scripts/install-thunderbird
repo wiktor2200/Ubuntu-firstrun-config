@@ -1,6 +1,7 @@
 # install-thunderbird
 # Useful - Install Thunderbird
 # Install Thunderbird mail client
+echo -e "Running: Useful - Install Thunderbird - ./scripts/install-thunderbird"
 
 # Get system language (locale)
 SYS_LANGUAGE=`locale | grep LANG | cut -d= -f2 | cut -d_ -f1`
@@ -10,4 +11,12 @@ if [[ $SYS_LANGUAGE == "C.UTF-8" ]] ; then
   SYS_LANGUAGE="en"
 fi
 
-sudo apt install -y thunderbird thunderbird-gnome-support thunderbird-locale-en thunderbird-locale-$SYS_LANGUAGE
+sudo apt-get install -y thunderbird thunderbird-gnome-support thunderbird-locale-en thunderbird-locale-$SYS_LANGUAGE
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+   exit 0
+else
+   echo -e "\\nFAIL\\n"
+   exit 1
+fi

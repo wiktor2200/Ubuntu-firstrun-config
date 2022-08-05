@@ -1,5 +1,14 @@
 # install-qalculate
 # Useful - Install Qalculate scientific calculator
 # Install Qalculate scientific calculator
+echo -e "Running: Useful - Install Qalculate scientific calculator - ./scripts/install-qalculate"
 
-sudo apt install -y qalculate
+sudo apt-get install -y qalculate-gtk
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+   exit 0
+else
+   echo -e "\\nFAIL\\n"
+   exit 1
+fi

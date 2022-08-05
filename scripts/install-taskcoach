@@ -1,19 +1,20 @@
 # install-taskcoach
 # Useful - Install task manager – TaskCoach (using AppImage)
 # Install powerful task manager TaskCoach (using AppImage)
+echo -e "Running: Useful - Install task manager – TaskCoach (using AppImage) - ./scripts/install-taskcoach"
 
 TASKCOACH_VERSION="1.4.6"
 APPIMAGES_PATH="/home/$USER/.local/bin"
 
 ## Create directory for AppImage images
-mkdir -p $APPIMAGES_PATH
+mkdir -p $APPIMAGES_PATH &&
 
 ## Add PATH for AppImage entries
 echo -e "# Setup AppImage
 # ---------
 if [[ ! \"\$PATH\" == *$APPIMAGES_PATH* ]]; then
   export PATH=\"\${PATH:+\${PATH}:}$APPIMAGES_PATH\"
-fi" > /home/$USER/.appimage.bash
+fi" > /home/$USER/.appimage.bash &&
 
 ## AppImage entry to .bashrc (if not exist)
 if ! grep -Fxq "[ -f ~/.appimage.bash ] && source ~/.appimage.bash" /home/$USER/.bashrc
@@ -23,13 +24,13 @@ then
 fi
 
 ## Download AppImage
-wget -P /tmp https://sourceforge.net/projects/taskcoach/files/taskcoach/Release-$TASKCOACH_VERSION/TaskCoach-$TASKCOACH_VERSION-x86_64.AppImage
-mv /tmp/TaskCoach-$TASKCOACH_VERSION-x86_64.AppImage $APPIMAGES_PATH
-chmod +x $APPIMAGES_PATH/TaskCoach-$TASKCOACH_VERSION-x86_64.AppImage
+wget -P /tmp https://sourceforge.net/projects/taskcoach/files/taskcoach/Release-$TASKCOACH_VERSION/TaskCoach-$TASKCOACH_VERSION-x86_64.AppImage &&
+mv /tmp/TaskCoach-$TASKCOACH_VERSION-x86_64.AppImage $APPIMAGES_PATH &&
+chmod +x $APPIMAGES_PATH/TaskCoach-$TASKCOACH_VERSION-x86_64.AppImage &&
 
 ## Download icon
-wget -O /tmp/taskcoach.ico https://sourceforge.net/p/taskcoach/repo/ci/default/tree/taskcoach/icons.in/taskcoach.ico?format=raw
-mv /tmp/taskcoach.ico $APPIMAGES_PATH/
+wget -O /tmp/taskcoach.ico https://sourceforge.net/p/taskcoach/repo/ci/default/tree/taskcoach/icons.in/taskcoach.ico?format=raw &&
+mv /tmp/taskcoach.ico $APPIMAGES_PATH/ &&
 
 ## Add firejail configuration (if installed and user is able to use firejail) for AppImage
 if [[ $(dpkg-query -W -f='${Status}' firejail 2>/dev/null | grep -c "ok installed") -eq 1 ]] && [[ `cat /etc/firejail/firejail.users` == *$USER* ]];
@@ -40,7 +41,7 @@ else
 fi
 
 ## Integrate TaskCoach AppImage with desktop
-mkdir -p /home/$USER/.local/share/applications
+mkdir -p /home/$USER/.local/share/applications &&
 echo -e "[Desktop Entry]\n\
 Type=Application\n\
 Name=Task Coach\n\
@@ -48,3 +49,11 @@ Icon=$APPIMAGES_PATH/taskcoach.ico\n\
 Exec=$APPIMAGE_EXEC\n\
 Terminal=false\n\
 Comment=Task Coach Your Friendly Task Manager" | tee /home/$USER/.local/share/applications/taskcoach.desktop > /dev/null
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+   exit 0
+else
+   echo -e "\\nFAIL\\n"
+   exit 1
+fi

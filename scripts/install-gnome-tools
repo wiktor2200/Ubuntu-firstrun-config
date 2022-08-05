@@ -1,5 +1,14 @@
 # install-gnome-tools
 # Utilties - Install Gnome tools
 # Install Gnome settings managers and utils.
+echo -e "Running: Utilties - Install Gnome tools - ./scripts/install-gnome-tools"
 
-sudo apt install -y chrome-gnome-shell gnome-calculator gnome-system-monitor gnome-system-tools gnome-tweak-tool gucharmap
+sudo apt-get install -y chrome-gnome-shell gnome-calculator gnome-system-monitor gnome-system-tools gnome-tweaks gucharmap
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+   exit 0
+else
+   echo -e "\\nFAIL\\n"
+   exit 1
+fi

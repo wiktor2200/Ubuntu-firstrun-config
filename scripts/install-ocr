@@ -1,5 +1,14 @@
 # install-ocr
 # Documents - Install OCR Reader
 # Install utilties to OCR read files.
+echo -e "Running: Documents - Install OCR Reader - ./scripts/install-ocr"
 
-sudo apt install -y gimagereader tesseract-ocr tesseract-ocr-pol
+sudo apt-get install -y gimagereader tesseract-ocr tesseract-ocr-pol
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+   exit 0
+else
+   echo -e "\\nFAIL\\n"
+   exit 1
+fi

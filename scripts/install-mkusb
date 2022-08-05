@@ -1,7 +1,16 @@
 # install-mkusb
 # Utilties - Install bootable live USB creator – mkusb
 # Install bootable live USB creator – mkusb
+echo -e "Running: Utilties - Install bootable live USB creator – mkusb - ./scripts/install-mkusb"
 
-sudo add-apt-repository -y ppa:mkusb/ppa
-sudo apt update
-sudo apt install -y mkusb mkusb-nox usb-pack-efi
+sudo add-apt-repository -y ppa:mkusb/ppa &&
+sudo apt-get update &&
+sudo apt-get install -y mkusb mkusb-nox usb-pack-efi
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+   exit 0
+else
+   echo -e "\\nFAIL\\n"
+   exit 1
+fi

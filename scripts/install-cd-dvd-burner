@@ -1,5 +1,14 @@
 # install-cd-dvd-burner
 # Utilties - Install CD-DVD burner
 # Install CD-DVD burner – if you have disk drive
+echo -e "Running: Utilties - Install CD-DVD burner - ./scripts/install-cd-dvd-burner"
 
-sudo apt install -y brasero
+sudo apt-get install -y brasero
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+   exit 0
+else
+   echo -e "\\nFAIL\\n"
+   exit 1
+fi

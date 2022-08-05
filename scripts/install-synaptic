@@ -1,5 +1,14 @@
 # install-synaptic
 # Utilties - Install Synaptic package manager
 # Install Synaptic package manager
+echo -e "Running: Utilties - Install Synaptic package manager - ./scripts/install-synaptic"
 
-sudo apt install -y synaptic
+sudo apt-get install -y synaptic
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+   exit 0
+else
+   echo -e "\\nFAIL\\n"
+   exit 1
+fi

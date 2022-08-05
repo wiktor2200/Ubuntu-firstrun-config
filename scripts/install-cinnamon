@@ -1,5 +1,14 @@
 # install-cinnamon
 # System - Install Cinnamon desktop manager
 # Install Cinnamon desktop manager
+echo -e "Running: System - Install Cinnamon desktop manager - ./scripts/install-cinnamon"
 
-sudo apt install -y cinnamon-core
+sudo apt-get install -y cinnamon-core
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+   exit 0
+else
+   echo -e "\\nFAIL\\n"
+   exit 1
+fi

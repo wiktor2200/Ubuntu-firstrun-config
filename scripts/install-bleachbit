@@ -1,5 +1,14 @@
 # install-bleachbit
 # Utilties - Install Bleachbit cleaner.
 # Install Bleachbit powerful cache, temp files and garbage cleaner.
+echo -e "Running: Utilties - Install Bleachbit cleaner. - ./scripts/install-bleachbit"
 
-sudo apt install -y bleachbit
+sudo apt-get install -y bleachbit
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+   exit 0
+else
+   echo -e "\\nFAIL\\n"
+   exit 1
+fi

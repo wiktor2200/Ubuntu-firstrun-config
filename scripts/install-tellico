@@ -1,6 +1,15 @@
 # install-tellico
 # Useful - Install Tellico – collections manager
 # Install Tellico – collections manager – books, movies, coins etc.
+echo -e "Running: Useful - Install Tellico – collections manager - ./scripts/install-tellico"
 
 # http://tellico-project.org/
-sudo apt install -y tellico
+sudo apt-get install -y tellico
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+   exit 0
+else
+   echo -e "\\nFAIL\\n"
+   exit 1
+fi

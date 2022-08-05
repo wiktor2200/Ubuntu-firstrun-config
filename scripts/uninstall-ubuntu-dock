@@ -1,5 +1,14 @@
 # uninstall-ubuntu-dock
 # Cleanup - Uninstall Ubuntu dock
 # Uninstall Ubuntu Gnome dock.
+echo -e "Running: Cleanup - Uninstall Ubuntu dock - ./scripts/uninstall-ubuntu-dock"
 
-sudo apt remove -y --purge gnome-shell-extension-ubuntu-dock
+sudo apt-get remove -y --purge gnome-shell-extension-ubuntu-dock
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+   exit 0
+else
+   echo -e "\\nFAIL\\n"
+   exit 1
+fi

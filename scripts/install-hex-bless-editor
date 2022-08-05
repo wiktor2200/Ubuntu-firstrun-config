@@ -1,5 +1,14 @@
 # install-hex-bless-editor
 # IDE - Install Powerful HEX editor – bless
 # Install hex editor - bless - more powerful, but needs more dependencies. – bless.
+echo -e "Running: IDE - Install Powerful HEX editor – bless - ./scripts/install-hex-bless-editor"
 
-sudo apt install -y bless
+sudo apt-get install -y bless
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+   exit 0
+else
+   echo -e "\\nFAIL\\n"
+   exit 1
+fi

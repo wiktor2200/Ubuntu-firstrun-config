@@ -1,6 +1,7 @@
 # install-language-packages
 # Utilties - Install language packages
 # Installing language packages for your locale different than English.
+echo -e "Running: Utilties - Install language packages - ./scripts/install-language-packages"
 
 # Get system language (locale)
 SYS_LANGUAGE=`locale | grep LANG | cut -d= -f2 | cut -d_ -f1`
@@ -12,9 +13,17 @@ if [[ $SYS_LANGUAGE == "C.UTF-8" ]] ; then
   SYS_LANGUAGE2="en-us"
 fi
 
-sudo apt install -y aspell-$SYS_LANGUAGE firefox-locale-$SYS_LANGUAGE language-pack-gnome-$SYS_LANGUAGE language-pack-gnome-$SYS_LANGUAGE-base language-pack-$SYS_LANGUAGE language-pack-$SYS_LANGUAGE-base wpolish
-sudo apt install -y hyphen-$SYS_LANGUAGE2 libreoffice-help-$SYS_LANGUAGE2 libreoffice-l10n-$SYS_LANGUAGE2 mythes-$SYS_LANGUAGE2
-
 if [[ ! $SYS_LANGUAGE == "en" ]] ; then
-  sudo apt install manpages-$SYS_LANGUAGE
+  sudo apt-get install -y manpages-$SYS_LANGUAGE
+fi
+
+sudo apt-get install -y aspell-$SYS_LANGUAGE firefox-locale-$SYS_LANGUAGE language-pack-gnome-$SYS_LANGUAGE language-pack-gnome-$SYS_LANGUAGE-base language-pack-$SYS_LANGUAGE language-pack-$SYS_LANGUAGE-base wpolish &&
+sudo apt-get install -y hyphen-$SYS_LANGUAGE2 libreoffice-help-$SYS_LANGUAGE2 libreoffice-l10n-$SYS_LANGUAGE2 mythes-$SYS_LANGUAGE2 &&
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+   exit 0
+else
+   echo -e "\\nFAIL\\n"
+   exit 1
 fi

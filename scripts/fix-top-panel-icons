@@ -1,6 +1,15 @@
 # fix-top-panel-icons
 # Fixes - Fix top panel icons
 # Fix top panel icons on systems upgraded from 16.04
+echo -e "Running: Fixes - Fix top panel icons - ./scripts/fix-top-panel-icons"
 
-sudo apt remove --purge indicator-common
+sudo apt-get remove -y --purge indicator-common &&
 sudo apt -y autoremove
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+   exit 0
+else
+   echo -e "\\nFAIL\\n"
+   exit 1
+fi

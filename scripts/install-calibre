@@ -1,5 +1,14 @@
 # install-calibre
 # Documents - Install ebook reader
 # Install ebook reader – calibre
+echo -e "Running: Documents - Install ebook reader - ./scripts/install-calibre"
 
-sudo apt install -y calibre
+sudo apt-get install -y calibre
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+   exit 0
+else
+   echo -e "\\nFAIL\\n"
+   exit 1
+fi

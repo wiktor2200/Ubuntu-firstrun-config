@@ -1,5 +1,14 @@
 # install-photo-utils
 # Photos - Install batch photos utilties
 # Install utilties to batch modify your photos and metadata e.g. aaphoto, exiv2
+echo -e "Running: Photos - Install batch photos utilties - ./scripts/install-photo-utils"
 
-sudo apt install -y aaphoto exiv2 gthumb libimage-exiftool-perl
+sudo apt-get install -y aaphoto exiv2 gthumb libimage-exiftool-perl
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+   exit 0
+else
+   echo -e "\\nFAIL\\n"
+   exit 1
+fi

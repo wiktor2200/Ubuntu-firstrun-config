@@ -1,5 +1,14 @@
 # install-gnome-paint
 # Graphics - Install Gnome Paint - replacement for MSPaint.
 # Install Gnome Paint - Linux alternative for MSPaint.
+echo -e "Running: Graphics - Install Gnome Paint - replacement for MSPaint. - ./scripts/install-gnome-paint"
 
-sudo apt install -y gnome-paint
+sudo apt-get install -y gnome-paint
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+   exit 0
+else
+   echo -e "\\nFAIL\\n"
+   exit 1
+fi

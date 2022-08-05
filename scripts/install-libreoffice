@@ -1,6 +1,7 @@
 # install-libreoffice
 # Documents - Install Libreoffice
 # Install full Libreoffice package with language packages.
+echo -e "Running: Documents - Install Libreoffice - ./scripts/install-libreoffice"
 
 # Get system language (locale)
 SYS_LANGUAGE=`locale | grep LANG | cut -d= -f2 | cut -d_ -f1`
@@ -10,4 +11,13 @@ if [[ $SYS_LANGUAGE == "C.UTF-8" ]] ; then
   SYS_LANGUAGE="en-us"
 fi
 
-sudo apt install -y libreoffice-calc libreoffice-draw libreoffice-gnome libreoffice-help-$SYS_LANGUAGE  libreoffice-impress libreoffice-java-common libreoffice-l10n-$SYS_LANGUAGE libreoffice-l10n-en-gb libreoffice-math libreoffice-ogltrans libreoffice-pdfimport libreoffice-style-breeze libreoffice-writer
+sudo add-apt-repository -y ppa:libreoffice/ppa &&
+sudo apt-get install -y libreoffice-calc libreoffice-draw libreoffice-gnome libreoffice-help-$SYS_LANGUAGE  libreoffice-impress libreoffice-java-common libreoffice-l10n-$SYS_LANGUAGE libreoffice-l10n-en-gb libreoffice-math libreoffice-ogltrans libreoffice-pdfimport libreoffice-style-breeze libreoffice-writer
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+   exit 0
+else
+   echo -e "\\nFAIL\\n"
+   exit 1
+fi

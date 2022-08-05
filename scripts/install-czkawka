@@ -1,0 +1,61 @@
+# install-czkawka
+# Utilties - Install duplicate finder czkawka. (using AppImage)
+# Install duplicate finder czkawka. (using AppImage)
+echo -e "Running: Utilties - Install duplicate finder czkawka. (using AppImage) - ./scripts/install-czkawka"
+
+## Source https://github.com/qarmin/czkawka
+
+CZKAWKA_VERSION="5.0.0"
+APPIMAGES_PATH="/home/$USER/.local/bin"
+
+## Create directory for AppImage images
+mkdir -p $APPIMAGES_PATH &&
+
+## Add PATH for AppImage entries
+echo -e "# Setup AppImage
+# ---------
+if [[ ! \"\$PATH\" == *$APPIMAGES_PATH* ]]; then
+  export PATH=\"\${PATH:+\${PATH}:}$APPIMAGES_PATH\"
+fi" > /home/$USER/.appimage.bash &&
+
+## AppImage entry to .bashrc (if not exist)
+if ! grep -Fxq "[ -f ~/.appimage.bash ] && source ~/.appimage.bash" /home/$USER/.bashrc
+then
+    echo "[ -f ~/.appimage.bash ] && source ~/.appimage.bash" >> /home/$USER/.bashrc
+    source /home/$USER/.bashrc
+fi
+
+## Download AppImage
+wget -P /tmp https://github.com/qarmin/czkawka/releases/download/$CZKAWKA_VERSION/linux_czkawka_gui.AppImage &&
+mv /tmp/linux_czkawka_gui.AppImage $APPIMAGES_PATH &&
+chmod +x $APPIMAGES_PATH/linux_czkawka_gui.AppImage &&
+
+## Download icon
+wget -O /tmp/czkawka.svg https://raw.githubusercontent.com/qarmin/czkawka/master/data/icons/com.github.qarmin.czkawka.svg &&
+mv /tmp/czkawka.svg $APPIMAGES_PATH/ &&
+
+## Add firejail configuration (if installed and user is able to use firejail) for AppImage
+if [[ $(dpkg-query -W -f='${Status}' firejail 2>/dev/null | grep -c "ok installed") -eq 1 ]] && [[ `cat /etc/firejail/firejail.users` == *$USER* ]];
+then
+    APPIMAGE_EXEC="firejail --appimage $APPIMAGES_PATH/linux_czkawka_gui.AppImage"
+else
+    APPIMAGE_EXEC="$APPIMAGES_PATH/linux_czkawka_gui.AppImage"
+fi
+
+## Integrate Czkawka AppImage with desktop
+mkdir -p /home/$USER/.local/share/applications &&
+echo -e "[Desktop Entry]\n\
+Type=Application\n\
+Name=Czkawka\n\
+Icon=$APPIMAGES_PATH/czkawka.svg\n\
+Exec=$APPIMAGE_EXEC\n\
+Terminal=false\n\
+Comment=Multi functional app to find duplicates, empty folders, similar images etc." | tee /home/$USER/.local/share/applications/czkawka.desktop > /dev/null
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+   exit 0
+else
+   echo -e "\\nFAIL\\n"
+   exit 1
+fi

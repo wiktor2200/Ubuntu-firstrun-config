@@ -1,5 +1,14 @@
 # install-virtualbox
 # Developer - Install VirtualBox
 # Install Virtualbox virtual machines manager.
+echo -e "Running: Developer - Install VirtualBox - ./scripts/install-virtualbox"
 
-sudo apt install -y virtualbox virtualbox-guest-additions-iso
+sudo apt-get install -y virtualbox virtualbox-guest-additions-iso
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+   exit 0
+else
+   echo -e "\\nFAIL\\n"
+   exit 1
+fi

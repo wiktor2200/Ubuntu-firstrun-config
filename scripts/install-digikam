@@ -1,5 +1,14 @@
 # install-digikam
 # Photos - Install Digikam
 # Install Powerful tool for photos managment
+echo -e "Running: Photos - Install Digikam - ./scripts/install-digikam"
 
-sudo apt install -y digikam
+sudo apt-get install -y digikam
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+   exit 0
+else
+   echo -e "\\nFAIL\\n"
+   exit 1
+fi

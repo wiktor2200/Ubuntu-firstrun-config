@@ -1,7 +1,16 @@
 # install-battery-support
 # Hardware - Install better laptop's battery support
 # Install better laptop's battery support. Recommended on laptops.
+echo -e "Running: Hardware - Install better laptop's battery support - ./scripts/install-battery-support"
 
-sudo apt install -y tlp tlp-rdw
-sudo tlp start
+sudo apt-get install -y tlp tlp-rdw &&
+sudo tlp start &&
 sudo tlp-stat
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+   exit 0
+else
+   echo -e "\\nFAIL\\n"
+   exit 1
+fi

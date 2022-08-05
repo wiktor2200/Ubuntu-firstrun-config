@@ -1,14 +1,23 @@
 # install-firejail
 # Utilties - Install sandboxing app – Firejail
 # Install sandboxing app Firejail.
+echo -e "Running: Utilties - Install sandboxing app – Firejail - ./scripts/install-firejail"
 
 ## Source: https://github.com/netblue30/firejail
 
 ## Add PPA repository for firejail
-sudo add-apt-repository -y ppa:deki/firejail
-sudo apt update
+sudo add-apt-repository -y ppa:deki/firejail &&
+sudo apt-get update &&
 
 ## Install dependencies
-sudo apt install -y git build-essential libapparmor-dev pkg-config gawk
+sudo apt-get install -y git build-essential libapparmor-dev pkg-config gawk &&
 
-sudo apt install -y firejail
+sudo apt-get install -y firejail
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+   exit 0
+else
+   echo -e "\\nFAIL\\n"
+   exit 1
+fi
