@@ -1,5 +1,12 @@
 # install-chromium
 # Useful - Install Chromium browser
 # Install open-source Chromium browser. Open-source Chrome.
+echo -e "Running: Useful - Install Chromium browser - ./scripts/install-chromium"
 
 sudo apt-get install -y chromium-browser
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+else
+   echo -e "\\nFAIL\\n"
+fi

@@ -1,5 +1,12 @@
 # install-scanner-support
 # Hardware - Install scanner support
 # Install utilties to support scanner in Ubuntu.
+echo -e "Running: Hardware - Install scanner support - ./scripts/install-scanner-support"
 
 sudo apt-get install -y xsane simple-scan
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+else
+   echo -e "\\nFAIL\\n"
+fi

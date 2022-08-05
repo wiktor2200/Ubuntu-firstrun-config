@@ -1,15 +1,22 @@
 # replace-snap-firefox
 # Utilties - Replace firefox snap package with native apt.
 # Replace firefox snap package with native apt.
+echo -e "Running: Utilties - Replace firefox snap package with native apt. - ./scripts/replace-snap-firefox"
 
-sudo snap remove firefox
-sudo add-apt-repository -y ppa:mozillateam/ppa
+sudo snap remove firefox &&
+sudo add-apt-repository -y ppa:mozillateam/ppa &&
 echo '
 Package: * \
 Pin: release o=LP-PPA-mozillateam \
 Pin-Priority: 1001 \
-' | sudo tee /etc/apt/preferences.d/mozilla-firefox
+' | sudo tee /etc/apt/preferences.d/mozilla-firefox &&
 
-echo 'Unattended-Upgrade::Allowed-Origins:: "LP-PPA-mozillateam:${distro_codename}";' | sudo tee /etc/apt/apt.conf.d/51unattended-upgrades-firefox
+echo 'Unattended-Upgrade::Allowed-Origins:: "LP-PPA-mozillateam:${distro_codename}";' | sudo tee /etc/apt/apt.conf.d/51unattended-upgrades-firefox &&
 
 sudo apt -y install firefox
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+else
+   echo -e "\\nFAIL\\n"
+fi

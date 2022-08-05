@@ -1,6 +1,13 @@
 # install-pdf-tools
 # Documents - Install PDF tools
 # Install utilties to support pdf modifications  - merging, spliting, replacing pages etc.
+echo -e "Running: Documents - Install PDF tools - ./scripts/install-pdf-tools"
 
-sudo apt-get install -y pdfshuffler
+sudo apt-get install -y pdfshuffler &&
 sudo snap install krop
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+else
+   echo -e "\\nFAIL\\n"
+fi

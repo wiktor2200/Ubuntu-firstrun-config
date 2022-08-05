@@ -1,7 +1,14 @@
 # install-archives-tools
 # Utilties - Install archives tools
 # Support for zip, rar, 7zip etc.
+echo -e "Running: Utilties - Install archives tools - ./scripts/install-archives-tools"
 
-sudo add-apt-repository -y multiverse
-sudo apt-get update
-sudo apt-get install -y arj cabextract p7zip-full p7zip-rar poppler-data rar unace unrar unzip zip
+sudo add-apt-repository -y multiverse &&
+sudo apt-get update &&
+sudo apt-get install -y arj cabextract p7zip-full p7zip-rar poppler-data rar unace unrar unzip zip &&
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+else
+   echo -e "\\nFAIL\\n"
+fi

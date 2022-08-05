@@ -1,5 +1,12 @@
 # install-dia
 # Graphics - Install Dia – diagram creator
 # Install Dia – diagram creator – easy and powerful
+echo -e "Running: Graphics - Install Dia – diagram creator - ./scripts/install-dia"
 
 sudo apt-get install -y dia
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+else
+   echo -e "\\nFAIL\\n"
+fi

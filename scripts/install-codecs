@@ -1,8 +1,15 @@
 # install-codecs
 # Utilties - Install codecs
 # Codecs to support common audio, video formats and additional fonts.
+echo -e "Running: Utilties - Install codecs - ./scripts/install-codecs"
 
-sudo add-apt-repository -y multiverse
-sudo apt-get update
-echo "ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true" | sudo debconf-set-selections
+sudo add-apt-repository -y multiverse &&
+sudo apt-get update && 
+echo "ttf-mscorefonts-installer msttcorefonts/accepted-mscorefonts-eula select true" | sudo debconf-set-selections &&
 sudo apt-get install -y ubuntu-restricted-extras
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+else
+   echo -e "\\nFAIL\\n"
+fi

@@ -1,5 +1,12 @@
 # install-guake
 # Utilties - Install Guake – gnome dropdown terminal
 # Install Guake – gnome dropdown terminal
+echo -e "Running: Utilties - Install Guake – gnome dropdown terminal - ./scripts/install-guake"
 
 sudo apt-get install -y guake
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+else
+   echo -e "\\nFAIL\\n"
+fi

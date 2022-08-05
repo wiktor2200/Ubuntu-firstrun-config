@@ -1,5 +1,12 @@
 # install-acetoneiso
 # Utilties - Install ISO images tool
 # Install ISO images tool, mount, unmount, modify. - acetoneiso
+echo -e "Running: Utilties - Install ISO images tool - ./scripts/install-acetoneiso"
 
 sudo apt-get install -y acetoneiso
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+else
+   echo -e "\\nFAIL\\n"
+fi

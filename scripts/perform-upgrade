@@ -1,6 +1,13 @@
 # perform-upgrade
 # 0Upgrade - Upgrade packages
 # Perform apt dist-upgrade
+echo -e "Running: 0Upgrade - Upgrade packages - ./scripts/perform-upgrade"
 
-sudo apt-get update
+sudo apt-get update &&
 sudo apt dist-upgrade -y
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+else
+   echo -e "\\nFAIL\\n"
+fi

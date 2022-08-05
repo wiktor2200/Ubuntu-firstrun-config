@@ -1,6 +1,7 @@
 # enable-upgrade-notifications
 # 0Upgrade - Set upgrade notifications for all users
 # Set upgrade notifications for all users
+echo -e "Running: 0Upgrade - Set upgrade notifications for all users - ./scripts/enable-upgrade-notifications"
 
 # Add update notifier to desktop entries
 mkdir -p ~/.config/autostart
@@ -14,3 +15,9 @@ Type=Application\n\
 NoDisplay=false\n\
 X-GNOME-Autostart-Delay=60\n\
 X-Ubuntu-Gettext-Domain=update-notifier" | tee ~/.config/autostart/update-notifier.desktop > /dev/null
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+else
+   echo -e "\\nFAIL\\n"
+fi

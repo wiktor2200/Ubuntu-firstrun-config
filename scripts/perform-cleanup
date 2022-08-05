@@ -1,7 +1,14 @@
 # perform-cleanup
 # Cleanup - Clean packages
 # Perform apt autoremove, clean and autoclean
+echo -e "Running: Cleanup - Clean packages - ./scripts/perform-cleanup"
 
-sudo apt clean
-sudo apt-get autoclean
+sudo apt clean &&
+sudo apt-get autoclean &&
 sudo apt-get autoremove -y --purge
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+else
+   echo -e "\\nFAIL\\n"
+fi

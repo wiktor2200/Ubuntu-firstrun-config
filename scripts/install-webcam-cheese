@@ -1,5 +1,12 @@
 # install-webcam-cheese
 # Hardware - Install webcam application
 # Install webcam application – cheese
+echo -e "Running: Hardware - Install webcam application - ./scripts/install-webcam-cheese"
 
 sudo apt-get install -y cheese
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+else
+   echo -e "\\nFAIL\\n"
+fi

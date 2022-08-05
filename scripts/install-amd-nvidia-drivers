@@ -1,6 +1,13 @@
 # install-amd-nvidia-drivers
 # Utilties - Install AMD-Nvidia graphics drivers
 # Install Install AMD-Nvidia graphics drivers
+echo -e "Running: Utilties - Install AMD-Nvidia graphics drivers - ./scripts/install-amd-nvidia-drivers"
 
-sudo apt-get install -y ubuntu-drivers-common
+sudo apt-get install -y ubuntu-drivers-common &&
 sudo ubuntu-drivers autoinstall
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+else
+   echo -e "\\nFAIL\\n"
+fi

@@ -1,11 +1,18 @@
 # install-vlc
 # Multimedia - Install VLC
 # Install popular media player - both music and videos.
+echo -e "Running: Multimedia - Install VLC - ./scripts/install-vlc"
 
-sudo apt-get install -y vlc
+sudo apt-get install -y vlc &&
 
 # Set as default Gnome media player
-sudo mkdir -p /etc/gnome
-sudo touch /etc/gnome/defaults.list
-sudo sed -i 's/org.gnome.Totem.desktop/vlc.desktop/g' /etc/gnome/defaults.list
+sudo mkdir -p /etc/gnome &&
+sudo touch /etc/gnome/defaults.list &&
+sudo sed -i 's/org.gnome.Totem.desktop/vlc.desktop/g' /etc/gnome/defaults.list &&
 sudo sed -i 's/rhythmbox.desktop/vlc.desktop/g' /etc/gnome/defaults.list
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+else
+   echo -e "\\nFAIL\\n"
+fi

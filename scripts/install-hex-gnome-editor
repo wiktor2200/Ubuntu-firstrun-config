@@ -1,5 +1,12 @@
 # install-hex-gnome-editor
 # IDE - Install Simple HEX editor - ghex
 # Install simple Gnome hex editor.
+echo -e "Running: IDE - Install Simple HEX editor - ghex - ./scripts/install-hex-gnome-editor"
 
 sudo apt-get install -y ghex
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+else
+   echo -e "\\nFAIL\\n"
+fi

@@ -1,25 +1,29 @@
 # install-fzf
 # Utilties - Install fzf – CLI fuzzy finder
 # Install fzf – CLI fuzzy finder. Git clone installation – run as user which will be using script
+echo -e "Running: Utilties - Install fzf – CLI fuzzy finder - ./scripts/install-fzf"
 
-git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
-~/.fzf/install --all
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf &&
+~/.fzf/install --all &&
 
 # Install silversearch - more powerfull searcher
-if [ $(dpkg-query -W -f='${Status}' silversearcher-ag 2>/dev/null | grep -c "ok installed") -eq 0 ];
-then
-  sudo apt-get install -y silversearcher-ag
-fi
+sudo apt-get install -y silversearcher-ag &&
 
 # Add fzf-ag support in .bashrc file
 echo -e "export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g \"\"'
 export FZF_CTRL_T_COMMAND='ag --hidden --ignore .git -g \"\"'
-export FZF_ALT_C_COMMAND='find . -type d -iname \"*\"'" >> ~/.bashrc
-source ~/.bashrc
+export FZF_ALT_C_COMMAND='find . -type d -iname \"*\"'" >> ~/.bashrc &&
+source ~/.bashrc &&
 
 # Create upgrade command in .git_upgrades directory
-mkdir -p ~/.git_upgrades
-echo "cd ~/.fzf && git pull && ./install" > ~/.git_upgrades/fzf.upgrade
-chmod +x ~/.git_upgrades/fzf.upgrade
+mkdir -p ~/.git_upgrades &&
+echo "cd ~/.fzf && git pull && ./install" > ~/.git_upgrades/fzf.upgrade &&
+chmod +x ~/.git_upgrades/fzf.upgrade &&
 # Add crontab job to auto upgrade once a week - "At 00:00 on Monday."
 crontab -l | { cat; echo "0 0 * * 1 bash ~/.git_upgrades/fzf.upgrade"; } | crontab -
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+else
+   echo -e "\\nFAIL\\n"
+fi

@@ -1,14 +1,15 @@
 # install-dropbox
 # Storage - Install Dropbox client
 # Install official Dropbox client with nemo support. Headless moder – run as user which will be using dropbox.
+echo -e "Running: Storage - Install Dropbox client - ./scripts/install-dropbox"
 
 ## More information: https://www.dropbox.com/install-linux
 
 # Install official Dropbox client. Headless moder – run as user which will be using dropbox.
-cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
+cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf - &&
 
 # Add Dropbox to user's environment autostart (with Gnome panel icon fix)
-mkdir -p ~/.config/autostart
+mkdir -p ~/.config/autostart &&
 echo -e "[Desktop Entry]\n\
 Type=Application\n\
 Name=Dropbox\n\
@@ -28,3 +29,9 @@ Comment=Start Dropbox at log in" | tee ~/.config/autostart/dropbox.desktop > /de
 # # Firstrun dropbox daemon and then kill it to not freeze configuration script
 # ~/.dropbox-dist/dropboxd & sleep 10
 # killall dropbox*
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+else
+   echo -e "\\nFAIL\\n"
+fi

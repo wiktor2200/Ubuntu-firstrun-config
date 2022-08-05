@@ -1,5 +1,12 @@
 # install-sysadmin-network-tools
 # Network - Install sysadmin network utilties
 # Install utilties to monitor network traffic e.g. nethogs, nmap, iftop, whois, net-tools etc.
+echo -e "Running: Network - Install sysadmin network utilties - ./scripts/install-sysadmin-network-tools"
 
 sudo apt-get install -y iftop nethogs net-tools nmap whois wireshark
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+else
+   echo -e "\\nFAIL\\n"
+fi

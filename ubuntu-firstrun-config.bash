@@ -11,7 +11,7 @@
 #        AUTHOR:  wiktor2200, https://github.com/wiktor2200
 #          REPO:  https://github.com/wiktor2200/Ubuntu-firstrun-config
 #       CREATED:  2018-06-12
-#       UPDATED:  2022-07-30
+#       UPDATED:  2022-08-05
 #===============================================================================
 # This script is generated using: generate-script-from-config.bash from repo: https://github.com/wiktor2200/Ubuntu-firstrun-config
 

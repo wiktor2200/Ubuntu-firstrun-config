@@ -42,13 +42,14 @@ function generate_subscripts_files () {
   do
     # Check if script exist in subfolder, if not create it.
     if [ ! -f $DIR/../scripts/$script ]; then
-          echo -e "# $script \n# $task \n# $description" > $DIR/../scripts/$script
+          echo -e "# $script \n# $task \n# $description\necho -e \"Running: $task - $script\"" > $DIR/../scripts/$script
     fi
-    # If script exist in subfolder, replace 3 first lines
+    # If script exist in subfolder, replace 4 first lines
     if [ -f $DIR/../scripts/$script ]; then
           sed -i "1 s/^.*$/# $script/" $DIR/../scripts/$script
           sed -i "2 s/^.*$/# $task/" $DIR/../scripts/$script
           sed -i "3 s/^.*$/# $description/" $DIR/../scripts/$script
+          sed -i "4 s/^.*$/echo -e \"Running: $task - .\/scripts\/$script\"/" $DIR/../scripts/$script
     fi
   done < $INPUT
   unset IFS

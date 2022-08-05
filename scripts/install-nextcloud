@@ -1,13 +1,20 @@
 # install-nextcloud
 # Storage - Install Nextcloud client
 # Install Nextcloud client.
+echo -e "Running: Storage - Install Nextcloud client - ./scripts/install-nextcloud"
 
-sudo add-apt-repository -y ppa:nextcloud-devs/client
-sudo apt-get update
-sudo apt-get install -y nextcloud-client 
+sudo add-apt-repository -y ppa:nextcloud-devs/client &&
+sudo apt-get update &&
+sudo apt-get install -y nextcloud-client &&
 
 ## Install nemo integration if nemo is installed
 if [ $(dpkg-query -W -f='${Status}' nemo 2>/dev/null | grep -c "ok installed") -eq 1 ];
 then
   sudo apt-get install -y nextcloud-client-nemo
+fi
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+else
+   echo -e "\\nFAIL\\n"
 fi

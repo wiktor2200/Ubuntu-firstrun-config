@@ -1,5 +1,12 @@
 # install-desktop-recorder
 # Useful - Install Kazam desktop recorder
 # Install Kazam - simple desktop recorder
+echo -e "Running: Useful - Install Kazam desktop recorder - ./scripts/install-desktop-recorder"
 
 sudo apt-get install -y kazam
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+else
+   echo -e "\\nFAIL\\n"
+fi

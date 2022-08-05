@@ -1,5 +1,12 @@
 # install-system-utilties
 # Utilties - Install useful system utilties
 # Install Partitioning tools, space usage tools, hardware info tools.
+echo -e "Running: Utilties - Install useful system utilties - ./scripts/install-system-utilties"
 
 sudo apt-get install -y baobab build-essential curl dconf-editor exfatprogs git git-lfs gparted gufw hardinfo htop incron lm-sensors mc meld ncdu printer-driver-cups-pdf silversearcher-ag sqlite3 sqlitebrowser tree unattended-upgrades
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+else
+   echo -e "\\nFAIL\\n"
+fi

@@ -1,14 +1,21 @@
 # install-antivir
 # Useful - Install ClamAV Antivirus
 # Install and configure ClamAV Antivirus
+echo -e "Running: Useful - Install ClamAV Antivirus - ./scripts/install-antivir"
 
-sudo apt-get install -y clamav
+sudo apt-get install -y clamav &&
 
 # Update virus database
-sudo systemctl stop clamav-freshclam
-sudo freshclam
-sudo systemctl start clamav-freshclam
+sudo systemctl stop clamav-freshclam &&
+sudo freshclam &&
+sudo systemctl start clamav-freshclam &&
 
 # Install Antivirus GUI
-sudo apt-get install -y clamtk
+sudo apt-get install -y clamtk &&
 sudo sed -e 's/Exec=clamtk %F/Exec=env LC_TIME=C clamtk %F/g' -i /usr/share/applications/clamtk.desktop
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+else
+   echo -e "\\nFAIL\\n"
+fi

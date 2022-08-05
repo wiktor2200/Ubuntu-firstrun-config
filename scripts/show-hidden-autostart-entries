@@ -1,6 +1,13 @@
 # show-hidden-autostart-entries
 # System - Show hidden autostart system entries
 # Show hidden autostart system entries
+echo -e "Running: System - Show hidden autostart system entries - ./scripts/show-hidden-autostart-entries"
 
 # Script will change flag `NoDisplay` to show system defined startup application
 sudo sed -i 's/NoDisplay=true/NoDisplay=false/g' /etc/xdg/autostart/*.desktop
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+else
+   echo -e "\\nFAIL\\n"
+fi

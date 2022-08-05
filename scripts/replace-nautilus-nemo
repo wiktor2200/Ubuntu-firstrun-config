@@ -1,14 +1,15 @@
 # replace-nautilus-nemo
 # System - Replace filemanager Nautilus with Nemo
 # Replace file manager Nautilus with more powerful Nemo
+echo -e "Running: System - Replace filemanager Nautilus with Nemo - ./scripts/replace-nautilus-nemo"
 
-sudo apt-get install -y nemo nemo-fileroller
+sudo apt-get install -y nemo nemo-fileroller &&
 
 # Set nemo as main filemanager
-sudo xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search
-sudo gsettings set org.gnome.desktop.background show-desktop-icons false
-sudo gsettings set org.nemo.desktop show-desktop-icons true
-sudo xdg-mime query default inode/directory
+sudo xdg-mime default nemo.desktop inode/directory application/x-gnome-saved-search &&
+sudo gsettings set org.gnome.desktop.background show-desktop-icons false &&
+sudo gsettings set org.nemo.desktop show-desktop-icons true &&
+sudo xdg-mime query default inode/directory &&
 
 # Add desktop support - autostart command: "nemo-desktop"
 echo -e "[Desktop Entry]\n\
@@ -22,7 +23,13 @@ X-GNOME-Autostart-Phase=Desktop\n\
 X-GNOME-Autostart-Notify=true\n\
 X-GNOME-AutoRestart=true\n\
 X-GNOME-Provides=filemanager\n\
-Comment=Start Nemo desktop at log in" | sudo tee /etc/xdg/autostart/nemo-desktop.desktop > /dev/null
+Comment=Start Nemo desktop at log in" | sudo tee /etc/xdg/autostart/nemo-desktop.desktop > /dev/null &&
 
 # Remove Nautilus
 sudo apt-get remove -y --purge  nautilus nautilus-extension-gnome-terminal nautilus-sendto nautilus-share
+
+if [ $? -eq 0 ]; then
+   echo -e "\\nOK\\n"
+else
+   echo -e "\\nFAIL\\n"
+fi
