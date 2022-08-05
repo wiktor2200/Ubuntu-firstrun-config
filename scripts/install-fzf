@@ -24,8 +24,8 @@ crontab -l | { cat; echo "0 0 * * 1 bash ~/.git_upgrades/fzf.upgrade"; } | cront
 
 if [ $? -eq 0 ]; then
    echo -e "\\nOK\\n"
-   exit 1
+   exit 0
 else
    echo -e "\\nFAIL\\n"
-   exit 0
+   exit 1
 fi

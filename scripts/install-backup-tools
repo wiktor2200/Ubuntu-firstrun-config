@@ -30,8 +30,8 @@ StartupNotify=true" | sudo tee /usr/share/applications/unison.desktop > /dev/nul
 
 if [ $? -eq 0 ]; then
    echo -e "\\nOK\\n"
-   exit 1
+   exit 0
 else
    echo -e "\\nFAIL\\n"
-   exit 0
+   exit 1
 fi
