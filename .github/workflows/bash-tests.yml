@@ -411,7 +411,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Install ubuntu-desktop package"
-        run: sudo apt-get-update; sudo apt-get install ubuntu-desktop"
+        run: sudo apt-get-update; sudo apt-get install ubuntu-desktop
       - name: Run replace-gedit-pluma
         run: sudo bash ./scripts/replace-gedit-pluma
   set-grub:
