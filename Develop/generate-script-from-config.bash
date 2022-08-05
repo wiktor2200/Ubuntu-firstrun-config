@@ -119,7 +119,7 @@ function generate_github_actions () {
       echo -e "    runs-on: ubuntu-$UBUNTU_VERSION"
       echo -e "    steps:"
       echo -e "      - name: Install ubuntu-desktop package"
-      echo -e "        run: sudo apt-get update; sudo apt-get install ubuntu-desktop"
+      echo -e "        run: sudo apt-get update; sudo apt-get install ubuntu-desktop; sudo apt-get update --fix-missing; sudo apt install -f"
 
   # Read config file from main script directory
   INPUT="$DIR/config.csv"

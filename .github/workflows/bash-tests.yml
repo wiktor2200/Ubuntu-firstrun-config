@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Install ubuntu-desktop package
-        run: sudo apt-get update; sudo apt-get install ubuntu-desktop
+        run: sudo apt-get update; sudo apt-get install ubuntu-desktop; sudo apt-get update --fix-missing; sudo apt install -f
   perform-upgrade:
     needs: build
     runs-on: ubuntu-22.04
