@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Install ubuntu-desktop package
-        run: sudo apt-get update; sudo apt-get install ubuntu-desktop; sudo apt-get update --fix-missing; sudo apt install -f
+        run: sudo apt-get update; sudo apt-get install ubuntu-desktop; sudo apt-get update --fix-missing; sudo apt-get install -f
   perform-upgrade:
     needs: build
     runs-on: ubuntu-22.04
@@ -69,7 +69,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Run install-vlc
-        run: sudo bash ./scripts/install-vlc
+        run: sudo apt-get update; sudo bash ./scripts/install-vlc
   install-gimp:
     needs: build
     runs-on: ubuntu-22.04
