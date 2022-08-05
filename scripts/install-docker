@@ -7,7 +7,7 @@ echo -e "Running: Developer - Install Docker - ./scripts/install-docker"
 sudo snap install docker &&
 
 # Create and join the docker group
-sudo groupadd --system docker &&
+sudo groupadd -f --system docker &&
 sudo usermod -a -G docker $USER &&
 
 # Disable and re-enable the docker snap

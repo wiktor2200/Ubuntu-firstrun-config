@@ -3,28 +3,30 @@
 # Install powerful music player – Amarok
 echo -e "Running: Multimedia - Install Amarok - ./scripts/install-amarok"
 
-## Source: https://forum.kde.org/viewtopic.php?f=114&t=165859
-### While the work on Amarok 3 is still in progress (porting to KDE5), that's to only option to install it.
+# ## Source: https://forum.kde.org/viewtopic.php?f=114&t=165859
+# ### While the work on Amarok 3 is still in progress (porting to KDE5), that's to only option to install it.
 
-### https://launchpad.net/~pgomes/+archive/ubuntu/amarok
-sudo add-apt-repository -y ppa:pgomes/amarok &&
-sudo apt-get update &&
+# ### https://launchpad.net/~pgomes/+archive/ubuntu/amarok
+# sudo add-apt-repository -y ppa:pgomes/amarok &&
+# sudo apt-get update &&
 
-sudo apt-get install -y amarok &&
+# sudo apt-get install -y amarok &&
 
-# Fix broken desktop-entry for Amarok
-echo -e "[Desktop Entry]\n\
-Type=Application\n\
-Name=Amarok\n\
-GenericName=Audio Player\n\
-Exec=amarok %U\n\
-StartupWMClass=amarok\n\
-Comment=Amarok - Rediscover Your Music\n\
-Icon=amarok\n\
-# Add pure audio formats here, for other formats see amarok_*.desktop files\n\
-# See bug 242292\n\
-MimeType=audio/aac;audio/mp4;audio/mpeg;audio/mpegurl;audio/vnd.rn-realaudio;audio/vorbis;audio/x-flac;audio/x-mp3;audio/x-mpegurl;audio/x-ms-wma;audio/x-musepack;audio/x-oggflac;audio/x-pn-realaudio;audio/x-scpls;audio/x-speex;audio/x-vorbis;audio/x-wav;application/x-ogm-audio;audio/x-vorbis+ogg;audio/ogg;\n\
-Terminal=false" | sudo tee /usr/share/applications/org.kde.amarok.desktop > /dev/null
+# # Fix broken desktop-entry for Amarok
+# echo -e "[Desktop Entry]\n\
+# Type=Application\n\
+# Name=Amarok\n\
+# GenericName=Audio Player\n\
+# Exec=amarok %U\n\
+# StartupWMClass=amarok\n\
+# Comment=Amarok - Rediscover Your Music\n\
+# Icon=amarok\n\
+# # Add pure audio formats here, for other formats see amarok_*.desktop files\n\
+# # See bug 242292\n\
+# MimeType=audio/aac;audio/mp4;audio/mpeg;audio/mpegurl;audio/vnd.rn-realaudio;audio/vorbis;audio/x-flac;audio/x-mp3;audio/x-mpegurl;audio/x-ms-wma;audio/x-musepack;audio/x-oggflac;audio/x-pn-realaudio;audio/x-scpls;audio/x-speex;audio/x-vorbis;audio/x-wav;application/x-ogm-audio;audio/x-vorbis+ogg;audio/ogg;\n\
+# Terminal=false" | sudo tee /usr/share/applications/org.kde.amarok.desktop > /dev/null
+
+## UPDATE: Commenting out - Amarok is not supported for 22.04 anymore, will update when be back again.
 
 if [ $? -eq 0 ]; then
    echo -e "\\nOK\\n"

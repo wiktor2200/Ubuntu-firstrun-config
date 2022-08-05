@@ -9,7 +9,7 @@ sudo apt-get install -y pluma &&
 sudo sed -i 's/gedit.desktop/pluma.desktop/g' /etc/gnome/defaults.list &&
 
 # Uninstall gedit
-sudo apt-get remove -y --purge gedit &&
+sudo apt-get remove -y --purge gedit
 
 if [ $? -eq 0 ]; then
    echo -e "\\nOK\\n"
