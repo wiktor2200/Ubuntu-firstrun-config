@@ -1,5 +1,4 @@
 name: Install ubuntu-desktop
-on: [pull_request]
 
 jobs:
   build:

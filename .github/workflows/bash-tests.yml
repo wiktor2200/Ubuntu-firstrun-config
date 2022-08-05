@@ -17,455 +17,390 @@ on: [pull_request]
 
 jobs:
   perform-upgrade:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run perform-upgrade
         run: sudo apt-get update; sudo bash ./scripts/perform-upgrade
   enable-upgrade-notifications:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run enable-upgrade-notifications
         run: sudo apt-get update; sudo bash ./scripts/enable-upgrade-notifications
   perform-cleanup:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run perform-cleanup
         run: sudo apt-get update; sudo bash ./scripts/perform-cleanup
   uninstall-garbage-packages:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run uninstall-garbage-packages
         run: sudo apt-get update; sudo bash ./scripts/uninstall-garbage-packages
   install-libreoffice:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-libreoffice
         run: sudo apt-get update; sudo bash ./scripts/install-libreoffice
   install-vs-code:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-vs-code
         run: sudo apt-get update; sudo bash ./scripts/install-vs-code
   install-vlc:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-vlc
         run: sudo apt-get update; sudo bash ./scripts/install-vlc
   install-gimp:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-gimp
         run: sudo apt-get update; sudo bash ./scripts/install-gimp
   install-password-manager:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-password-manager
         run: sudo apt-get update; sudo bash ./scripts/install-password-manager
   install-archives-tools:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-archives-tools
         run: sudo apt-get update; sudo bash ./scripts/install-archives-tools
   install-codecs:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-codecs
         run: sudo apt-get update; sudo bash ./scripts/install-codecs
   install-gnome-tools:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-gnome-tools
         run: sudo apt-get update; sudo bash ./scripts/install-gnome-tools
   install-language-packages:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-language-packages
         run: sudo apt-get update; sudo bash ./scripts/install-language-packages
   install-system-utilties:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-system-utilties
         run: sudo apt-get update; sudo bash ./scripts/install-system-utilties
   install-backup-tools:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-backup-tools
         run: sudo apt-get update; sudo bash ./scripts/install-backup-tools
   replace-snap-packages:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run replace-snap-packages
         run: sudo apt-get update; sudo bash ./scripts/replace-snap-packages
   replace-snap-firefox:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run replace-snap-firefox
         run: sudo apt-get update; sudo bash ./scripts/replace-snap-firefox
   install-czkawka:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-czkawka
         run: sudo apt-get update; sudo bash ./scripts/install-czkawka
   install-bleachbit:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-bleachbit
         run: sudo apt-get update; sudo bash ./scripts/install-bleachbit
   uninstall-ubuntu-dock:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run uninstall-ubuntu-dock
         run: sudo apt-get update; sudo bash ./scripts/uninstall-ubuntu-dock
   install-docker:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-docker
         run: sudo apt-get update; sudo bash ./scripts/install-docker
   install-virtualbox:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-virtualbox
         run: sudo apt-get update; sudo bash ./scripts/install-virtualbox
   install-calibre:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-calibre
         run: sudo apt-get update; sudo bash ./scripts/install-calibre
   install-ocr:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-ocr
         run: sudo apt-get update; sudo bash ./scripts/install-ocr
   install-pdf-tools:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-pdf-tools
         run: sudo apt-get update; sudo bash ./scripts/install-pdf-tools
   install-qownnotes:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-qownnotes
         run: sudo apt-get update; sudo bash ./scripts/install-qownnotes
   fix-top-panel-icons:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run fix-top-panel-icons
         run: sudo apt-get update; sudo bash ./scripts/fix-top-panel-icons
   install-dia:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-dia
         run: sudo apt-get update; sudo bash ./scripts/install-dia
   install-gnome-paint:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-gnome-paint
         run: sudo apt-get update; sudo bash ./scripts/install-gnome-paint
   install-inkscape:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-inkscape
         run: sudo apt-get update; sudo bash ./scripts/install-inkscape
   install-battery-support:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-battery-support
         run: sudo apt-get update; sudo bash ./scripts/install-battery-support
   install-scanner-support:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-scanner-support
         run: sudo apt-get update; sudo bash ./scripts/install-scanner-support
   install-webcam-cheese:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-webcam-cheese
         run: sudo apt-get update; sudo bash ./scripts/install-webcam-cheese
   install-atom:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-atom
         run: sudo apt-get update; sudo bash ./scripts/install-atom
   install-hex-bless-editor:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-hex-bless-editor
         run: sudo apt-get update; sudo bash ./scripts/install-hex-bless-editor
   install-qtcreator:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-qtcreator
         run: sudo apt-get update; sudo bash ./scripts/install-qtcreator
   install-hex-gnome-editor:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-hex-gnome-editor
         run: sudo apt-get update; sudo bash ./scripts/install-hex-gnome-editor
   install-amarok:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-amarok
         run: sudo apt-get update; sudo bash ./scripts/install-amarok
   install-audacity:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-audacity
         run: sudo apt-get update; sudo bash ./scripts/install-audacity
   install-sysadmin-network-tools:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-sysadmin-network-tools
         run: sudo apt-get update; sudo bash ./scripts/install-sysadmin-network-tools
   enable-tmp-ram:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run enable-tmp-ram
         run: sudo apt-get update; sudo bash ./scripts/enable-tmp-ram
   remove-swapfile:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run remove-swapfile
         run: sudo apt-get update; sudo bash ./scripts/remove-swapfile
   install-photo-utils:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-photo-utils
         run: sudo apt-get update; sudo bash ./scripts/install-photo-utils
   install-digikam:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-digikam
         run: sudo apt-get update; sudo bash ./scripts/install-digikam
   install-dropbox:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-dropbox
         run: sudo apt-get update; sudo bash ./scripts/install-dropbox
   install-nextcloud:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-nextcloud
         run: sudo apt-get update; sudo bash ./scripts/install-nextcloud
   install-owncloud:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-owncloud
         run: sudo apt-get update; sudo bash ./scripts/install-owncloud
   install-cinnamon:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-cinnamon
         run: sudo apt-get update; sudo bash ./scripts/install-cinnamon
   install-chromium:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-chromium
         run: sudo apt-get update; sudo bash ./scripts/install-chromium
   install-antivir:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-antivir
         run: sudo apt-get update; sudo bash ./scripts/install-antivir
   install-desktop-recorder:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-desktop-recorder
         run: sudo apt-get update; sudo bash ./scripts/install-desktop-recorder
   install-qalculate:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-qalculate
         run: sudo apt-get update; sudo bash ./scripts/install-qalculate
   install-slack:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-slack
         run: sudo apt-get update; sudo bash ./scripts/install-slack
   install-taskcoach:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-taskcoach
         run: sudo apt-get update; sudo bash ./scripts/install-taskcoach
   install-tellico:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-tellico
         run: sudo apt-get update; sudo bash ./scripts/install-tellico
   install-thunderbird:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-thunderbird
         run: sudo apt-get update; sudo bash ./scripts/install-thunderbird
   install-amd-nvidia-drivers:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-amd-nvidia-drivers
         run: sudo apt-get update; sudo bash ./scripts/install-amd-nvidia-drivers
   install-mkusb:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-mkusb
         run: sudo apt-get update; sudo bash ./scripts/install-mkusb
   install-cd-dvd-burner:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-cd-dvd-burner
         run: sudo apt-get update; sudo bash ./scripts/install-cd-dvd-burner
   install-fzf:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-fzf
         run: sudo apt-get update; sudo bash ./scripts/install-fzf
   install-guake:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-guake
         run: sudo apt-get update; sudo bash ./scripts/install-guake
   install-acetoneiso:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-acetoneiso
         run: sudo apt-get update; sudo bash ./scripts/install-acetoneiso
   install-firejail:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-firejail
         run: sudo apt-get update; sudo bash ./scripts/install-firejail
   install-synaptic:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run install-synaptic
         run: sudo apt-get update; sudo bash ./scripts/install-synaptic
   replace-nautilus-nemo:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
@@ -478,21 +413,18 @@ jobs:
       - name: Run replace-gedit-pluma
         run: sudo apt-get update; sudo bash ./scripts/replace-gedit-pluma
   set-grub:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run set-grub
         run: sudo apt-get update; sudo bash ./scripts/set-grub
   show-hidden-autostart-entries:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
       - name: Run show-hidden-autostart-entries
         run: sudo apt-get update; sudo bash ./scripts/show-hidden-autostart-entries
   uninstall-old-1604-dependencies:
-    needs: build
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v3
