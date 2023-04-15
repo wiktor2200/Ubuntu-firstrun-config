@@ -11,7 +11,7 @@
 #        AUTHOR:  wiktor2200, https://github.com/wiktor2200
 #          REPO:  https://github.com/wiktor2200/Ubuntu-firstrun-config
 #       CREATED:  2018-06-12
-#       UPDATED:  2022-08-05
+#       UPDATED:  2023-04-15
 #===============================================================================
 # This script is generated using: generate-script-from-config.bash from repo: https://github.com/wiktor2200/Ubuntu-firstrun-config
 
@@ -83,6 +83,7 @@ FALSE "Utilties - Install fzf – CLI fuzzy finder" "Install fzf – CLI fuzzy f
 FALSE "Utilties - Install Guake – gnome dropdown terminal" "Install Guake – gnome dropdown terminal" \
 FALSE "Utilties - Install ISO images tool" "Install ISO images tool, mount, unmount, modify. - acetoneiso" \
 FALSE "Utilties - Install sandboxing app – Firejail" "Install sandboxing app Firejail." \
+FALSE "Utilties - Install Solaar for Logitech devices" "Install Solaar - Logitech Unifying,Bolt companion tool." \
 FALSE "Utilties - Install Synaptic package manager" "Install Synaptic package manager" \
 FALSE "System - Replace filemanager Nautilus with Nemo" "Replace file manager Nautilus with more powerful Nemo" \
 FALSE "System - Replace notepad gedit with pluma" "Replace default gedit with powerful pluma notepad." \
@@ -346,6 +347,10 @@ for word in $response ; do
  "Utilties - Install sandboxing app – Firejail") 
  SUMMARY+="`cat $DIR/scripts/install-firejail`\n\n" 
  COMMAND_TO_RUN+="bash $DIR/scripts/install-firejail; " 
+ ;;
+ "Utilties - Install Solaar for Logitech devices") 
+ SUMMARY+="`cat $DIR/scripts/install-solaar`\n\n" 
+ COMMAND_TO_RUN+="bash $DIR/scripts/install-solaar; " 
  ;;
  "Utilties - Install Synaptic package manager") 
  SUMMARY+="`cat $DIR/scripts/install-synaptic`\n\n" 

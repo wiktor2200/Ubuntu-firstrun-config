@@ -40,7 +40,7 @@ Example summary:
 # Features
 Full feature list from [config.csv](./Develop/config.csv) file in `Develop` directory in easy readable table.
 
-2022-07-30
+2023-04-15
 
 |Task|Description|Subscript|
 |---|---|---|
@@ -107,13 +107,13 @@ Full feature list from [config.csv](./Develop/config.csv) file in `Develop` dire
 |Utilties - Install Guake – gnome dropdown terminal|Install Guake – gnome dropdown terminal|[install-guake](/scripts/install-guake)|
 |Utilties - Install ISO images tool|Install ISO images tool, mount, unmount, modify. - acetoneiso|[install-acetoneiso](/scripts/install-acetoneiso)|
 |Utilties - Install sandboxing app – Firejail|Install sandboxing app Firejail.|[install-firejail](/scripts/install-firejail)|
+|Utilties - Install Solaar - Logitech Unifying/Bolt companion tool|install-solaar|[](/scripts/)|
 |Utilties - Install Synaptic package manager|Install Synaptic package manager|[install-synaptic](/scripts/install-synaptic)|
 |System - Replace filemanager Nautilus with Nemo|Replace file manager Nautilus with more powerful Nemo|[replace-nautilus-nemo](/scripts/replace-nautilus-nemo)|
 |System - Replace notepad gedit with pluma|Replace default gedit with powerful pluma notepad.|[replace-gedit-pluma](/scripts/replace-gedit-pluma)|
 |System - Set Grub Timeout to 1 second|Set Grub Timeout to 1 second|[set-grub](/scripts/set-grub)|
 |System - Show hidden autostart system entries|Show hidden autostart system entries|[show-hidden-autostart-entries](/scripts/show-hidden-autostart-entries)|
 |Cleanup - Uninstall Ubuntu 16.04 old dependencies.|Uninstall 16.04 garbage dependencies after upgrade to 18.04.|[uninstall-old-1604-dependencies](/scripts/uninstall-old-1604-dependencies)|
-
 
 # Contribution guide
 

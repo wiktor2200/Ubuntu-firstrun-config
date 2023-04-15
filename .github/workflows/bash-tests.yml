@@ -10,10 +10,17 @@
 #        AUTHOR:  wiktor2200, https://github.com/wiktor2200
 #          REPO:  https://github.com/wiktor2200/Ubuntu-firstrun-config
 #       CREATED:  2018-06-12
-#       UPDATED:  2022-08-05
+#       UPDATED:  2023-04-15
 #===============================================================================
 name: Check Bash scripts
-on: [pull_request]
+
+"on":
+  push:
+    branches:
+      - main
+  pull_request:
+  schedule:
+    - cron: "0 0 1 * *"
 
 jobs:
   perform-upgrade:
@@ -520,6 +527,14 @@ jobs:
         run: sudo apt-get update; sudo apt-get install ubuntu-desktop
       - name: Run install-firejail
         run: sudo bash ./scripts/install-firejail
+  install-solaar:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v3
+      - name: Install ubuntu-desktop package
+        run: sudo apt-get update; sudo apt-get install ubuntu-desktop
+      - name: Run install-solaar
+        run: sudo bash ./scripts/install-solaar
   install-synaptic:
     runs-on: ubuntu-22.04
     steps:
