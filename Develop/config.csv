@@ -61,6 +61,7 @@ FALSE:Utilties - Install fzf – CLI fuzzy finder:Install fzf – CLI fuzzy find
 FALSE:Utilties - Install Guake – gnome dropdown terminal:Install Guake – gnome dropdown terminal:install-guake
 FALSE:Utilties - Install ISO images tool:Install ISO images tool, mount, unmount, modify. - acetoneiso:install-acetoneiso
 FALSE:Utilties - Install sandboxing app – Firejail:Install sandboxing app Firejail.:install-firejail
+FALSE:Utilties - Install Solaar for Logitech devices:Install Solaar - Logitech Unifying,Bolt companion tool.:install-solaar
 FALSE:Utilties - Install Synaptic package manager:Install Synaptic package manager:install-synaptic
 FALSE:System - Replace filemanager Nautilus with Nemo:Replace file manager Nautilus with more powerful Nemo:replace-nautilus-nemo
 FALSE:System - Replace notepad gedit with pluma:Replace default gedit with powerful pluma notepad.:replace-gedit-pluma

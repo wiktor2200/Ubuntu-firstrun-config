@@ -1,4 +1,4 @@
-2022-08-05
+2023-04-15
 
 |Task|Description|Subscript|
 |---|---|---|
@@ -65,6 +65,7 @@
 |Utilties - Install Guake – gnome dropdown terminal|Install Guake – gnome dropdown terminal|[install-guake](/scripts/install-guake)|
 |Utilties - Install ISO images tool|Install ISO images tool, mount, unmount, modify. - acetoneiso|[install-acetoneiso](/scripts/install-acetoneiso)|
 |Utilties - Install sandboxing app – Firejail|Install sandboxing app Firejail.|[install-firejail](/scripts/install-firejail)|
+|Utilties - Install Solaar for Logitech devices|Install Solaar - Logitech Unifying,Bolt companion tool.|[install-solaar](/scripts/install-solaar)|
 |Utilties - Install Synaptic package manager|Install Synaptic package manager|[install-synaptic](/scripts/install-synaptic)|
 |System - Replace filemanager Nautilus with Nemo|Replace file manager Nautilus with more powerful Nemo|[replace-nautilus-nemo](/scripts/replace-nautilus-nemo)|
 |System - Replace notepad gedit with pluma|Replace default gedit with powerful pluma notepad.|[replace-gedit-pluma](/scripts/replace-gedit-pluma)|
